@@ -22,9 +22,20 @@ chapter5 =								\
 	../slides/5/reellenormalform.tex				\
 	../slides/5/cayleyhamilton.tex					\
 									\
+	../slides/5/spektrum.tex					\
+	../slides/5/normal.tex						\
+	../slides/5/unitaer.tex						\
+									\
+	../slides/5/konvergenzradius.tex				\
+	../slides/5/krbeispiele.tex					\
+	../slides/5/spektralgelfand.tex					\
+	../slides/5/Aiteration.tex					\
+	../slides/5/satzvongelfand.tex					\
+									\
 	../slides/5/stoneweierstrass.tex				\
 	../slides/5/potenzreihenmethode.tex				\
 	../slides/5/logarithmusreihe.tex				\
 	../slides/5/exponentialfunktion.tex				\
+	../slides/5/hyperbolisch.tex					\
 	../slides/5/chapter.tex
 
