@@ -1,7 +1,11 @@
 \BOOKMARK [-1][-]{part.1}{I Grundlagen}{}% 1
 \BOOKMARK [0][-]{chapter*.3}{Einleitung}{part.1}% 2
 \BOOKMARK [0][-]{chapter.1}{Zahlen }{part.1}% 3
+<<<<<<< HEAD
 \BOOKMARK [1][-]{section.1.1}{Nat\374rliche Zahlen }{chapter.1}% 4
+=======
+\BOOKMARK [1][-]{section.1.1}{Nat\374rlich Zahlen }{chapter.1}% 4
+>>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
 \BOOKMARK [1][-]{section.1.2}{Ganze Zahlen }{chapter.1}% 5
 \BOOKMARK [1][-]{section.1.3}{Rationale Zahlen }{chapter.1}% 6
 \BOOKMARK [1][-]{section.1.4}{Reelle Zahlen }{chapter.1}% 7
@@ -13,6 +17,7 @@
 \BOOKMARK [2][-]{subsection.2.1.3}{Gleichungssysteme }{section.2.1}% 13
 \BOOKMARK [2][-]{subsection.2.1.4}{Lineare Abbildungen }{section.2.1}% 14
 \BOOKMARK [1][-]{section.2.2}{Skalarprodukt }{chapter.2}% 15
+<<<<<<< HEAD
 \BOOKMARK [2][-]{subsection.2.2.1}{Bilinearformen und Skalarprodukte }{section.2.2}% 16
 \BOOKMARK [2][-]{subsection.2.2.2}{Orthognormalbasis }{section.2.2}% 17
 \BOOKMARK [2][-]{subsection.2.2.3}{Symmetrische und selbstadjungierte Abbilungen }{section.2.2}% 18
@@ -161,3 +166,146 @@
 \BOOKMARK [1][-]{section.12.4}{Teil 3 }{chapter.12}% 161
 \BOOKMARK [2][-]{subsection.12.4.1}{De finibus bonorum et malorum }{section.12.4}% 162
 \BOOKMARK [0][-]{subsection.12.4.1}{Index}{part.2}% 163
+=======
+\BOOKMARK [2][-]{subsection.2.2.1}{Bilinearformen }{section.2.2}% 16
+\BOOKMARK [2][-]{subsection.2.2.2}{Orthogonale und unit\344re Matrizen }{section.2.2}% 17
+\BOOKMARK [2][-]{subsection.2.2.3}{Orthogonale Unterr\344ume }{section.2.2}% 18
+\BOOKMARK [2][-]{subsection.2.2.4}{Andere Normen auf Vektorr\344umen }{section.2.2}% 19
+\BOOKMARK [1][-]{section.2.3}{Algebraische Strukturen }{chapter.2}% 20
+\BOOKMARK [2][-]{subsection.2.3.1}{Gruppen }{section.2.3}% 21
+\BOOKMARK [2][-]{subsection.2.3.2}{Ringe und Moduln }{section.2.3}% 22
+\BOOKMARK [2][-]{subsection.2.3.3}{Algebren }{section.2.3}% 23
+\BOOKMARK [2][-]{subsection.2.3.4}{K\366rper }{section.2.3}% 24
+\BOOKMARK [1][-]{section.2.4}{Hadamard-Algebra }{chapter.2}% 25
+\BOOKMARK [2][-]{subsection.2.4.1}{Hadamard-Produkt }{section.2.4}% 26
+\BOOKMARK [2][-]{subsection.2.4.2}{Hadamard-Produkt und Matrizenalgebra }{section.2.4}% 27
+\BOOKMARK [2][-]{subsection.2.4.3}{Weitere Verkn\374pfungen }{section.2.4}% 28
+\BOOKMARK [0][-]{chapter.3}{Polynome }{part.1}% 29
+\BOOKMARK [1][-]{section.3.1}{Definitionen }{chapter.3}% 30
+\BOOKMARK [2][-]{subsection.3.1.1}{Skalare }{section.3.1}% 31
+\BOOKMARK [2][-]{subsection.3.1.2}{Der Polynomring }{section.3.1}% 32
+\BOOKMARK [2][-]{subsection.3.1.3}{Grad }{section.3.1}% 33
+\BOOKMARK [2][-]{subsection.3.1.4}{Teilbarkeit }{section.3.1}% 34
+\BOOKMARK [2][-]{subsection.3.1.5}{Formale Potenzreihen }{section.3.1}% 35
+\BOOKMARK [1][-]{section.3.2}{Polynome als Vektoren }{chapter.3}% 36
+\BOOKMARK [2][-]{subsection.3.2.1}{Polynome beliebigen Grades }{section.3.2}% 37
+\BOOKMARK [2][-]{subsection.3.2.2}{Multiplikative Struktur }{section.3.2}% 38
+\BOOKMARK [1][-]{section.3.3}{Polynommultiplikation mit Matrizen }{chapter.3}% 39
+\BOOKMARK [1][-]{section.3.4}{Minimalpolynom }{chapter.3}% 40
+\BOOKMARK [0][-]{chapter.4}{Endliche K\366rper }{part.1}% 41
+\BOOKMARK [1][-]{section.4.1}{Der euklidische Algorithmus }{chapter.4}% 42
+\BOOKMARK [2][-]{subsection.4.1.1}{Ganze Zahlen}{section.4.1}% 43
+\BOOKMARK [2][-]{subsection.4.1.2}{Matrixschreibweise}{section.4.1}% 44
+\BOOKMARK [2][-]{subsection.4.1.3}{Polynome}{section.4.1}% 45
+\BOOKMARK [1][-]{section.4.2}{Galois-K\366rper }{chapter.4}% 46
+\BOOKMARK [2][-]{subsection.4.2.1}{Arithmetik modulo p }{section.4.2}% 47
+\BOOKMARK [2][-]{subsection.4.2.2}{Charakteristik }{section.4.2}% 48
+\BOOKMARK [1][-]{section.4.3}{Wurzeln }{chapter.4}% 49
+\BOOKMARK [2][-]{subsection.4.3.1}{Irreduzible Polynome }{section.4.3}% 50
+\BOOKMARK [2][-]{subsection.4.3.2}{K\366rpererweiterungen }{section.4.3}% 51
+\BOOKMARK [2][-]{subsection.4.3.3}{Zerf\344llungsk\366rper }{section.4.3}% 52
+\BOOKMARK [0][-]{chapter.5}{Eigenwerte und Eigenvektoren }{part.1}% 53
+\BOOKMARK [1][-]{section.5.1}{Grundlagen }{chapter.5}% 54
+\BOOKMARK [2][-]{subsection.5.1.1}{Kern und Bild von Matrixpotenzen }{section.5.1}% 55
+\BOOKMARK [2][-]{subsection.5.1.2}{Invariante Unterr\344ume }{section.5.1}% 56
+\BOOKMARK [2][-]{subsection.5.1.3}{Nilpotente Matrizen }{section.5.1}% 57
+\BOOKMARK [2][-]{subsection.5.1.4}{Eigenwerte und Eigenvektoren }{section.5.1}% 58
+\BOOKMARK [2][-]{subsection.5.1.5}{Verallgemeinerte Eigenr\344ume }{section.5.1}% 59
+\BOOKMARK [2][-]{subsection.5.1.6}{Zerlegung in invariante Unterr\344ume }{section.5.1}% 60
+\BOOKMARK [2][-]{subsection.5.1.7}{Das charakteristische Polynom }{section.5.1}% 61
+\BOOKMARK [1][-]{section.5.2}{Normalformen }{chapter.5}% 62
+\BOOKMARK [2][-]{subsection.5.2.1}{Diagonalform}{section.5.2}% 63
+\BOOKMARK [2][-]{subsection.5.2.2}{Jordan-Normalform }{section.5.2}% 64
+\BOOKMARK [2][-]{subsection.5.2.3}{Reelle Normalform }{section.5.2}% 65
+\BOOKMARK [2][-]{subsection.5.2.4}{Obere Hessenberg-Form }{section.5.2}% 66
+\BOOKMARK [1][-]{section.5.3}{Funktionen einer Matrix }{chapter.5}% 67
+\BOOKMARK [2][-]{subsection.5.3.1}{Polynom-Funktionen }{section.5.3}% 68
+\BOOKMARK [2][-]{subsection.5.3.2}{Approximation von f\(A\) }{section.5.3}% 69
+\BOOKMARK [2][-]{subsection.5.3.3}{Potenzreihen }{section.5.3}% 70
+\BOOKMARK [2][-]{subsection.5.3.4}{Gelfand-Radius und Eigenwerte }{section.5.3}% 71
+\BOOKMARK [1][-]{section.5.4}{Numerische Verfahren zur Eigenwertbestimmung }{chapter.5}% 72
+\BOOKMARK [1][-]{section.5.5}{Spektraltheorie }{chapter.5}% 73
+\BOOKMARK [0][-]{chapter.6}{Permutationen }{part.1}% 74
+\BOOKMARK [1][-]{section.6.1}{Permutationen einer endlichen Menge }{chapter.6}% 75
+\BOOKMARK [2][-]{subsection.6.1.1}{Permutationen als 2n-Matrizen}{section.6.1}% 76
+\BOOKMARK [2][-]{subsection.6.1.2}{Zyklenzerlegung }{section.6.1}% 77
+\BOOKMARK [2][-]{subsection.6.1.3}{Konjugierte Elemente in Sn}{section.6.1}% 78
+\BOOKMARK [1][-]{section.6.2}{Permutationen und Transpositionen }{chapter.6}% 79
+\BOOKMARK [2][-]{subsection.6.2.1}{Zyklus und Permutationen aus Transpositionen}{section.6.2}% 80
+\BOOKMARK [2][-]{subsection.6.2.2}{Signum einer Permutation}{section.6.2}% 81
+\BOOKMARK [1][-]{section.6.3}{Permutationsmatrizen }{chapter.6}% 82
+\BOOKMARK [2][-]{subsection.6.3.1}{Matrizen}{section.6.3}% 83
+\BOOKMARK [2][-]{subsection.6.3.2}{Transpositionen}{section.6.3}% 84
+\BOOKMARK [2][-]{subsection.6.3.3}{Determinante und Vorzeichen}{section.6.3}% 85
+\BOOKMARK [1][-]{section.6.4}{Determinante }{chapter.6}% 86
+\BOOKMARK [0][-]{chapter.7}{Matrizengruppen }{part.1}% 87
+\BOOKMARK [1][-]{section.7.1}{Symmetrien }{chapter.7}% 88
+\BOOKMARK [1][-]{section.7.2}{Lie-Gruppen }{chapter.7}% 89
+\BOOKMARK [1][-]{section.7.3}{Lie-Algebren }{chapter.7}% 90
+\BOOKMARK [1][-]{section.7.4}{Homogene R\344ume }{chapter.7}% 91
+\BOOKMARK [0][-]{chapter.8}{Graphen }{part.1}% 92
+\BOOKMARK [1][-]{section.8.1}{Beschreibung von Graphen mit Matrizen }{chapter.8}% 93
+\BOOKMARK [2][-]{subsection.8.1.1}{Definition von Graphen }{section.8.1}% 94
+\BOOKMARK [2][-]{subsection.8.1.2}{Die Adjazenz-Matrix und Laplace-Matrix }{section.8.1}% 95
+\BOOKMARK [1][-]{section.8.2}{Spektrale Graphentheorie }{chapter.8}% 96
+\BOOKMARK [1][-]{section.8.3}{Wavelets auf Graphen }{chapter.8}% 97
+\BOOKMARK [0][-]{chapter.9}{Wahrscheinlichkeitsmatrizen }{part.1}% 98
+\BOOKMARK [1][-]{section.9.1}{Google-Matrix }{chapter.9}% 99
+\BOOKMARK [2][-]{subsection.9.1.1}{Ein Modell f\374r Webseitenbesucher }{section.9.1}% 100
+\BOOKMARK [2][-]{subsection.9.1.2}{Wahrscheinlichkeitsinterpretation }{section.9.1}% 101
+\BOOKMARK [2][-]{subsection.9.1.3}{``Freier Wille'' }{section.9.1}% 102
+\BOOKMARK [2][-]{subsection.9.1.4}{Wahrscheinlichkeitsverteilung }{section.9.1}% 103
+\BOOKMARK [1][-]{section.9.2}{Diskrete Markov-Ketten und Wahrscheinlichkeitsmatrizen }{chapter.9}% 104
+\BOOKMARK [2][-]{subsection.9.2.1}{Markov-Eigenschaft}{section.9.2}% 105
+\BOOKMARK [2][-]{subsection.9.2.2}{Diskrete Markov-Kette}{section.9.2}% 106
+\BOOKMARK [2][-]{subsection.9.2.3}{Absorbierende Zust\344nde}{section.9.2}% 107
+\BOOKMARK [1][-]{section.9.3}{Positive Vektoren und Matrizen }{chapter.9}% 108
+\BOOKMARK [2][-]{subsection.9.3.1}{Elementare Eigenschaften }{section.9.3}% 109
+\BOOKMARK [2][-]{subsection.9.3.2}{Die verallgemeinerte Dreiecksungleichung }{section.9.3}% 110
+\BOOKMARK [2][-]{subsection.9.3.3}{Der Satz von Perron-Frobenius }{section.9.3}% 111
+\BOOKMARK [1][-]{section.9.4}{Das Paradoxon von Parrondo }{chapter.9}% 112
+\BOOKMARK [2][-]{subsection.9.4.1}{Die beiden Teilspiele }{section.9.4}% 113
+\BOOKMARK [2][-]{subsection.9.4.2}{Kombination der Spiele }{section.9.4}% 114
+\BOOKMARK [0][-]{chapter.10}{Anwendungen in Kryptographie und Codierungstheorie }{part.1}% 115
+\BOOKMARK [1][-]{section.10.1}{Arithmetik f\374r die Kryptographie }{chapter.10}% 116
+\BOOKMARK [2][-]{subsection.10.1.1}{Potenzieren }{section.10.1}% 117
+\BOOKMARK [2][-]{subsection.10.1.2}{Rechenoperationen in Fp }{section.10.1}% 118
+\BOOKMARK [2][-]{subsection.10.1.3}{Rechenoperationen in F2l }{section.10.1}% 119
+\BOOKMARK [1][-]{section.10.2}{Kryptographie und endliche K\366rper }{chapter.10}% 120
+\BOOKMARK [2][-]{subsection.10.2.1}{Potenzen in Fp und diskreter Logarithmus }{section.10.2}% 121
+\BOOKMARK [2][-]{subsection.10.2.2}{Diffie-Hellman-Schl\374sseltausch }{section.10.2}% 122
+\BOOKMARK [2][-]{subsection.10.2.3}{Elliptische Kurven }{section.10.2}% 123
+\BOOKMARK [1][-]{section.10.3}{Advanced Encryption Standard \205 AES }{chapter.10}% 124
+\BOOKMARK [1][-]{section.10.4}{Fehlerkorrigierende Codes nach Reed-Solomon }{chapter.10}% 125
+\BOOKMARK [2][-]{subsection.10.4.1}{Was ist ein Code? }{section.10.4}% 126
+\BOOKMARK [2][-]{subsection.10.4.2}{Reed-Solomon-Code }{section.10.4}% 127
+\BOOKMARK [2][-]{subsection.10.4.3}{Decodierung }{section.10.4}% 128
+\BOOKMARK [0][-]{chapter.11}{Homologie }{part.1}% 129
+\BOOKMARK [1][-]{section.11.1}{Simplexe und simpliziale Komplexe }{chapter.11}% 130
+\BOOKMARK [2][-]{subsection.11.1.1}{Simplexe und Rand }{section.11.1}% 131
+\BOOKMARK [2][-]{subsection.11.1.2}{Triangulation }{section.11.1}% 132
+\BOOKMARK [1][-]{section.11.2}{Kettenkomplexe }{chapter.11}% 133
+\BOOKMARK [2][-]{subsection.11.2.1}{Randoperator von Simplexen }{section.11.2}% 134
+\BOOKMARK [2][-]{subsection.11.2.2}{Kettenkomplexe und Morphismen }{section.11.2}% 135
+\BOOKMARK [1][-]{section.11.3}{Homologie }{chapter.11}% 136
+\BOOKMARK [2][-]{subsection.11.3.1}{Homologie eines Kettenkomplexes }{section.11.3}% 137
+\BOOKMARK [2][-]{subsection.11.3.2}{Induzierte Abbildung }{section.11.3}% 138
+\BOOKMARK [2][-]{subsection.11.3.3}{Homologie eines simplizialen Komplexes }{section.11.3}% 139
+\BOOKMARK [1][-]{section.11.4}{Exaktheit und die Mayer-Vietoris-Folge }{chapter.11}% 140
+\BOOKMARK [2][-]{subsection.11.4.1}{Kurze exakte Folgen von Kettenkomplexen }{section.11.4}% 141
+\BOOKMARK [2][-]{subsection.11.4.2}{Schlangenlemma und lange exakte Folgen }{section.11.4}% 142
+\BOOKMARK [2][-]{subsection.11.4.3}{Mayer-Vietoris-Folge }{section.11.4}% 143
+\BOOKMARK [1][-]{section.11.5}{Fixpunkte }{chapter.11}% 144
+\BOOKMARK [2][-]{subsection.11.5.1}{Lefshetz-Spurformel }{section.11.5}% 145
+\BOOKMARK [2][-]{subsection.11.5.2}{Brower-Fixpunktsatz }{section.11.5}% 146
+\BOOKMARK [-1][-]{part.2}{II Anwendungen und weiterf\374hrende Themen}{}% 147
+\BOOKMARK [0][-]{chapter.12}{Thema}{part.2}% 148
+\BOOKMARK [1][-]{section.12.1}{Teil 0}{chapter.12}% 149
+\BOOKMARK [1][-]{section.12.2}{Teil 1 }{chapter.12}% 150
+\BOOKMARK [2][-]{subsection.12.2.1}{De finibus bonorum et malorum }{section.12.2}% 151
+\BOOKMARK [1][-]{section.12.3}{Teil 2 }{chapter.12}% 152
+\BOOKMARK [2][-]{subsection.12.3.1}{De finibus bonorum et malorum }{section.12.3}% 153
+\BOOKMARK [1][-]{section.12.4}{Teil 3 }{chapter.12}% 154
+\BOOKMARK [2][-]{subsection.12.4.1}{De finibus bonorum et malorum }{section.12.4}% 155
+\BOOKMARK [0][-]{subsection.12.4.1}{Index}{part.2}% 156
+>>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6

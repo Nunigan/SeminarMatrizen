@@ -17,6 +17,7 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
+<<<<<<< HEAD
   \entry{buch:ebbinghaus}{book}{}
     \name{author}{1}{}{%
       {{hash=eaHDE}{%
@@ -44,6 +45,8 @@
     \field{year}{1983}
   \endentry
 
+=======
+>>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
   \entry{BRIN1998107}{article}{}
     \name{author}{2}{}{%
       {{hash=BS}{%

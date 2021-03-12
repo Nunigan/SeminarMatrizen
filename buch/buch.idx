@@ -11,22 +11,35 @@
 \indexentry{teilbar|hyperpage}{11}
 \indexentry{Primzahl|hyperpage}{11}
 \indexentry{Zahlentheorie|hyperpage}{11}
+<<<<<<< HEAD
 \indexentry{endlich|hyperpage}{12}
 \indexentry{gleich mächtig|hyperpage}{12}
 \indexentry{Ring|hyperpage}{14}
 \indexentry{Ring!kommutativer|hyperpage}{14}
 \indexentry{Kürzen|hyperpage}{15}
 \indexentry{Erweitern|hyperpage}{15}
+=======
+\indexentry{Ring|hyperpage}{13}
+\indexentry{Ring!kommutativer|hyperpage}{13}
+\indexentry{Kürzen|hyperpage}{14}
+\indexentry{Erweitern|hyperpage}{14}
+>>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
 \indexentry{Kehrwert|hyperpage}{15}
 \indexentry{lineares Gleichungssystem|hyperpage}{15}
 \indexentry{Körper|hyperpage}{15}
 \indexentry{$\Bbbk$|hyperpage}{15}
+<<<<<<< HEAD
 \indexentry{Fundamentalsatz der Algebra|hyperpage}{20}
 \indexentry{Gauss, Carl Friedrich|hyperpage}{20}
+=======
+\indexentry{Fundamentalsatz der Algebra|hyperpage}{19}
+\indexentry{Gauss, Carl Friedrich|hyperpage}{19}
+>>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
 \indexentry{Quaternionen|hyperpage}{20}
 \indexentry{Einheitsquaternionen|hyperpage}{20}
 \indexentry{Divisionsalgebra|hyperpage}{20}
 \indexentry{antikommutativ|hyperpage}{20}
+<<<<<<< HEAD
 \indexentry{Cayley, Arthur|hyperpage}{21}
 \indexentry{Vektorform eines Gleichungssystems|hyperpage}{25}
 \indexentry{aufgespannter Raum|hyperpage}{25}
@@ -165,3 +178,118 @@
 \indexentry{positive Matrix|hyperpage}{159}
 \indexentry{nichtnegative Matrix|hyperpage}{159}
 \indexentry{diskreter Logarithmus|hyperpage}{176}
+=======
+\indexentry{Cayley, Arthur|hyperpage}{20}
+\indexentry{Vektorform eines Gleichungssystems|hyperpage}{23}
+\indexentry{aufgespannter Raum|hyperpage}{23}
+\indexentry{Basis|hyperpage}{24}
+\indexentry{Dimension|hyperpage}{24}
+\indexentry{Matrix|hyperpage}{25}
+\indexentry{quadratische Matrix|hyperpage}{25}
+\indexentry{Kronecker-$\delta$|hyperpage}{26}
+\indexentry{Kronecker-Symbol|hyperpage}{26}
+\indexentry{Einheitsmatrix|hyperpage}{26}
+\indexentry{homogenes Gleichungssystem|hyperpage}{27}
+\indexentry{inverse Matrix|hyperpage}{27}
+\indexentry{Kern|hyperpage}{30}
+\indexentry{neutrales Element|hyperpage}{33}
+\indexentry{Gruppe|hyperpage}{33}
+\indexentry{Gruppe|hyperpage}{33}
+\indexentry{Monoid|hyperpage}{33}
+\indexentry{Halbgruppe|hyperpage}{33}
+\indexentry{Homomorphismus|hyperpage}{34}
+\indexentry{Kern|hyperpage}{35}
+\indexentry{Normalteiler|hyperpage}{35}
+\indexentry{Faktorgruppe|hyperpage}{35}
+\indexentry{Quotientengruppe|hyperpage}{35}
+\indexentry{Darstellung|hyperpage}{36}
+\indexentry{reguläre Darstellung|hyperpage}{36}
+\indexentry{Ring|hyperpage}{36}
+\indexentry{Distributivgesetz|hyperpage}{36}
+\indexentry{Ring mit Eins|hyperpage}{36}
+\indexentry{Ring!kommutativ|hyperpage}{36}
+\indexentry{kommutativer Ring|hyperpage}{36}
+\indexentry{Gausssche Zahlen|hyperpage}{37}
+\indexentry{$R^*$|hyperpage}{38}
+\indexentry{Einheit|hyperpage}{38}
+\indexentry{Einheitengruppe|hyperpage}{38}
+\indexentry{Homomorphismus|hyperpage}{39}
+\indexentry{Ringhomomorphismus|hyperpage}{39}
+\indexentry{Kern|hyperpage}{39}
+\indexentry{Ideal|hyperpage}{40}
+\indexentry{Quotientenring|hyperpage}{40}
+\indexentry{Polynom|hyperpage}{49}
+\indexentry{arithmetische Sichtweise|hyperpage}{49}
+\indexentry{algebraische Sichtweise|hyperpage}{49}
+\indexentry{Skalar|hyperpage}{50}
+\indexentry{Ring|hyperpage}{50}
+\indexentry{Polynome über $R$|hyperpage}{50}
+\indexentry{Polynom!normiert|hyperpage}{51}
+\indexentry{normiertes Polynom|hyperpage}{51}
+\indexentry{Polynom!monisch|hyperpage}{51}
+\indexentry{normiertes Polynom|hyperpage}{51}
+\indexentry{Leitkoeffizient|hyperpage}{51}
+\indexentry{Nullteiler|hyperpage}{53}
+\indexentry{nullteilerfrei|hyperpage}{53}
+\indexentry{irreduzibles Polynom|hyperpage}{70}
+\indexentry{Eigenraum|hyperpage}{86}
+\indexentry{Jordan-Block|hyperpage}{92}
+\indexentry{Jordan-Matrix|hyperpage}{92}
+\indexentry{Minimalpolynom einer Matrix|hyperpage}{93}
+\indexentry{Norm|hyperpage}{97}
+\indexentry{Konvergenzbedingung|hyperpage}{98}
+\indexentry{Spektralradius|hyperpage}{98}
+\indexentry{Gelfand-Radius|hyperpage}{98}
+\indexentry{Grenzwert|hyperpage}{98}
+\indexentry{Konvergenzkriterium|hyperpage}{98}
+\indexentry{diagonalisierbar|hyperpage}{98}
+\indexentry{Diagonalform|hyperpage}{98}
+\indexentry{komplex|hyperpage}{98}
+\indexentry{Eigenbasis|hyperpage}{98}
+\indexentry{Gelfand-Radius|hyperpage}{99}
+\indexentry{Blockmatrix|hyperpage}{99}
+\indexentry{Diagonalmatrix|hyperpage}{99}
+\indexentry{charakteristisches Polynom|hyperpage}{99}
+\indexentry{Polynom!charakteristisch|hyperpage}{99}
+\indexentry{Jordan-Block|hyperpage}{100}
+\indexentry{lineare!Algebra|hyperpage}{100}
+\indexentry{Binomialkoeffizient|hyperpage}{100}
+\indexentry{Satz von Gelfand|hyperpage}{101}
+\indexentry{Gelfand!Satz von|hyperpage}{101}
+\indexentry{Graph|hyperpage}{115}
+\indexentry{Komplexitätstheorie|hyperpage}{115}
+\indexentry{Stundenplan|hyperpage}{115}
+\indexentry{Färbeproblem|hyperpage}{115}
+\indexentry{Graphentheorie!spektrale|hyperpage}{115}
+\indexentry{Knoten|hyperpage}{116}
+\indexentry{Vertex|hyperpage}{116}
+\indexentry{Kante|hyperpage}{116}
+\indexentry{Graph!ungerichteter|hyperpage}{116}
+\indexentry{ungerichteter Graph|hyperpage}{116}
+\indexentry{Graph!gerichteter|hyperpage}{116}
+\indexentry{gerichteter Graph|hyperpage}{116}
+\indexentry{Pfad|hyperpage}{117}
+\indexentry{Durchmesser eines Graphen|hyperpage}{118}
+\indexentry{Graph!Durchmesser des|hyperpage}{118}
+\indexentry{totale Wahrscheinlichkeit|hyperpage}{123}
+\indexentry{Wahrscheinlichkeit!totale|hyperpage}{123}
+\indexentry{Google-Matrix|hyperpage}{125}
+\indexentry{stationäre Verteilung|hyperpage}{126}
+\indexentry{Markov-Eigenschaft|hyperpage}{128}
+\indexentry{Pfadwahrscheinlichkeit|hyperpage}{129}
+\indexentry{homogene Markov-Kette|hyperpage}{131}
+\indexentry{stationäre Verteilung|hyperpage}{131}
+\indexentry{irreduzible Markov-Kette|hyperpage}{132}
+\indexentry{konvexe Kombination|hyperpage}{134}
+\indexentry{konvex|hyperpage}{134}
+\indexentry{Grenzverteilung|hyperpage}{134}
+\indexentry{absorbierender Zustand|hyperpage}{136}
+\indexentry{absorbierende Markov-Kette|hyperpage}{136}
+\indexentry{transienter Zustand|hyperpage}{136}
+\indexentry{Fundamental-Matrix|hyperpage}{136}
+\indexentry{positiver Vektor|hyperpage}{139}
+\indexentry{nichtnegativer Vektor|hyperpage}{139}
+\indexentry{positive Matrix|hyperpage}{139}
+\indexentry{nichtnegative Matrix|hyperpage}{139}
+\indexentry{diskreter Logarithmus|hyperpage}{156}
+>>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6

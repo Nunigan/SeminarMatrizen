@@ -1,6 +1,12 @@
 This is makeindex, version 2.15 [TeX Live 2019] (kpathsea + Thai support).
+<<<<<<< HEAD
 Scanning input file buch.idx....done (167 entries accepted, 0 rejected).
 Sorting entries....done (1295 comparisons).
 Generating output file buch.ind....done (238 lines written, 0 warnings).
+=======
+Scanning input file buch.idx....done (140 entries accepted, 0 rejected).
+Sorting entries....done (1097 comparisons).
+Generating output file buch.ind....done (208 lines written, 0 warnings).
+>>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
 Output written in buch.ind.
 Transcript written in buch.ilg.
