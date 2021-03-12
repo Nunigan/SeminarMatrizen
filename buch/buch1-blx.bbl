@@ -1,0 +1,132 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global}
+  \entry{buch:ebbinghaus}{book}{}
+    \name{author}{1}{}{%
+      {{hash=eaHDE}{%
+         prefix={et},
+         prefixi={e\bibinitperiod},
+         family={al },
+         familyi={a\bibinitperiod},
+         given={Hans-Dieter\bibnamedelima Ebbinghaus},
+         giveni={H\bibinithyphendelim D\bibinitperiod\bibinitdelim
+  E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer-Verlag}%
+    }
+    \strng{namehash}{aHDEe1}
+    \strng{fullhash}{aHDEe1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{isbn}{3-540-12666-X}
+    \field{title}{Zahlen}
+    \field{volume}{1}
+    \field{year}{1983}
+  \endentry
+
+  \entry{BRIN1998107}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BS}{%
+         family={Brin},
+         familyi={B\bibinitperiod},
+         given={Sergey},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=PL}{%
+         family={Page},
+         familyi={P\bibinitperiod},
+         given={Lawrence},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \keyw{World Wide Web, Search engines, Information retrieval, PageRank,
+  Google}
+    \strng{namehash}{BSPL1}
+    \strng{fullhash}{BSPL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    In this paper, we present Google, a prototype of a large-scale search
+  engine which makes heavy use of the structure present in hypertext. Google is
+  designed to crawl and index the Web efficiently and produce much more
+  satisfying search results than existing systems. The prototype with a full
+  text and hyperlink database of at least 24 million pages is available at
+  http://google.stanford.edu/ To engineer a search engine is a challenging
+  task. Search engines index tens to hundreds of millions of Web pages
+  involving a comparable number of distinct terms. They answer tens of millions
+  of queries every day. Despite the importance of large-scale search engines on
+  the Web, very little academic research has been done on them. Furthermore,
+  due to rapid advance in technology and Web proliferation, creating a Web
+  search engine today is very different from three years ago. This paper
+  provides an in-depth description of our large-scale Web search engine — the
+  first such detailed public description we know of to date. Apart from the
+  problems of scaling traditional search techniques to data of this magnitude,
+  there are new technical challenges involved with using the additional
+  information present in hypertext to produce better search results. This paper
+  addresses this question of how to build a practical large-scale system which
+  can exploit the additional information present in hypertext. Also we look at
+  the problem of how to effectively deal with uncontrolled hypertext
+  collections where anyone can publish anything they want.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/S0169-7552(98)00110-X
+    \endverb
+    \field{issn}{0169-7552}
+    \field{note}{Proceedings of the Seventh International World Wide Web
+  Conference}
+    \field{number}{1}
+    \field{pages}{107 \bibrangedash  117}
+    \field{title}{The anatomy of a large-scale hypertextual Web search engine}
+    \verb{url}
+    \verb http://www.sciencedirect.com/science/article/pii/S016975529800110X
+    \endverb
+    \field{volume}{30}
+    \field{journaltitle}{Computer Networks and ISDN Systems}
+    \field{year}{1998}
+  \endentry
+
+  \entry{buch:repo}{online}{}
+    \name{author}{1}{}{%
+      {{hash=MA}{%
+         family={Müller},
+         familyi={M\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MA1}
+    \strng{fullhash}{MA1}
+    \field{labelnamesource}{author}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{subtitle}{Source Code Repository}
+    \verb{url}
+    \verb https://github.com/AndreasFMueller/SeminarNumerik.git
+    \endverb
+    \field{year}{2020}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+\enddatalist
+\endinput

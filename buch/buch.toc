@@ -1,0 +1,323 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
+\contentsline {part}{I\hspace {1em}Grundlagen}{3}{part.1}%
+\contentsline {chapter}{Einleitung}{5}{chapter*.3}%
+\contentsline {chapter}{\numberline {1}Zahlen }{9}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Natürliche Zahlen }{9}{section.1.1}%
+\contentsline {subsubsection}{Peano-Axiome}{9}{section*.4}%
+\contentsline {subsubsection}{Vollständige Induktion}{10}{section*.5}%
+\contentsline {subsubsection}{Addition}{10}{section*.6}%
+\contentsline {subsubsection}{Multiplikation}{10}{section*.7}%
+\contentsline {subsubsection}{Rechenregeln}{10}{section*.8}%
+\contentsline {subsubsection}{Teilbarkeit}{11}{section*.9}%
+\contentsline {subsubsection}{Konstruktion der natürlichen Zahlen aus der Mengenlehre}{11}{section*.10}%
+\contentsline {subsubsection}{Natürliche Zahlen als Äquivalenzklassen}{12}{section*.11}%
+\contentsline {section}{\numberline {1.2}Ganze Zahlen }{12}{section.1.2}%
+\contentsline {subsubsection}{Paare von natürlichen Zahlen}{12}{section*.12}%
+\contentsline {subsubsection}{Äquivalenzrelation}{13}{section*.13}%
+\contentsline {subsubsection}{Entgegengesetzter Wert}{13}{section*.14}%
+\contentsline {subsubsection}{Lösung von Gleichungen}{13}{section*.15}%
+\contentsline {subsubsection}{Ring}{14}{section*.16}%
+\contentsline {section}{\numberline {1.3}Rationale Zahlen }{14}{section.1.3}%
+\contentsline {subsubsection}{Brüche}{14}{section*.17}%
+\contentsline {subsubsection}{Kürzen}{15}{section*.18}%
+\contentsline {subsubsection}{Kehrwert}{15}{section*.19}%
+\contentsline {subsubsection}{Lösung von linearen Gleichungen}{15}{section*.20}%
+\contentsline {subsubsection}{Körper}{15}{section*.21}%
+\contentsline {section}{\numberline {1.4}Reelle Zahlen }{16}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Komplexe Zahlen }{16}{section.1.5}%
+\contentsline {subsubsection}{Imaginäre und komplexe Zahlen}{17}{section*.22}%
+\contentsline {subsubsection}{Real- und Imaginärteil}{17}{section*.23}%
+\contentsline {subsubsection}{Komplexe Konjugation}{17}{section*.24}%
+\contentsline {subsubsection}{Betrag}{18}{section*.25}%
+\contentsline {subsubsection}{Division}{18}{section*.26}%
+\contentsline {subsubsection}{Gausssche Zahlenebene}{18}{section*.27}%
+\contentsline {subsubsection}{Geometrische Interpretation der Rechenoperationen}{19}{section*.29}%
+\contentsline {subsubsection}{Algebraische Vollständigkeit}{19}{section*.30}%
+\contentsline {subsubsection}{Quaternionen und Octonionen}{20}{section*.31}%
+\contentsline {chapter}{\numberline {2}Vektoren und Matrizen }{23}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Lineare Algebra }{23}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Vektoren }{23}{subsection.2.1.1}%
+\contentsline {subsubsection}{Zeilen- und Spaltenvektoren}{23}{section*.32}%
+\contentsline {subsubsection}{Standardbasisvektoren}{24}{section*.33}%
+\contentsline {subsubsection}{Vektorraum}{24}{section*.34}%
+\contentsline {subsubsection}{Gleichungssysteme in Vektorform}{25}{section*.35}%
+\contentsline {subsubsection}{Lineare Abhängigkeit}{26}{section*.36}%
+\contentsline {subsubsection}{Basis}{26}{section*.37}%
+\contentsline {subsubsection}{Unterräume}{26}{section*.38}%
+\contentsline {subsection}{\numberline {2.1.2}Matrizen }{27}{subsection.2.1.2}%
+\contentsline {subsubsection}{Definition einer Matrix}{27}{section*.39}%
+\contentsline {subsubsection}{Addition und Multiplikation mit Skalaren}{27}{section*.40}%
+\contentsline {subsubsection}{Multiplikation}{28}{section*.41}%
+\contentsline {subsubsection}{Einheitsmatrix}{28}{section*.42}%
+\contentsline {subsection}{\numberline {2.1.3}Gleichungssysteme }{28}{subsection.2.1.3}%
+\contentsline {subsubsection}{Eindeutige Lösung}{28}{section*.43}%
+\contentsline {subsubsection}{Inhomogene und homogene Gleichungssysteme}{29}{section*.44}%
+\contentsline {subsubsection}{Gauss-Algorithmus}{29}{section*.45}%
+\contentsline {subsubsection}{Lösungsmenge}{31}{section*.47}%
+\contentsline {subsubsection}{Inverse Matrix}{31}{section*.48}%
+\contentsline {subsubsection}{Determinante}{32}{section*.49}%
+\contentsline {subsection}{\numberline {2.1.4}Lineare Abbildungen }{32}{subsection.2.1.4}%
+\contentsline {subsubsection}{Definition}{32}{section*.50}%
+\contentsline {subsubsection}{Matrix}{33}{section*.51}%
+\contentsline {subsubsection}{Basiswechsel}{33}{section*.52}%
+\contentsline {subsubsection}{Umkehrabbbildung}{34}{section*.53}%
+\contentsline {subsubsection}{Kern und Bild}{34}{section*.54}%
+\contentsline {subsubsection}{Rang und Defekt}{35}{section*.55}%
+\contentsline {subsubsection}{Quotient}{35}{section*.56}%
+\contentsline {section}{\numberline {2.2}Skalarprodukt }{35}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Bilinearformen und Skalarprodukte }{36}{subsection.2.2.1}%
+\contentsline {subsubsection}{Symmetrische bilineare Funktionen}{36}{section*.57}%
+\contentsline {subsubsection}{Positiv definite Bilinearformen und Skalarprodukt}{36}{section*.58}%
+\contentsline {subsubsection}{Dreiecksungleichung}{37}{section*.59}%
+\contentsline {subsubsection}{Polarformel}{38}{section*.60}%
+\contentsline {subsubsection}{Komplexe Vektorräume und Sesquilinearformen}{38}{section*.61}%
+\contentsline {subsection}{\numberline {2.2.2}Orthognormalbasis }{39}{subsection.2.2.2}%
+\contentsline {subsubsection}{Gram-Matrix}{39}{section*.62}%
+\contentsline {subsubsection}{Orthonormalbasis}{39}{section*.63}%
+\contentsline {subsubsection}{Gram-Schmidt-Orthonormalisierung}{39}{section*.64}%
+\contentsline {subsubsection}{Orthogonalisierung}{40}{section*.65}%
+\contentsline {subsubsection}{Orthonormalbasen in komplexen Vektorräumen}{40}{section*.66}%
+\contentsline {subsection}{\numberline {2.2.3}Symmetrische und selbstadjungierte Abbilungen }{40}{subsection.2.2.3}%
+\contentsline {subsubsection}{Symmetrische Abbildungen}{41}{section*.67}%
+\contentsline {subsubsection}{Selbstadjungierte Abbildungen}{41}{section*.68}%
+\contentsline {subsubsection}{Die Adjungierte}{41}{section*.69}%
+\contentsline {subsection}{\numberline {2.2.4}Orthogonale und unitäre Matrizen }{42}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Orthogonale Unterräume }{42}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.6}Andere Normen auf Vektorräumen }{42}{subsection.2.2.6}%
+\contentsline {subsubsection}{$l^1$-Norm}{42}{section*.70}%
+\contentsline {subsubsection}{$l^\infty $-Norm}{43}{section*.71}%
+\contentsline {subsubsection}{Operatornorm}{43}{section*.72}%
+\contentsline {subsubsection}{Normen auf Funktionenräumen}{44}{section*.73}%
+\contentsline {section}{\numberline {2.3}Algebraische Strukturen }{44}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Gruppen }{44}{subsection.2.3.1}%
+\contentsline {subsubsection}{Beispiele von Gruppen}{46}{section*.75}%
+\contentsline {subsubsection}{Einige einfache Rechenregeln in Gruppen}{47}{section*.76}%
+\contentsline {subsubsection}{Homomorphismen}{47}{section*.77}%
+\contentsline {subsubsection}{Normalteiler}{48}{section*.78}%
+\contentsline {subsubsection}{Faktorgruppen}{48}{section*.79}%
+\contentsline {subsubsection}{Darstellungen}{49}{section*.80}%
+\contentsline {subsection}{\numberline {2.3.2}Ringe und Moduln }{49}{subsection.2.3.2}%
+\contentsline {subsubsection}{Definition eines Rings}{49}{section*.81}%
+\contentsline {subsubsection}{Beispiele von Ringen}{50}{section*.82}%
+\contentsline {subsubsection}{Einheiten}{51}{section*.84}%
+\contentsline {subsubsection}{Nullteiler}{51}{section*.85}%
+\contentsline {subsubsection}{Homomorphismus}{52}{section*.86}%
+\contentsline {subsubsection}{Ideale}{52}{section*.87}%
+\contentsline {subsection}{\numberline {2.3.3}Algebren }{53}{subsection.2.3.3}%
+\contentsline {subsubsection}{Die Algebra der Funktionen $\Bbbk ^X$}{54}{section*.89}%
+\contentsline {subsubsection}{Die Algebra der stetigen Funktionen $C([a,b])$}{54}{section*.90}%
+\contentsline {subsection}{\numberline {2.3.4}Körper }{54}{subsection.2.3.4}%
+\contentsline {section}{\numberline {2.4}Hadamard-Algebra }{55}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Hadamard-Produkt }{55}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Hadamard-Produkt und Matrizenalgebra }{56}{subsection.2.4.2}%
+\contentsline {subsubsection}{Unverträglichkeit von Hadamard- und Matrizen-Produkt}{56}{section*.91}%
+\contentsline {subsubsection}{Einbettung der Hadamard-Algebra ein eine Matrizenalgebra}{56}{section*.92}%
+\contentsline {subsubsection}{Beispiel: Faltung und Fourier-Theorie}{57}{section*.93}%
+\contentsline {subsection}{\numberline {2.4.3}Weitere Verknüpfungen }{57}{subsection.2.4.3}%
+\contentsline {subsubsection}{Transposition}{57}{section*.94}%
+\contentsline {subsubsection}{Frobeniusnorm}{57}{section*.95}%
+\contentsline {subsubsection}{Skalarprodukt}{58}{section*.96}%
+\contentsline {chapter}{\numberline {3}Polynome }{61}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Definitionen }{62}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Skalare }{62}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Der Polynomring }{63}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Grad }{64}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Teilbarkeit }{66}{subsection.3.1.4}%
+\contentsline {subsubsection}{Polynomdivision}{66}{section*.98}%
+\contentsline {subsubsection}{Euklidische Ringe und Faktorzerlegung}{67}{section*.99}%
+\contentsline {subsubsection}{Irreduzible Polynome}{68}{section*.100}%
+\contentsline {subsubsection}{Faktorisierung in einem Polynomring}{68}{section*.101}%
+\contentsline {subsection}{\numberline {3.1.5}Formale Potenzreihen }{68}{subsection.3.1.5}%
+\contentsline {section}{\numberline {3.2}Polynome als Vektoren }{68}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Polynome beliebigen Grades }{69}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Multiplikative Struktur }{70}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Polynommultiplikation mit Matrizen }{70}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Minimalpolynom }{70}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Endliche Körper }{71}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Der euklidische Algorithmus }{71}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Ganze Zahlen}{71}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Matrixschreibweise }{73}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Vereinfachte Durchführung }{74}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Polynome}{76}{subsection.4.1.4}%
+\contentsline {section}{\numberline {4.2}Galois-Körper }{77}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Arithmetik modulo $p$ }{78}{subsection.4.2.1}%
+\contentsline {subsubsection}{Restklassenring}{78}{section*.103}%
+\contentsline {subsubsection}{Division in $\mathbb {Z}/n\mathbb {Z}$}{79}{section*.104}%
+\contentsline {subsubsection}{Der kleine Satz von Fermat}{80}{section*.105}%
+\contentsline {subsubsection}{Der Satz von Wilson}{81}{section*.106}%
+\contentsline {subsection}{\numberline {4.2.2}Charakteristik }{81}{subsection.4.2.2}%
+\contentsline {subsubsection}{Primkörper}{82}{section*.107}%
+\contentsline {subsubsection}{Teilbarkeit von Binomialkoeffizienten}{82}{section*.108}%
+\contentsline {subsubsection}{Frobenius-Automorphismus}{84}{section*.111}%
+\contentsline {section}{\numberline {4.3}Wurzeln }{85}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Irreduzible Polynome }{85}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Körpererweiterungen }{87}{subsection.4.3.2}%
+\contentsline {subsubsection}{Erweiterung mit einem irreduziblen Polynom}{87}{section*.112}%
+\contentsline {subsubsection}{Matrixrealisierung der Multiplikation mit $\alpha $}{87}{section*.113}%
+\contentsline {subsubsection}{Inverse}{88}{section*.114}%
+\contentsline {subsubsection}{Algebraische Konstruktion}{91}{section*.116}%
+\contentsline {subsubsection}{Reduktion modulo $m$}{91}{section*.117}%
+\contentsline {subsubsection}{Multiplikative Inverse}{92}{section*.118}%
+\contentsline {subsection}{\numberline {4.3.3}Zerfällungskörper }{94}{subsection.4.3.3}%
+\contentsline {chapter}{\numberline {5}Eigenwerte und Eigenvektoren }{97}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Grundlagen }{97}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Kern und Bild von Matrixpotenzen }{97}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Invariante Unterräume }{99}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Nilpotente Matrizen }{100}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.4}Eigenwerte und Eigenvektoren }{101}{subsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.1.5}Verallgemeinerte Eigenräume }{103}{subsection.5.1.5}%
+\contentsline {subsection}{\numberline {5.1.6}Zerlegung in invariante Unterräume }{104}{subsection.5.1.6}%
+\contentsline {subsection}{\numberline {5.1.7}Das charakteristische Polynom }{105}{subsection.5.1.7}%
+\contentsline {section}{\numberline {5.2}Normalformen }{107}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Diagonalform}{107}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Jordan-Normalform }{107}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Reelle Normalform }{110}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Obere Hessenberg-Form }{110}{subsection.5.2.4}%
+\contentsline {section}{\numberline {5.3}Funktionen einer Matrix }{110}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Polynom-Funktionen }{110}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Approximation von $f(A)$ }{113}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Potenzreihen }{114}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}Gelfand-Radius und Eigenwerte }{114}{subsection.5.3.4}%
+\contentsline {subsubsection}{Spezialfall: Diagonalisierbare Matrizen}{114}{section*.120}%
+\contentsline {subsubsection}{Blockmatrizen}{115}{section*.121}%
+\contentsline {subsubsection}{Jordan-Blöcke}{116}{section*.122}%
+\contentsline {subsubsection}{Iterationsfolgen}{116}{section*.123}%
+\contentsline {subsubsection}{Der Satz von Gelfand}{117}{section*.124}%
+\contentsline {section}{\numberline {5.4}Numerische Verfahren zur Eigenwertbestimmung }{118}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Spektraltheorie }{118}{section.5.5}%
+\contentsline {chapter}{\numberline {6}Permutationen }{121}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Permutationen einer endlichen Menge }{121}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Permutationen als $2\times n$-Matrizen}{121}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Zyklenzerlegung }{122}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Konjugierte Elemente in $S_n$}{123}{subsection.6.1.3}%
+\contentsline {section}{\numberline {6.2}Permutationen und Transpositionen }{123}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Zyklus und Permutationen aus Transpositionen}{124}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Signum einer Permutation}{124}{subsection.6.2.2}%
+\contentsline {section}{\numberline {6.3}Permutationsmatrizen }{125}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Matrizen}{126}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Transpositionen}{126}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}Determinante und Vorzeichen}{127}{subsection.6.3.3}%
+\contentsline {section}{\numberline {6.4}Determinante }{128}{section.6.4}%
+\contentsline {chapter}{\numberline {7}Matrizengruppen }{129}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Symmetrien }{129}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Lie-Gruppen }{129}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Lie-Algebren }{129}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Homogene Räume }{129}{section.7.4}%
+\contentsline {chapter}{\numberline {8}Graphen }{131}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Beschreibung von Graphen mit Matrizen }{131}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Definition von Graphen }{132}{subsection.8.1.1}%
+\contentsline {subsubsection}{Ungerichtete Graphen}{132}{section*.128}%
+\contentsline {subsubsection}{Gerichtete Graphen}{132}{section*.129}%
+\contentsline {subsubsection}{Adjazenzmatrix}{133}{section*.130}%
+\contentsline {subsubsection}{Adjazenzmatrix und die Anzahl der Pfade}{134}{section*.133}%
+\contentsline {subsubsection}{Beschriftete Graphen}{136}{section*.135}%
+\contentsline {subsection}{\numberline {8.1.2}Inzidenzmatrix}{136}{subsection.8.1.2}%
+\contentsline {subsubsection}{Beschriftete Graphen}{136}{section*.136}%
+\contentsline {subsubsection}{Inzidenzmatrix und Adjazenzmatrix}{137}{section*.137}%
+\contentsline {subsubsection}{Gradmatrix}{137}{section*.138}%
+\contentsline {subsubsection}{Gerichtete Graphen}{137}{section*.139}%
+\contentsline {subsubsection}{Anwendung: Netlist}{137}{section*.140}%
+\contentsline {subsection}{\numberline {8.1.3}Die Adjazenzmatrix und Laplace-Matrix }{137}{subsection.8.1.3}%
+\contentsline {section}{\numberline {8.2}Spektrale Graphentheorie }{138}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Wavelets auf Graphen }{138}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Funktionen auf einem Graphen und die Laplace-Matrix}{138}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}Standardbasis und Eigenbasis }{139}{subsection.8.3.2}%
+\contentsline {subsection}{\numberline {8.3.3}Wavelet-Basen }{140}{subsection.8.3.3}%
+\contentsline {chapter}{\numberline {9}Wahrscheinlichkeitsmatrizen }{141}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Google-Matrix }{141}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}Ein Modell für Webseitenbesucher }{142}{subsection.9.1.1}%
+\contentsline {subsection}{\numberline {9.1.2}Wahrscheinlichkeitsinterpretation }{142}{subsection.9.1.2}%
+\contentsline {subsubsection}{Ereignisse und Wahrscheinlichkeiten}{142}{section*.143}%
+\contentsline {subsubsection}{Bedingte Wahrscheinlichkeit}{143}{section*.144}%
+\contentsline {subsubsection}{Totale Wahrscheinlichkeit}{143}{section*.145}%
+\contentsline {subsection}{\numberline {9.1.3}``Freier Wille'' }{144}{subsection.9.1.3}%
+\contentsline {subsubsection}{Erweiterung der Link-Matrix}{144}{section*.146}%
+\contentsline {subsubsection}{Die Google-Matrix}{145}{section*.147}%
+\contentsline {subsection}{\numberline {9.1.4}Wahrscheinlichkeitsverteilung }{146}{subsection.9.1.4}%
+\contentsline {subsubsection}{Stationäre Verteilung}{146}{section*.148}%
+\contentsline {subsubsection}{Potenzverfahren}{147}{section*.149}%
+\contentsline {section}{\numberline {9.2}Diskrete Markov-Ketten und Wahrscheinlichkeitsmatrizen }{148}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Markov-Eigenschaft}{148}{subsection.9.2.1}%
+\contentsline {subsubsection}{Gedächtnislosigkeit}{148}{section*.150}%
+\contentsline {subsubsection}{Die Chapman-Kolmogorov-Gleichung}{149}{section*.151}%
+\contentsline {subsection}{\numberline {9.2.2}Diskrete Markov-Kette}{149}{subsection.9.2.2}%
+\contentsline {subsubsection}{Zustandswahrscheinlichkeiten}{151}{section*.153}%
+\contentsline {subsubsection}{Zeitunabhängige Übergangswahrscheinlichkeiten}{151}{section*.154}%
+\contentsline {subsubsection}{Stationäre Verteilung}{151}{section*.155}%
+\contentsline {subsubsection}{Irreduzible Markov-Ketten}{152}{section*.156}%
+\contentsline {subsubsection}{Die konvexe Menge der stationären Verteilungen}{154}{section*.158}%
+\contentsline {subsubsection}{Grenzverteilung}{154}{section*.160}%
+\contentsline {subsubsection}{Erwartungswert und Varianz}{155}{section*.161}%
+\contentsline {subsubsection}{Erwartungswert von Werten auf Übergängen}{155}{section*.162}%
+\contentsline {subsection}{\numberline {9.2.3}Absorbierende Zustände}{156}{subsection.9.2.3}%
+\contentsline {subsubsection}{Absorbtionszeit}{157}{section*.164}%
+\contentsline {subsubsection}{Wartezeit}{158}{section*.165}%
+\contentsline {section}{\numberline {9.3}Positive Vektoren und Matrizen }{158}{section.9.3}%
+\contentsline {subsection}{\numberline {9.3.1}Elementare Eigenschaften }{159}{subsection.9.3.1}%
+\contentsline {subsection}{\numberline {9.3.2}Die verallgemeinerte Dreiecksungleichung }{162}{subsection.9.3.2}%
+\contentsline {subsection}{\numberline {9.3.3}Der Satz von Perron-Frobenius }{164}{subsection.9.3.3}%
+\contentsline {section}{\numberline {9.4}Das Paradoxon von Parrondo }{168}{section.9.4}%
+\contentsline {subsection}{\numberline {9.4.1}Die beiden Teilspiele }{168}{subsection.9.4.1}%
+\contentsline {subsubsection}{Das Spiel $A$}{168}{section*.171}%
+\contentsline {subsubsection}{Das Spiel $B$}{168}{section*.172}%
+\contentsline {subsubsection}{Übergangsmatrix im Spiel $B$}{168}{section*.173}%
+\contentsline {subsubsection}{Gewinnerwartung in einem Einzelspiel $B$}{169}{section*.175}%
+\contentsline {subsubsection}{Das wiederholte Spiel $B$}{170}{section*.176}%
+\contentsline {subsubsection}{Das modifizierte Spiel $\tilde {B}$}{171}{section*.177}%
+\contentsline {subsubsection}{Gewinnerwartung im modifizierten Einzelspiel}{172}{section*.179}%
+\contentsline {subsubsection}{Iteration des modifizierten Spiels}{173}{section*.180}%
+\contentsline {subsection}{\numberline {9.4.2}Kombination der Spiele }{173}{subsection.9.4.2}%
+\contentsline {subsubsection}{Das Spiel $C$}{174}{section*.181}%
+\contentsline {subsubsection}{Das iterierte Spiel $C$}{174}{section*.182}%
+\contentsline {chapter}{\numberline {10}Anwendungen in Kryptographie und Codierungstheorie }{175}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Arithmetik für die Kryptographie }{175}{section.10.1}%
+\contentsline {subsection}{\numberline {10.1.1}Potenzieren }{175}{subsection.10.1.1}%
+\contentsline {subsection}{\numberline {10.1.2}Rechenoperationen in $\mathbb {F}_p$ }{175}{subsection.10.1.2}%
+\contentsline {subsection}{\numberline {10.1.3}Rechenoperationen in $\mathbb {F}_{2^l}$ }{175}{subsection.10.1.3}%
+\contentsline {section}{\numberline {10.2}Kryptographie und endliche Körper }{175}{section.10.2}%
+\contentsline {subsection}{\numberline {10.2.1}Potenzen in $\mathbb {F}_p$ und diskreter Logarithmus }{175}{subsection.10.2.1}%
+\contentsline {subsection}{\numberline {10.2.2}Diffie-Hellman-Schlüsseltausch }{177}{subsection.10.2.2}%
+\contentsline {subsection}{\numberline {10.2.3}Elliptische Kurven }{177}{subsection.10.2.3}%
+\contentsline {subsubsection}{Elliptische Kurven}{178}{section*.184}%
+\contentsline {subsubsection}{Geometrische Definition der Gruppenoperation}{179}{section*.186}%
+\contentsline {subsubsection}{Gruppenoperation, algebraische Konstruktion}{180}{section*.187}%
+\contentsline {subsubsection}{Beispiele}{183}{section*.188}%
+\contentsline {subsubsection}{Diffie-Hellman in einer elliptischen Kurve}{183}{section*.189}%
+\contentsline {section}{\numberline {10.3}Advanced Encryption Standard -- AES }{183}{section.10.3}%
+\contentsline {section}{\numberline {10.4}Fehlerkorrigierende Codes nach Reed-Solomon }{183}{section.10.4}%
+\contentsline {subsection}{\numberline {10.4.1}Was ist ein Code? }{184}{subsection.10.4.1}%
+\contentsline {subsection}{\numberline {10.4.2}Reed-Solomon-Code }{184}{subsection.10.4.2}%
+\contentsline {subsection}{\numberline {10.4.3}Decodierung }{184}{subsection.10.4.3}%
+\contentsline {chapter}{\numberline {11}Homologie }{185}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Simplexe und simpliziale Komplexe }{185}{section.11.1}%
+\contentsline {subsection}{\numberline {11.1.1}Simplexe und Rand }{185}{subsection.11.1.1}%
+\contentsline {subsubsection}{Rand eines Dreiecks}{185}{section*.192}%
+\contentsline {subsubsection}{Simplizes}{186}{section*.193}%
+\contentsline {subsubsection}{Rechnen mit Simplizes}{187}{section*.194}%
+\contentsline {subsubsection}{Rand eines Simplex}{187}{section*.195}%
+\contentsline {subsection}{\numberline {11.1.2}Triangulation }{188}{subsection.11.1.2}%
+\contentsline {section}{\numberline {11.2}Kettenkomplexe }{188}{section.11.2}%
+\contentsline {subsection}{\numberline {11.2.1}Randoperator von Simplexen }{188}{subsection.11.2.1}%
+\contentsline {subsection}{\numberline {11.2.2}Kettenkomplexe und Morphismen }{188}{subsection.11.2.2}%
+\contentsline {section}{\numberline {11.3}Homologie }{188}{section.11.3}%
+\contentsline {subsection}{\numberline {11.3.1}Homologie eines Kettenkomplexes }{188}{subsection.11.3.1}%
+\contentsline {subsection}{\numberline {11.3.2}Induzierte Abbildung }{188}{subsection.11.3.2}%
+\contentsline {subsection}{\numberline {11.3.3}Homologie eines simplizialen Komplexes }{188}{subsection.11.3.3}%
+\contentsline {section}{\numberline {11.4}Exaktheit und die Mayer-Vietoris-Folge }{188}{section.11.4}%
+\contentsline {subsection}{\numberline {11.4.1}Kurze exakte Folgen von Kettenkomplexen }{188}{subsection.11.4.1}%
+\contentsline {subsection}{\numberline {11.4.2}Schlangenlemma und lange exakte Folgen }{188}{subsection.11.4.2}%
+\contentsline {subsection}{\numberline {11.4.3}Mayer-Vietoris-Folge }{188}{subsection.11.4.3}%
+\contentsline {section}{\numberline {11.5}Fixpunkte }{188}{section.11.5}%
+\contentsline {subsection}{\numberline {11.5.1}Lefshetz-Spurformel }{188}{subsection.11.5.1}%
+\contentsline {subsection}{\numberline {11.5.2}Brower-Fixpunktsatz }{188}{subsection.11.5.2}%
+\contentsline {part}{II\hspace {1em}Anwendungen und weiterführende Themen}{191}{part.2}%
+\contentsline {chapter}{\numberline {12}Thema}{195}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Teil 0}{195}{section.12.1}%
+\contentsline {section}{\numberline {12.2}Teil 1 }{195}{section.12.2}%
+\contentsline {subsection}{\numberline {12.2.1}De finibus bonorum et malorum }{196}{subsection.12.2.1}%
+\contentsline {section}{\numberline {12.3}Teil 2 }{196}{section.12.3}%
+\contentsline {subsection}{\numberline {12.3.1}De finibus bonorum et malorum }{196}{subsection.12.3.1}%
+\contentsline {section}{\numberline {12.4}Teil 3 }{197}{section.12.4}%
+\contentsline {subsection}{\numberline {12.4.1}De finibus bonorum et malorum }{197}{subsection.12.4.1}%
+\contentsline {chapter}{Index}{199}{subsection.12.4.1}%

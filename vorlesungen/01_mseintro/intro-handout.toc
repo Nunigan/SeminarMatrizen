@@ -1,0 +1,5 @@
+\beamer@sectionintoc {1}{Zahlensysteme}{2}{0}{1}
+\beamer@sectionintoc {2}{Übersicht}{9}{0}{2}
+\beamer@sectionintoc {3}{Spezielles}{11}{0}{3}
+\beamer@sectionintoc {4}{Hadamard-Algebra}{15}{0}{4}
+\beamer@sectionintoc {5}{Hadamard-Algebra}{15}{0}{5}

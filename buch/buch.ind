@@ -1,0 +1,238 @@
+\begin{theindex}
+
+  \item $R^*$, \hyperpage{51}
+  \item $\Bbbk$, \hyperpage{15}
+  \item $\mathbb{N}$, \hyperpage{9}
+
+  \indexspace
+
+  \item absorbierende Markov-Kette, \hyperpage{156}
+  \item absorbierender Zustand, \hyperpage{156}
+  \item Addition
+    \subitem in $\mathbb{N}$, \hyperpage{10}
+  \item algebraische Sichtweise, \hyperpage{61}
+  \item antikommutativ, \hyperpage{20}
+  \item arithmetische Sichtweise, \hyperpage{61}
+  \item aufgespannter Raum, \hyperpage{25}
+
+  \indexspace
+
+  \item Basis, \hyperpage{26}
+  \item Beschriftung, \hyperpage{136}
+  \item bilinear, \hyperpage{36}
+  \item Bilinearform, \hyperpage{36}
+  \item Binomialkoeffizient, \hyperpage{116}
+  \item Blockmatrix, \hyperpage{115}
+
+  \indexspace
+
+  \item Cayley, Arthur, \hyperpage{21}
+  \item charakteristisches Polynom, \hyperpage{115}
+
+  \indexspace
+
+  \item Darstellung, \hyperpage{49}
+  \item Defekt einer Matrix, \hyperpage{35}
+  \item Descartes, René, \hyperpage{5}
+  \item Diagonalform, \hyperpage{114}
+  \item diagonalisierbar, \hyperpage{114}
+  \item Diagonalmatrix, \hyperpage{115}
+  \item Dimension, \hyperpage{26}
+  \item diskreter Logarithmus, \hyperpage{176}
+  \item Distributivgesetz, \hyperpage{49}
+  \item Division mit Rest, \hyperpage{67}
+  \item Divisionsalgebra, \hyperpage{20}
+  \item Durchmesser eines Graphen, \hyperpage{135}
+
+  \indexspace
+
+  \item Eigenbasis, \hyperpage{114}
+  \item Eigenraum, \hyperpage{102}
+  \item Einheit, \hyperpage{51}
+  \item Einheitengruppe, \hyperpage{51}
+  \item Einheitsmatrix, \hyperpage{28}
+  \item Einheitsquaternionen, \hyperpage{20}
+  \item endlich, \hyperpage{12}
+  \item Erweitern, \hyperpage{15}
+  \item euklidischer Ring, \hyperpage{67}
+
+  \indexspace
+
+  \item Faktorgruppe, \hyperpage{48}
+  \item Fermat, Pierre de, \hyperpage{5}
+  \item Fundamental-Matrix, \hyperpage{156}
+  \item Fundamentalsatz der Algebra, \hyperpage{20}
+  \item Färbeproblem, \hyperpage{131}
+
+  \indexspace
+
+  \item Gauss, Carl Friedrich, \hyperpage{20}
+  \item Gausssche Zahlen, \hyperpage{50}
+  \item Gelfand
+    \subitem Satz von, \hyperpage{117}
+  \item Gelfand-Radius, \hyperpage{114, 115}
+  \item gerichteter Graph, \hyperpage{132}
+  \item Github-Repository, \hyperpage{1}
+  \item gleich mächtig, \hyperpage{12}
+  \item Google-Matrix, \hyperpage{145}
+  \item Grad eines Knotens, \hyperpage{137}
+  \item Gradfunktion, \hyperpage{67}
+  \item Gradmatrix, \hyperpage{137}
+  \item Gram-Schmidt-Orthonormalisierung, \hyperpage{39}
+  \item Graph, \hyperpage{131}
+    \subitem Durchmesser des, \hyperpage{135}
+    \subitem gerichteter, \hyperpage{132}
+    \subitem ungerichteter, \hyperpage{132}
+  \item Graphentheorie
+    \subitem spektrale, \hyperpage{131}
+  \item Grenzverteilung, \hyperpage{154}
+  \item Grenzwert, \hyperpage{114}
+  \item Gruppe, \hyperpage{46}
+
+  \indexspace
+
+  \item Halbgruppe, \hyperpage{46}
+  \item homogene Markov-Kette, \hyperpage{151}
+  \item homogenes Gleichungssystem, \hyperpage{29}
+  \item Homomorphismus, \hyperpage{47}, \hyperpage{52}
+
+  \indexspace
+
+  \item Ideal, \hyperpage{53}
+  \item inverse Matrix, \hyperpage{32}
+  \item Inzidenzmatrix, \hyperpage{136}
+  \item irreduzible Markov-Kette, \hyperpage{152}
+  \item irreduzibles Polynom, \hyperpage{86}
+
+  \indexspace
+
+  \item Jordan-Block, \hyperpage{108}, \hyperpage{116}
+  \item Jordan-Matrix, \hyperpage{108}
+
+  \indexspace
+
+  \item Kante, \hyperpage{132}
+  \item Kehrwert, \hyperpage{15}
+  \item Kern, \hyperpage{34}, \hyperpage{48}, \hyperpage{52}
+  \item Knoten, \hyperpage{132}
+  \item kommutativer Ring, \hyperpage{49}
+  \item Kommutativgesetz, \hyperpage{11}
+  \item komplex, \hyperpage{114}
+  \item Komplexitätstheorie, \hyperpage{131}
+  \item Konvergenzbedingung, \hyperpage{114}
+  \item Konvergenzkriterium, \hyperpage{114}
+  \item konvex, \hyperpage{154}
+  \item konvexe Kombination, \hyperpage{154}
+  \item Kronecker-$\delta$, \hyperpage{28}
+  \item Kronecker-Symbol, \hyperpage{28}
+  \item Körper, \hyperpage{15}
+  \item Kürzen, \hyperpage{15}
+
+  \indexspace
+
+  \item Leitkoeffizient, \hyperpage{63}
+  \item lineare
+    \subitem Algebra, \hyperpage{116}
+  \item lineares Gleichungssystem, \hyperpage{15}
+  \item Lösungsmenge, \hyperpage{31}
+
+  \indexspace
+
+  \item Markov-Eigenschaft, \hyperpage{148}
+  \item Matrix, \hyperpage{27}
+  \item Minimalpolynom einer Matrix, \hyperpage{109}
+  \item Monoid, \hyperpage{46}
+
+  \indexspace
+
+  \item Nachfolger, \hyperpage{9}
+  \item natürliche Zahlen, \hyperpage{9}
+  \item neutrales Element, \hyperpage{46}
+  \item nichtnegative Matrix, \hyperpage{159}
+  \item nichtnegativer Vektor, \hyperpage{159}
+  \item Norm, \hyperpage{113}
+  \item Normalteiler, \hyperpage{48}
+  \item normiertes Polynom, \hyperpage{63}
+  \item Nullteiler, \hyperpage{65}
+  \item nullteilerfrei, \hyperpage{65}
+
+  \indexspace
+
+  \item orthonormierte Basis, \hyperpage{39}
+
+  \indexspace
+
+  \item Peano-Axiome, \hyperpage{9}
+  \item Pfad, \hyperpage{133}
+  \item Pfadwahrscheinlichkeit, \hyperpage{149}
+  \item Pivotdivision, \hyperpage{29}
+  \item Pivotelement, \hyperpage{29}
+  \item Polynom, \hyperpage{61}
+    \subitem charakteristisch, \hyperpage{115}
+    \subitem monisch, \hyperpage{63}
+    \subitem normiert, \hyperpage{63}
+  \item Polynome über $R$, \hyperpage{62}
+  \item positiv definit, \hyperpage{36}
+  \item positive Matrix, \hyperpage{159}
+  \item positiver Vektor, \hyperpage{159}
+  \item Primzahl, \hyperpage{11}
+
+  \indexspace
+
+  \item quadratische Matrix, \hyperpage{27}
+  \item Quaternionen, \hyperpage{20}
+  \item Quotientengruppe, \hyperpage{48}
+  \item Quotientenring, \hyperpage{53}
+
+  \indexspace
+
+  \item Rang einer Matrix, \hyperpage{35}
+  \item reduced row echelon form, \hyperpage{30}
+  \item reduzierte Zeilenstufenform, \hyperpage{30}
+  \item reguläre Darstellung, \hyperpage{49}
+  \item Ring, \hyperpage{14}, \hyperpage{49}, \hyperpage{62}
+    \subitem kommutativ, \hyperpage{49}
+    \subitem kommutativer, \hyperpage{14}
+  \item Ring mit Eins, \hyperpage{49}
+  \item Ringhomomorphismus, \hyperpage{52}
+  \item Rückwärtseinsetzen, \hyperpage{30}
+
+  \indexspace
+
+  \item Satz von Gelfand, \hyperpage{117}
+  \item Schlusstableau, \hyperpage{31}
+  \item sesquilinear, \hyperpage{38}
+  \item Skalar, \hyperpage{62}
+  \item Skalarprodukt, \hyperpage{36}
+  \item Spektralradius, \hyperpage{114}
+  \item stationäre Verteilung, \hyperpage{146}, \hyperpage{151}
+  \item Stundenplan, \hyperpage{131}
+  \item Supremumnorm, \hyperpage{43}
+
+  \indexspace
+
+  \item teilbar, \hyperpage{11}
+  \item Teilbarkeit, \hyperpage{11}
+  \item totale Wahrscheinlichkeit, \hyperpage{143}
+  \item transienter Zustand, \hyperpage{156}
+
+  \indexspace
+
+  \item ungerichteter Graph, \hyperpage{132}
+
+  \indexspace
+
+  \item Vektorform eines Gleichungssystems, \hyperpage{25}
+  \item Vertex, \hyperpage{132}
+  \item Vorwärtsreduktion, \hyperpage{30}
+
+  \indexspace
+
+  \item Wahrscheinlichkeit
+    \subitem totale, \hyperpage{143}
+
+  \indexspace
+
+  \item Zahlentheorie, \hyperpage{11}
+
+\end{theindex}
