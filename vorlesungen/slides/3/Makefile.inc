@@ -12,6 +12,12 @@ chapter3 =								\
 	../slides/3/division2.tex					\
 	../slides/3/ringstruktur.tex					\
 	../slides/3/teilbarkeit.tex					\
+	../slides/3/ideal.tex						\
+	../slides/3/nichthauptideal.tex					\
+	../slides/3/nichthauptideal2.tex				\
+	../slides/3/idealverband.tex					\
+	../slides/3/maximalideal.tex					\
+	../slides/3/quotientenring.tex					\
 	../slides/3/faktorisierung.tex					\
 	../slides/3/faktorzerlegung.tex					\
 	../slides/3/einsetzen.tex					\
@@ -24,5 +30,8 @@ chapter3 =								\
 	../slides/3/operatoren.tex					\
 	../slides/3/adjunktion.tex					\
 	../slides/3/adjalgebra.tex					\
+	../slides/3/wurzel2.tex						\
+	../slides/3/phi.tex						\
+	../slides/3/multiplikation.tex					\
 	../slides/3/chapter.tex
 
