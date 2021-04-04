@@ -62,4 +62,4 @@ class Helper():
 if __name__ == '__main__':
 
     helper = Helper()
-    C = helper.write_c_matrix(64)
+    C = helper.write_c_matrix(1024)
