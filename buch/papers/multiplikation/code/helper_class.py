@@ -55,6 +55,37 @@ class Helper():
 
             file.writelines('  };\n')
 
+            file.writelines('const double dB[][{}] = \n'.format(n))
+            file.writelines('  {\n')
+            for i in range(n):
+                file.writelines('    {')
+                for j in range(n):
+                    if j == n-1:
+                        file.writelines('{}'.format(B[i,j]))
+                    else:
+                        file.writelines('{},'.format(B[i,j]))
+                if i == n-1:
+                    file.writelines('}\n')
+                else:
+                    file.writelines('},\n')
+
+            file.writelines('  };\n')
+
+            file.writelines('const double dA[][{}] = \n'.format(n))
+            file.writelines('  {\n')
+            for i in range(n):
+                file.writelines('    {')
+                for j in range(n):
+                    if j == n-1:
+                        file.writelines('{}'.format(A[i,j]))
+                    else:
+                        file.writelines('{},'.format(A[i,j]))
+                if i == n-1:
+                    file.writelines('}\n')
+                else:
+                    file.writelines('},\n')
+
+            file.writelines('  };\n')
         return C
 
 

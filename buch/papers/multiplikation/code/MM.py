@@ -66,7 +66,6 @@ def strassen(A, B):
         C12 = strassen(A11, B12) + strassen(A12, B22)
         C21 = strassen(A21, B11) + strassen(A22, B21)
         C22 = strassen(A21, B12) + strassen(A22, B22)
-        print(np.shape(C11), n)
         C = np.vstack((np.hstack((C11, C12)), np.hstack((C21, C22))))
     return C
 
@@ -94,21 +93,21 @@ def test_perfomance(n):
         t_mm_dc.append(time.time() - start)
 
 
-    #     start = time.time()
-    #     C = A@B
-    #     t_np.append(time.time() - start)
+        start = time.time()
+        C = A@B
+        t_np.append(time.time() - start)
 
     plt.figure()
     plt.plot(n, t_mm, label='Standard MM', lw=5)
     plt.plot(n, t_mm_dc, label='Divide and conquer MM', lw=5)
     plt.plot(n, t_mm_strassen, label='Strassen MM', lw=5)
-    # plt.plot(n, t_np, label='np MM')
+    plt.plot(n, t_np, label='np MM', lw=5)
     plt.legend()
     return t_np
 
 # test%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 if __name__ == '__main__':
-    n = np.logspace(1,4,4,base=2,dtype=(np.int))
+    n = np.logspace(1,9,9,base=2,dtype=(np.int))
     
     # A = np.random.randint(-10, 10, (64,64))
     # B = np.random.randint(-10, 10, (64,64))
@@ -117,15 +116,15 @@ if __name__ == '__main__':
     # C = strassen(A, B)
     # C_test = A@B
     
-    # def func(x, a,b,c):
-    #     return b*x**a+c
+    # def func(x, a):
+    #     return x**a
 
-    # popt, pcov = curve_fit(func, n, t_np, bounds=(0, [6,1000,1000]))
+    # popt, pcov = curve_fit(func, n, t_np, bounds=(2, 3))
 
 
     # plt.figure()
     # plt.plot(n, t_np, 'b-', label='data')
-    # plt.plot(n, func(n, *popt), 'r-', label='fit: a=%5.3f , b=%5.3f, c=%5.3f' % tuple(popt))
+    # plt.plot(n, func(n, *popt), 'r-', label='fit: a=%5.3f' % tuple(popt))
     # plt.xlabel('x')
     # plt.ylabel('y')
     # plt.legend()
