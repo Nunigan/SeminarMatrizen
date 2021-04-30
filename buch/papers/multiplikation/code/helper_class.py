@@ -94,4 +94,4 @@ class Helper():
 if __name__ == '__main__':
 
     helper = Helper()
-    C = helper.write_c_matrix(2048)
+    C = helper.write_c_matrix(16)
