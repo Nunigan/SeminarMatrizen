@@ -2,10 +2,16 @@
 #include <stdint.h>
 #include <stdlib.h>
 #include <time.h>
+#include <omp.h>
 #include "c_matrix.h"
-#include <cblas.h>
+#include <gsl/gsl_cblas.h>
 
 void MM(int *A, int *B, int *C, int n);
+void openMP_MM(int *A, int *B, int *C, int n);
+void winograd(int *A, int *B, int *C, int n);
+int winograd_inner(int *a, int *b, int n);
+void run_algo(void (*algo)(), char alog_name[], int print);
+void run_algo_cblas(int print);
 void MM_dc(int *A, int *B, int *C, int n);
 void strassen(int *A, int *B, int *C, int n);
 void printMatrix(int *C, int n);
@@ -17,68 +23,112 @@ void sub(int *A, int *B, int *C, int n);
 void multiply(int *A, int *B, int *C, int n);
 
 int main() {
-
-	double *dC = (double*) malloc(n * n * sizeof(double));
-
-	clock_t t;
-	t = clock();
-	cblas_dgemm(CblasRowMajor, CblasNoTrans, CblasNoTrans, n, n, n, 1.0, *dA, n,
-			*dB, n, 0.0, dC, n);
-	t = clock() - t;
-	double time_taken = ((double) t) / CLOCKS_PER_SEC; // calculate the elapsed time
-	printf("The Cblas program took %f seconds to execute \n", time_taken);
-//	printMatrix_double( (double*)dC, n);
-
-	free(dC);
-
-	int *C = (int*) malloc(n * n * sizeof(int));
-
-	t = clock();
-	strassen((int*) A, (int*) B, (int*) C, n);
-	t = clock() - t;
-	time_taken = ((double) t) / CLOCKS_PER_SEC; // calculate the elapsed time
-	printf("The Strassen program took %f seconds to execute \n", time_taken);
-//	printMatrix( (int *)C, n);
-
-	free(C);
-
-	int *D = (int*) malloc(n * n * sizeof(int));
-
-	t = clock();
-	MM((int*) A, (int*) B, (int*) D, n);
-	t = clock() - t;
-	time_taken = ((double) t) / CLOCKS_PER_SEC; // calculate the elapsed time
-	printf("The MM program took %f seconds to execute \n", time_taken);
-
-	free(D);
-
-	int *E = (int*) malloc(n * n * sizeof(int));
-
-	t = clock();
-	MM_dc((int*) A, (int*) B, (int*) E, n);
-	t = clock() - t;
-	time_taken = ((double) t) / CLOCKS_PER_SEC; // calculate the elapsed time
-	printf("The MM_dc program took %f seconds to execute \n", time_taken);
-
-	free(E);
+	// omp_set_dynamic(0);
+	// omp_set_num_threads(4);
+	run_algo_cblas(0);
+	run_algo(MM, "MM", 0);
+//	run_algo(openMP_MM, "openMP_MM",0);
+//	run_algo(MM_dc, "MM_dc",0);
+	// run_algo(strassen, "strassen",0);
+	run_algo(winograd, "winograd", 0);
 
 	return 0;
 }
 
 void MM(int *A, int *B, int *C, int n) {
-	int sum;
-
 	for (int i = 0; i < n; ++i) {
 		for (int j = 0; j < n; ++j) {
-			sum = 0;
-//			C[i][j] = 0;
+			int sum = 0;
 			for (int k = 0; k < n; ++k) {
 				sum += (*((A + i * n) + k)) * (*((B + k * n) + j));
-//				C[i][j] += A[i][k]*B[k][j];
 			}
 			*((C + i * n) + j) = sum;
 		}
 	}
+}
+
+int winograd_inner(int *a, int *b, int n){
+	int ab = 0;
+	if(n%2==0)
+		{
+			int xi = 0;
+			int etha = 0;
+			for(int i = 0; i<n/2;++i)
+			{
+				xi += a[2*i]*a[2*i+1];
+				etha += b[2*i]*b[2*i+1];
+				ab += (a[2*i]+b[2*i+1])*(a[2*i+1]+b[2*i]);
+			}
+			ab = ab-etha-xi;
+		}
+		return ab;
+	}
+
+	void winograd(int *A, int *B, int *C, int n) {
+
+		int xi_array[n];
+		int etha_array[n];
+		int xi = 0;
+		int etha = 0;
+		int ab = 0;
+
+		for (int i = 0; i < n; ++i) {
+			xi = 0;
+			etha = 0;
+			for(int k = 0;k<n/2;++k)
+			{
+				xi += (*((A + i * n) + 2*k))*(*((A + i * n) + (2*k+1)));
+				etha += (*((B + 2*k * n) + i))*(*((B + (2*k+1) * n) + i));
+			}
+			xi_array[i] = xi;
+			etha_array[i] = etha;
+    }
+
+		for (int i = 0; i < n; ++i) {
+			for (int j = 0; j < n; ++j) {
+				ab = 0;
+				for(int k = 0;k<n/2;++k)
+				{
+			  	ab += ((*((A + i * n) + 2*k))+(*((B + (2*k+1) * n) + j)))*((*((A + i * n) + (2*k+1)))+(*((B + 2*k * n) + j)));
+				}
+				*((C + i * n) + j) =  ab-etha_array[j]-xi_array[i];
+				}
+			}
+
+
+
+
+		// for (int i = 0; i < n; ++i) {
+		// 	int *a = (int*) malloc(n * sizeof(int));
+		// 	for(int k = 0; k<n; ++k)
+		// 	{
+		// 		a[k] = (*((A + i * n) + k));
+		// 	}
+		//
+		// 	for (int j = 0; j < n; ++j) {
+		// 		int *b = (int*) malloc(n * sizeof(int));
+		// 		for(int k = 0; k<n; ++k)
+		// 		{
+		// 			b[k] =(*((B + k * n) + j));
+		// 		}
+		// 		*((C + i * n) + j) = winograd_inner(a,b,n);
+		// 		}
+		// 	}
+		}
+
+
+void openMP_MM(int *A, int *B, int *C, int n) {
+
+		#pragma omp parallel for
+		for (int i = 0; i < n; ++i) {
+			for (int j = 0; j < n; ++j) {
+				int sum = 0;
+				for (int k = 0; k < n; ++k) {
+					sum += (*((A + i * n) + k)) * (*((B + k * n) + j));
+				}
+				*((C + i * n) + j) = sum;
+			}
+		}
 }
 
 void MM_dc(int *A, int *B, int *C, int n) {
@@ -213,14 +263,38 @@ void strassen(int *A, int *B, int *C, int n) {
 		int *tmp7 = (int*) malloc(n / 2 * n / 2 * sizeof(int));
 		int *tmp8 = (int*) malloc(n / 2 * n / 2 * sizeof(int));
 
-		strassen((int*) A11, (int*) B11, (int*) tmp1, n / 2);
-		strassen((int*) A12, (int*) B21, (int*) tmp2, n / 2);
-		strassen((int*) A11, (int*) B12, (int*) tmp3, n / 2);
-		strassen((int*) A12, (int*) B22, (int*) tmp4, n / 2);
-		strassen((int*) A21, (int*) B11, (int*) tmp5, n / 2);
-		strassen((int*) A22, (int*) B21, (int*) tmp6, n / 2);
-		strassen((int*) A21, (int*) B12, (int*) tmp7, n / 2);
-		strassen((int*) A22, (int*) B22, (int*) tmp8, n / 2);
+		#pragma omp task
+		{
+				strassen((int*) A11, (int*) B11, (int*) tmp1, n / 2);
+		}
+		#pragma omp task
+		{
+				strassen((int*) A12, (int*) B21, (int*) tmp2, n / 2);
+		}
+		#pragma omp task
+		{
+				strassen((int*) A11, (int*) B12, (int*) tmp3, n / 2);
+		}
+		#pragma omp task
+		{
+				strassen((int*) A12, (int*) B22, (int*) tmp4, n / 2);
+		}
+		#pragma omp task
+		{
+				strassen((int*) A21, (int*) B11, (int*) tmp5, n / 2);
+		}
+		#pragma omp task
+		{
+				strassen((int*) A22, (int*) B21, (int*) tmp6, n / 2);
+		}
+		#pragma omp task
+		{
+				strassen((int*) A21, (int*) B12, (int*) tmp7, n / 2);
+		}
+		#pragma omp task
+		{
+				strassen((int*) A22, (int*) B22, (int*) tmp8, n / 2);
+		}
 
 		free(A11);
 		free(A12);
@@ -312,8 +386,7 @@ void printMatrix(int *C, int n) {
 	}
 }
 
-void printMatrix_double(double *C, int n)
-{
+void printMatrix_double(double *C, int n) {
 	for (int i = 0; i < n; ++i) {
 		for (int j = 0; j < n; ++j) {
 			printf("%.0f ", *((C + i * n) + j));
@@ -322,3 +395,39 @@ void printMatrix_double(double *C, int n)
 	}
 }
 
+void run_algo(void (*algo)(), char alog_name[], int print)
+{
+	int *C = (int*) malloc(n * n * sizeof(int));
+
+    	double dtime = omp_get_wtime();
+        algo((int*) A, (int*) B, (int*) C, n);
+	    dtime = omp_get_wtime() - dtime;
+		printf("The %s program took %f seconds to execute \n", alog_name, dtime);
+
+		if(print==1)
+		{
+			printMatrix((int*)C, n);
+		}
+		free(C);
+}
+
+void run_algo_cblas(int print)
+
+{
+	double *dC = (double*) malloc(n * n * sizeof(double));
+
+		double dtime = omp_get_wtime();
+
+		cblas_dgemm(CblasRowMajor, CblasNoTrans, CblasNoTrans, n, n, n, 1.0, *dA, n,
+				*dB, n, 0.0, dC, n);
+	    dtime = omp_get_wtime() - dtime;
+	    printf("The cblas program took %f seconds to execute \n", dtime);
+
+		if(print==1)
+		{
+			printMatrix_double( (double*)dC, n);
+		}
+
+		free(dC);
+
+}

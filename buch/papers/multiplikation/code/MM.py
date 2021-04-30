@@ -69,16 +69,40 @@ def strassen(A, B):
         C = np.vstack((np.hstack((C11, C12)), np.hstack((C21, C22))))
     return C
 
+def winograd_inner(a, b):
+    n = np.shape(a)[0]
+    if n%2 == 0:
+        xi = np.sum(a[::2]*a[1::2])
+        etha = np.sum(b[::2]*b[1::2])
+        print("xi = {}, etha = {}".format(xi, etha))
+        ab = np.sum((a[::2]+b[1::2])*(a[1::2]+b[::2]))-xi-etha
+    else:
+        xi = np.sum(a[0:-1:2]*a[1::2])
+        etha = np.sum(b[0:-1:2]*b[1::2])
+        ab = np.sum((a[0:-1:2]+b[1::2])*(a[1::2]+b[0:-1:2]))-xi-etha+a[-1]*b[-1]
+    return ab
 
+def winograd(A, B):
+    m,n = np.shape(A)
+    n2,p = np.shape(B)
+    C = np.zeros((m,p))
+    for i in range(np.shape(A)[0]):
+        for j in range(np.shape(B)[1]):
+            C[i,j] = winograd_inner(A[i,:], B[:,j])
+    return C
+        
 def test_perfomance(n):
     t_mm = []
     t_mm_dc = []
     t_mm_strassen = []
+    t_wino = []
     t_np = []
 
     for i in n:
-        A = np.random.randn(i, i)
-        B = np.random.randn(i, i)
+        # A = np.random.randn(i, i)
+        # B = np.random.randn(i, i)
+        A = np.random.randint(-100, 100,(i, i))
+        B = np.random.randint(-100, 100,(i, i))
 
         start = time.time()
         C3 = strassen(A, B)
@@ -92,6 +116,9 @@ def test_perfomance(n):
         C2 = MM_dc(A, B)
         t_mm_dc.append(time.time() - start)
 
+        start = time.time()
+        C4 = winograd(A, B)
+        t_wino.append(time.time() - start)
 
         start = time.time()
         C = A@B
@@ -101,16 +128,22 @@ def test_perfomance(n):
     plt.plot(n, t_mm, label='Standard MM', lw=5)
     plt.plot(n, t_mm_dc, label='Divide and conquer MM', lw=5)
     plt.plot(n, t_mm_strassen, label='Strassen MM', lw=5)
+    plt.plot(n, t_wino, label='Winograd MM', lw=5)
     plt.plot(n, t_np, label='np MM', lw=5)
     plt.legend()
     return t_np
 
 # test%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 if __name__ == '__main__':
-    n = np.logspace(1,9,9,base=2,dtype=(np.int))
-    
+    n = np.logspace(1,8,8,base=2,dtype=(np.int))
+      
     # A = np.random.randint(-10, 10, (64,64))
     # B = np.random.randint(-10, 10, (64,64))
+
+    # C = winograd(A, B)
+    # C_test = A@B
+
+    # print(np.equal(C, C_test))
 
     t_np = test_perfomance(n)
     # C = strassen(A, B)
