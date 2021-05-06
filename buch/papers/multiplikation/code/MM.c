@@ -5,6 +5,7 @@
 #include <omp.h>
 #include "c_matrix.h"
 #include <gsl/gsl_cblas.h>
+#include <string.h>
 
 void MM(int *A, int *B, int *C, int n);
 void openMP_MM(int *A, int *B, int *C, int n);
@@ -25,12 +26,13 @@ void multiply(int *A, int *B, int *C, int n);
 int main() {
 	// omp_set_dynamic(0);
 	// omp_set_num_threads(4);
-	run_algo_cblas(0);
-	run_algo(MM, "MM", 0);
 //	run_algo(openMP_MM, "openMP_MM",0);
 //	run_algo(MM_dc, "MM_dc",0);
 	// run_algo(strassen, "strassen",0);
-	run_algo(winograd, "winograd", 0);
+
+	run_algo(MM, "MM", 0);
+  run_algo(winograd, "winograd", 0);
+  run_algo_cblas(0);
 
 	return 0;
 }
@@ -397,37 +399,51 @@ void printMatrix_double(double *C, int n) {
 
 void run_algo(void (*algo)(), char alog_name[], int print)
 {
-	int *C = (int*) malloc(n * n * sizeof(int));
+	FILE *fptr;
 
-    	double dtime = omp_get_wtime();
-        algo((int*) A, (int*) B, (int*) C, n);
-	    dtime = omp_get_wtime() - dtime;
-		printf("The %s program took %f seconds to execute \n", alog_name, dtime);
+	fptr = fopen("time.txt", "a");
 
-		if(print==1)
-		{
-			printMatrix((int*)C, n);
-		}
-		free(C);
+
+	for(int i=0; i<n_arrays; ++i)
+	{
+		int *C = (int*) malloc(n[i] * n[i] * sizeof(int));
+	    	double dtime = omp_get_wtime();
+	        algo(Ap[i], Bp[i], (int*) C, n[i]);
+		    dtime = omp_get_wtime() - dtime;
+			printf("The %s program took %f seconds to execute \n", alog_name, dtime);
+			fprintf(fptr, "%f \n", dtime);
+
+			if(print==1)
+			{
+				printMatrix((int*)C, n[i]);
+			}
+			free(C);
+
+	}
+	fclose(fptr);
+
 }
 
 void run_algo_cblas(int print)
 
 {
-	double *dC = (double*) malloc(n * n * sizeof(double));
+	for(int i=0; i<n_arrays; ++i)
+	{
+
+	double *dC = (double*) malloc(n[i] * n[i] * sizeof(double));
 
 		double dtime = omp_get_wtime();
 
-		cblas_dgemm(CblasRowMajor, CblasNoTrans, CblasNoTrans, n, n, n, 1.0, *dA, n,
-				*dB, n, 0.0, dC, n);
+		cblas_dgemm(CblasRowMajor, CblasNoTrans, CblasNoTrans, n[i], n[i], n[i], 1.0, dAp[i], n[i],
+				dBp[i], n[i], 0.0, dC, n[i]);
 	    dtime = omp_get_wtime() - dtime;
 	    printf("The cblas program took %f seconds to execute \n", dtime);
 
 		if(print==1)
 		{
-			printMatrix_double( (double*)dC, n);
+			printMatrix_double( (double*)dC, n[i]);
 		}
 
 		free(dC);
-
+}
 }

@@ -74,7 +74,7 @@ def winograd_inner(a, b):
     if n%2 == 0:
         xi = np.sum(a[::2]*a[1::2])
         etha = np.sum(b[::2]*b[1::2])
-        print("xi = {}, etha = {}".format(xi, etha))
+        # print("xi = {}, etha = {}".format(xi, etha))
         ab = np.sum((a[::2]+b[1::2])*(a[1::2]+b[::2]))-xi-etha
     else:
         xi = np.sum(a[0:-1:2]*a[1::2])
@@ -90,6 +90,36 @@ def winograd(A, B):
         for j in range(np.shape(B)[1]):
             C[i,j] = winograd_inner(A[i,:], B[:,j])
     return C
+
+def winograd2(A, B):
+    m,n = np.shape(A)
+    n2,p = np.shape(B)
+    C = np.zeros((m,p))
+    xi = np.zeros((n))
+    eta = np.zeros((n))
+    ab = 0
+    
+    for i in range(n):
+        for j in range(n//2):
+           xi[i] += A[i,2*j]*A[i,2*j+1]
+           eta[i] += B[2*j,i]*B[2*j+1,i]
+
+    if n%2==0:
+        for i in range(n):
+            for j in range(n):
+                ab = 0
+                for k in range(n//2):
+                    ab += (A[i,2*k]+B[2*k+1,j])*(A[i,2*k+1]+B[2*k,j])
+                C[i,j] = ab-eta[j]-xi[i]
+    else:
+        for i in range(n):
+            for j in range(n):
+                ab = 0
+                for k in range(n//2):
+                    ab += (A[i,2*k]+B[2*k+1,j])*(A[i,2*k+1]+B[2*k,j])
+                C[i,j] = ab-eta[j]-xi[i]+A[i,-1]*B[-1,j]
+        
+    return C
         
 def test_perfomance(n):
     t_mm = []
@@ -99,25 +129,25 @@ def test_perfomance(n):
     t_np = []
 
     for i in n:
-        # A = np.random.randn(i, i)
-        # B = np.random.randn(i, i)
-        A = np.random.randint(-100, 100,(i, i))
-        B = np.random.randint(-100, 100,(i, i))
+        A = np.random.randn(i, i)
+        B = np.random.randn(i, i)
+        # A = np.random.randint(-100, 100,(i, i))
+        # B = np.random.randint(-100, 100,(i, i))
 
-        start = time.time()
-        C3 = strassen(A, B)
-        t_mm_strassen.append(time.time() - start)
+        # start = time.time()
+        # C3 = strassen(A, B)
+        # t_mm_strassen.append(time.time() - start)
 
         start = time.time()
         C1 = MM(A, B)
         t_mm.append(time.time() - start)
 
-        start = time.time()
-        C2 = MM_dc(A, B)
-        t_mm_dc.append(time.time() - start)
+        # start = time.time()
+        # C2 = MM_dc(A, B)
+        # t_mm_dc.append(time.time() - start)
 
         start = time.time()
-        C4 = winograd(A, B)
+        C4 = winograd2(A, B)
         t_wino.append(time.time() - start)
 
         start = time.time()
@@ -126,8 +156,8 @@ def test_perfomance(n):
 
     plt.figure()
     plt.plot(n, t_mm, label='Standard MM', lw=5)
-    plt.plot(n, t_mm_dc, label='Divide and conquer MM', lw=5)
-    plt.plot(n, t_mm_strassen, label='Strassen MM', lw=5)
+    # plt.plot(n, t_mm_dc, label='Divide and conquer MM', lw=5)
+    # plt.plot(n, t_mm_strassen, label='Strassen MM', lw=5)
     plt.plot(n, t_wino, label='Winograd MM', lw=5)
     plt.plot(n, t_np, label='np MM', lw=5)
     plt.legend()
@@ -135,12 +165,12 @@ def test_perfomance(n):
 
 # test%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 if __name__ == '__main__':
-    n = np.logspace(1,8,8,base=2,dtype=(np.int))
-      
-    # A = np.random.randint(-10, 10, (64,64))
-    # B = np.random.randint(-10, 10, (64,64))
+    # n = np.logspace(1,9,9,base=2,dtype=(np.int))
+    n = np.arange(1,200,2)  
+    # A = np.random.randint(-10, 10, (5,5))
+    # B = np.random.randint(-10, 10, (5,5))
 
-    # C = winograd(A, B)
+    # C = winograd2(A, B)
     # C_test = A@B
 
     # print(np.equal(C, C_test))
