@@ -401,49 +401,60 @@ void run_algo(void (*algo)(), char alog_name[], int print)
 {
 	FILE *fptr;
 
-	fptr = fopen("time.txt", "a");
+	char fileName[40] =  "meas/";
+	strcat(fileName, alog_name);
+	strcat(fileName, ".txt");
+	fptr = fopen(fileName, "w");
 
 
 	for(int i=0; i<n_arrays; ++i)
 	{
-		int *C = (int*) malloc(n[i] * n[i] * sizeof(int));
-	    	double dtime = omp_get_wtime();
-	        algo(Ap[i], Bp[i], (int*) C, n[i]);
-		    dtime = omp_get_wtime() - dtime;
-			printf("The %s program took %f seconds to execute \n", alog_name, dtime);
-			fprintf(fptr, "%f \n", dtime);
+		for(int j = 0; j<1; ++j)
+		{
+	    int *C = (int*) malloc(n[i] * n[i] * sizeof(int));
+    	double dtime = omp_get_wtime();
+      algo(Ap[i], Bp[i], (int*) C, n[i]);
+	    dtime = omp_get_wtime() - dtime;
+			// printf("The %s program took %f seconds to execute \n", alog_name, dtime);
+			fprintf(fptr, "%f,%d\n", dtime, n[i]);
 
 			if(print==1)
 			{
 				printMatrix((int*)C, n[i]);
 			}
 			free(C);
-
+  }
 	}
 	fclose(fptr);
 
 }
 
 void run_algo_cblas(int print)
-
 {
+
+	FILE *fptr;
+
+	fptr = fopen("meas/blas.txt", "w");
 	for(int i=0; i<n_arrays; ++i)
 	{
-
-	double *dC = (double*) malloc(n[i] * n[i] * sizeof(double));
-
-		double dtime = omp_get_wtime();
-
-		cblas_dgemm(CblasRowMajor, CblasNoTrans, CblasNoTrans, n[i], n[i], n[i], 1.0, dAp[i], n[i],
-				dBp[i], n[i], 0.0, dC, n[i]);
-	    dtime = omp_get_wtime() - dtime;
-	    printf("The cblas program took %f seconds to execute \n", dtime);
-
-		if(print==1)
+		for(int j = 0; j<1; ++j)
 		{
-			printMatrix_double( (double*)dC, n[i]);
-		}
+			double *dC = (double*) malloc(n[i] * n[i] * sizeof(double));
+			double dtime = omp_get_wtime();
+			cblas_dgemm(CblasRowMajor, CblasNoTrans, CblasNoTrans, n[i], n[i], n[i], 1.0, dAp[i], n[i],
+			dBp[i], n[i], 0.0, dC, n[i]);
+			dtime = omp_get_wtime() - dtime;
+			// printf("The cblas program took %f seconds to execute \n", dtime);
+			fprintf(fptr, "%f,%d\n",dtime, n[i]);
 
-		free(dC);
-}
+			if(print==1)
+			{
+				printMatrix_double( (double*)dC, n[i]);
+			}
+
+			free(dC);
+		}
+	}
+	fclose(fptr);
+
 }

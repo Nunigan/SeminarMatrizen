@@ -163,10 +163,51 @@ def test_perfomance(n):
     plt.legend()
     return t_np
 
+def plot_c_res(ave):
+    MM = np.loadtxt("meas/MM.txt", delimiter=',')
+    winograd = np.loadtxt("meas/winograd.txt", delimiter=',')
+    blas = np.loadtxt("meas/blas.txt", delimiter=',')
+    
+    MM_t = MM[:,0] 
+    MM_n = MM[:,1] 
+    MM_t = np.mean(MM_t.reshape(-1,ave),axis=1)
+    MM_n = np.mean(MM_n.reshape(-1,ave),axis=1)
+
+    winograd_t = winograd[:,0] 
+    winograd_n = winograd[:,1] 
+    winograd_t = np.mean(winograd_t.reshape(-1,ave),axis=1)
+    winograd_n = np.mean(winograd_n.reshape(-1,ave),axis=1)
+    
+    blas_t = blas[:,0] 
+    blas_n = blas[:,1] 
+    blas_t = np.mean(blas_t.reshape(-1,ave),axis=1)
+    blas_n = np.mean(blas_n.reshape(-1,ave),axis=1)
+
+    def func(x, a,b):
+        return b*x**a
+
+    popt, pcov = curve_fit(func, blas_n, blas_t)
+    popt1, pcov2 = curve_fit(func, blas_n, winograd_t)
+    popt2, pcov2 = curve_fit(func, blas_n, MM_t)
+
+    plt.figure()
+    plt.plot(MM_n, MM_t, label='Standard MM', lw=5)
+    plt.plot(winograd_n, winograd_t, label='Winograd MM', lw=5)
+    plt.plot(blas_n, blas_t, label='Blas MM', lw=5)
+    plt.plot(blas_n, func(blas_n, *popt), 'r-', label='fit blas: a=%5.5f, b=%5.10f' % tuple(popt))
+    plt.plot(blas_n, func(blas_n, *popt1), 'r-', label='fit winograd: a=%5.5f, b=%5.10f' % tuple(popt1))
+    plt.plot(blas_n, func(blas_n, *popt2), 'r-', label='fit MM: a=%5.5f, b=%5.10f' % tuple(popt2))
+
+    plt.legend()
+    
+
 # test%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 if __name__ == '__main__':
+    plot_c_res(1)
+
+    
     # n = np.logspace(1,9,9,base=2,dtype=(np.int))
-    n = np.arange(1,200,2)  
+    # n = np.arange(1,200,2)  
     # A = np.random.randint(-10, 10, (5,5))
     # B = np.random.randint(-10, 10, (5,5))
 
@@ -175,10 +216,12 @@ if __name__ == '__main__':
 
     # print(np.equal(C, C_test))
 
-    t_np = test_perfomance(n)
+    # t_np = test_perfomance(n)
     # C = strassen(A, B)
     # C_test = A@B
     
+    
+    # plot_c_res()
     # def func(x, a):
     #     return x**a
 
@@ -191,3 +234,4 @@ if __name__ == '__main__':
     # plt.xlabel('x')
     # plt.ylabel('y')
     # plt.legend()
+    

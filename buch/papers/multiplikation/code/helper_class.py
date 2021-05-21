@@ -100,5 +100,5 @@ class Helper():
 if __name__ == '__main__':
 
     helper = Helper()
-    n = np.arange(2,100,2)  
+    n = np.arange(2,10)  
     C = helper.write_c_matrix(n)
