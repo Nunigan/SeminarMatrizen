@@ -49,14 +49,12 @@ $
 C_{22} = A_{21} \cdot B_{12} + A_{22} \cdot B_{22}
 $
 }
-
-
-\medskip
-\onslide<4->{
-$\mathcal{O}(n^3)$
-}
-
 \end{frame}
+
+\input{slides/algo.tex}
+
+\input{slides/BigO.tex}
+
 
 \begin{frame}
   \frametitle{Strassen's Algorithm}
@@ -93,23 +91,22 @@ $\mathcal{O}(n^3)$
     \end{column}
 \end{columns}
 
+\onslide<3->{
 
-
-\end{frame}
-
-\begin{frame}
-  \frametitle{Strassen's Algorithm}
-  \centering
-  \tiny
-  \begin{math}
-  \begin{aligned}
-    C_{11} &= (A_{11} + A_{22}) \cdot (B_{11} + B_{22}) + A_{22} \cdot (-B_{11}+B_{21}) - (A_{11} + A_{12}) \cdot B_{22} + (A_{12} - A_{22}) \cdot (B_{21} + B_{22}) \\
-    C_{11} &= A_{11}B_{11} + A_{11}B_{22} + A_{22}B_{11} + A_{22}B_{22} -A_{22}B_{11}+A_{22}B_{21} - A_{11}B_{22} - A_{12}B_{22}+ A_{12}B_{21} + A_{12}B_{22} - A_{22}B_{21} - A_{22}B_{22} \\
-    C_{11} &= A_{11}B_{11} + A_{12}B_{21}
-  \end{aligned}
-  \end{math}
+\bigskip
+\centering
+\tiny
+\begin{math}
+\begin{aligned}
+  C_{11} &= (A_{11} + A_{22}) \cdot (B_{11} + B_{22}) + A_{22} \cdot (-B_{11}+B_{21}) - (A_{11} + A_{12}) \cdot B_{22} + (A_{12} - A_{22}) \cdot (B_{21} + B_{22}) \\
+  C_{11} &= A_{11}B_{11} + A_{11}B_{22} + A_{22}B_{11} + A_{22}B_{22} -A_{22}B_{11}+A_{22}B_{21} - A_{11}B_{22} - A_{12}B_{22}+ A_{12}B_{21} + A_{12}B_{22} - A_{22}B_{21} - A_{22}B_{22} \\
+  C_{11} &= A_{11}B_{11} + A_{12}B_{21}
+\end{aligned}
+\end{math}
+}
 
 \end{frame}
+
 
 \begin{frame}
 \begin{adjustbox}{width=\textwidth}
@@ -212,4 +209,115 @@ $\mathcal{O}(n^3)$
  \node[opacity=0.5, rounded corners=0pt, inner sep=-1pt, fill=red, fit=(M46-3-1)] {};
 \end{tikzpicture}
 \end{adjustbox}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Strassen's Algorithm}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \large
+      \begin{math}
+      \begin{aligned}
+      \text{I}   &= (A_{11} + A_{22}) \cdot (B_{11} + B_{22}) \\
+      \text{II}  &= (A_{21} + A_{22}) \cdot B_{11} \\
+      \text{III} &= A_{11} \cdot (B_{12}-B_{22}) \\
+      \text{IV}  &= A_{22} \cdot (-B_{11}+B_{21}) \\
+      \text{V}   &= (A_{11} + A_{12}) \cdot B_{22} \\
+      \text{VI}  &= (-A_{11} + A_{21}) \cdot (B_{11} + B_{12}) \\
+      \text{VII} &= (A_{12} - A_{22}) \cdot (B_{21} + B_{22}) \\
+      \end{aligned}
+      \end{math}
+
+    \end{column}
+
+    \begin{column}{0.5\textwidth}
+        \large
+        \begin{math}
+        \begin{aligned}
+        C_{11} &= \text{I} + \text{IV} - \text{V} + \text{VII} \\
+        C_{21} &= \text{II} + \text{IV} \\
+        C_{12} &= \text{III} + \text{V}\\
+        C_{22} &= \text{I} + \text{III} - \text{II} + \text{VI} \\
+        \end{aligned}
+        \end{math}
+
+    \end{column}
+\end{columns}
+\end{frame}
+
+
+
+\begin{frame}
+
+\begin{columns}
+  \begin{column}{0.5\textwidth}
+\large
+\begin{math}
+\begin{aligned}
+\text{\textbf{I}}   &= (\mathbf{A_{11}} + \mathbf{A_{22}}) \cdot (\mathbf{B_{11}} + \mathbf{B_{22}}) \\
+\text{\textbf{II}}  &= (\mathbf{A_{21}} + \mathbf{A_{22}}) \cdot \mathbf{B_{11}} \\
+\text{\textbf{III}} &= \mathbf{A_{11}} \cdot (\mathbf{B_{12}}-\mathbf{B_{22}}) \\
+\text{\textbf{IV}}  &= \mathbf{A_{22}} \cdot (-\mathbf{B_{11}}+\mathbf{B_{21}}) \\
+\text{\textbf{V}}   &= (\mathbf{A_{11}} + \mathbf{A_{12}}) \cdot \mathbf{B_{22}} \\
+\text{\textbf{VI}}  &= (-\mathbf{A_{11}} + \mathbf{A_{21}}) \cdot (\mathbf{B_{11}} + \mathbf{B_{12}}) \\
+\text{\textbf{VII}} &= (\mathbf{A_{12}} - \mathbf{A_{22}}) \cdot (\mathbf{B_{21}} + \mathbf{B_{22}}) \\
+\end{aligned}
+\end{math}
+
+\end{column}
+
+\begin{column}{0.5\textwidth}
+  \large
+  \begin{math}
+  \begin{aligned}
+  \mathbf{C_{11}} &= \text{\textbf{I}} + \text{\textbf{IV}} - \text{\textbf{V}} + \text{\textbf{VII}} \\
+  \mathbf{C_{21}} &= \text{\textbf{II}} + \text{\textbf{IV}} \\
+  \mathbf{C_{12}} &= \text{\textbf{III}} + \text{\textbf{V}}\\
+  \mathbf{C_{22}} &= \text{\textbf{I}} + \text{\textbf{III}} - \text{\textbf{II}} + \text{\textbf{VI}} \\
+  \end{aligned}
+  \end{math}
+
+\end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Algorithm}
+  \scalebox{0.5}{\parbox{\linewidth}{
+    \begin{algorithm}[H]\caption{Strassen Matrix Multiplication}
+      \setlength{\lineskip}{7pt}
+      \begin{algorithmic}[1]
+        \Function{MM}{$\textbf{A}, \textbf{B}, \textbf{C}, n$}
+        \If{$n = 2$}
+        \State  $C \gets zeros((n, n))$
+        \State $P  \gets (A[0][0]+A[1][1])\cdot( B[0][0]+B[1][1])$
+        \State   $Q  \gets (A[1][0]+A[1][1])\cdot B[0][0]$
+        \State   $R  \gets A[0][0]\cdot (B[0][1]-B[1][1])$
+        \State   $S  \gets A[1][1]\cdot (B[1][0]-B[0][0])$
+        \State   $T  \gets (A[0][0]+A[0][1])\cdot B[1][1]$
+        \State   $U  \gets (A[1][0]-A[0][0])\cdot (B[0][0]+B[0][1])$
+        \State   $V  \gets (A[0][1]-A[1][1])\cdot (B[1][0]+B[1][1])$
+        \State   $C[0][0]  \gets P+S-T+V$
+        \State   $C[0][1]  \gets R+T$
+        \State   $C[1][0]  \gets Q+S$
+        \State   $C[1][1]  \gets P+R-Q+U$
+        \Else
+      \State  $ m \gets n/2$
+  \State $A11, A12, A21, A22 \gets A[:m][:m], A[:m][m:], A[m:][:m], A[m:][m:]$
+  \State $B11, B12, B21, B22 \gets B[:m][:m], B[:m][m:], B[m:][:m], B[m:][m:]$
+  \State $C11 \gets strassen(A11, B11, m) + strassen(A12, B21, m)$
+  \State $C12 \gets strassen(A11, B12, m) + strassen(A12, B22, m)$
+  \State $C21 \gets strassen(A21, B11, m) + strassen(A22, B21, m)$
+  \State $C22 \gets strassen(A21, B12, m) + strassen(A22, B22, m)$
+  \State $  C \gets vstack((hstack((C11, C12)), hstack((C21, C22))))$
+
+        \EndIf
+        \State \textbf{return} $\textbf{C}$
+
+       \EndFunction
+      \end{algorithmic}
+  \end{algorithm}
+    }}
 \end{frame}
