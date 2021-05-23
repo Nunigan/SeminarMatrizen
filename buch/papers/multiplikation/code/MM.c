@@ -27,12 +27,12 @@ int main() {
 	// omp_set_dynamic(0);
 	// omp_set_num_threads(4);
 //	run_algo(openMP_MM, "openMP_MM",0);
-//	run_algo(MM_dc, "MM_dc",0);
-	// run_algo(strassen, "strassen",0);
+	// run_algo(MM_dc, "MM_dc",0);
+	run_algo(strassen, "strassen",0);
 
 	run_algo(MM, "MM", 0);
-  run_algo(winograd, "winograd", 0);
-  run_algo_cblas(0);
+  // run_algo(winograd, "winograd", 0);
+  // run_algo_cblas(0);
 
 	return 0;
 }
@@ -256,47 +256,40 @@ void strassen(int *A, int *B, int *C, int n) {
 		split((int*) B, (int*) B21, n / 2, n / 2, 0);
 		split((int*) B, (int*) B22, n / 2, n / 2, n / 2);
 
-		int *tmp1 = (int*) malloc(n / 2 * n / 2 * sizeof(int));
-		int *tmp2 = (int*) malloc(n / 2 * n / 2 * sizeof(int));
-		int *tmp3 = (int*) malloc(n / 2 * n / 2 * sizeof(int));
-		int *tmp4 = (int*) malloc(n / 2 * n / 2 * sizeof(int));
-		int *tmp5 = (int*) malloc(n / 2 * n / 2 * sizeof(int));
-		int *tmp6 = (int*) malloc(n / 2 * n / 2 * sizeof(int));
-		int *tmp7 = (int*) malloc(n / 2 * n / 2 * sizeof(int));
-		int *tmp8 = (int*) malloc(n / 2 * n / 2 * sizeof(int));
+		int *P = (int*) malloc(n / 2 * n / 2 * sizeof(int));
+		int *Q = (int*) malloc(n / 2 * n / 2 * sizeof(int));
+		int *R = (int*) malloc(n / 2 * n / 2 * sizeof(int));
+		int *S = (int*) malloc(n / 2 * n / 2 * sizeof(int));
+		int *T = (int*) malloc(n / 2 * n / 2 * sizeof(int));
+		int *U = (int*) malloc(n / 2 * n / 2 * sizeof(int));
+		int *V = (int*) malloc(n / 2 * n / 2 * sizeof(int));
 
-		#pragma omp task
-		{
-				strassen((int*) A11, (int*) B11, (int*) tmp1, n / 2);
-		}
-		#pragma omp task
-		{
-				strassen((int*) A12, (int*) B21, (int*) tmp2, n / 2);
-		}
-		#pragma omp task
-		{
-				strassen((int*) A11, (int*) B12, (int*) tmp3, n / 2);
-		}
-		#pragma omp task
-		{
-				strassen((int*) A12, (int*) B22, (int*) tmp4, n / 2);
-		}
-		#pragma omp task
-		{
-				strassen((int*) A21, (int*) B11, (int*) tmp5, n / 2);
-		}
-		#pragma omp task
-		{
-				strassen((int*) A22, (int*) B21, (int*) tmp6, n / 2);
-		}
-		#pragma omp task
-		{
-				strassen((int*) A21, (int*) B12, (int*) tmp7, n / 2);
-		}
-		#pragma omp task
-		{
-				strassen((int*) A22, (int*) B22, (int*) tmp8, n / 2);
-		}
+		int *addA = (int*) malloc(n / 2 * n / 2 * sizeof(int));
+		int *addB = (int*) malloc(n / 2 * n / 2 * sizeof(int));
+
+    add((int*) A11, (int*) A22, (int*) addA, n / 2);
+		add((int*) B11, (int*) B22, (int*) addB, n / 2);
+		strassen((int*) addA, (int*) addB, (int*) P, n / 2);
+
+		add((int*) A21, (int*) A22, (int*) addA, n / 2);
+		strassen((int*) addA, (int*) B11, (int*) Q, n / 2);
+
+		sub((int*) B12, (int*) B22, (int*) addB, n / 2);
+		strassen((int*) A11, (int*) addB, (int*) R, n / 2);
+
+		sub((int*) B21, (int*) B11, (int*) addB, n / 2);
+		strassen((int*) A22, (int*) addB, (int*) S, n / 2);
+
+		add((int*) A11, (int*) A12, (int*) addA, n / 2);
+		strassen((int*) addA, (int*) B22, (int*) T, n / 2);
+
+		sub((int*) A21, (int*) A11, (int*) addA, n / 2);
+		add((int*) B11, (int*) B12, (int*) addB, n / 2);
+		strassen((int*) addA, (int*) addB, (int*) U, n / 2);
+
+		sub((int*) A12, (int*) A22, (int*) addA, n / 2);
+		add((int*) B21, (int*) B22, (int*) addB, n / 2);
+		strassen((int*) addA, (int*) addB, (int*) V, n / 2);
 
 		free(A11);
 		free(A12);
@@ -306,25 +299,37 @@ void strassen(int *A, int *B, int *C, int n) {
 		free(B12);
 		free(B21);
 		free(B22);
+		free(addA);
+		free(addB);
 
 		int *C11 = (int*) malloc(n / 2 * n / 2 * sizeof(int));
 		int *C12 = (int*) malloc(n / 2 * n / 2 * sizeof(int));
 		int *C21 = (int*) malloc(n / 2 * n / 2 * sizeof(int));
 		int *C22 = (int*) malloc(n / 2 * n / 2 * sizeof(int));
 
-		add((int*) tmp1, (int*) tmp2, (int*) C11, n / 2);
-		add((int*) tmp3, (int*) tmp4, (int*) C12, n / 2);
-		add((int*) tmp5, (int*) tmp6, (int*) C21, n / 2);
-		add((int*) tmp7, (int*) tmp8, (int*) C22, n / 2);
+		int *resAdd1 = (int*) malloc(n / 2 * n / 2 * sizeof(int));
+		int *resAdd2 = (int*) malloc(n / 2 * n / 2 * sizeof(int));
 
-		free(tmp1);
-		free(tmp2);
-		free(tmp3);
-		free(tmp4);
-		free(tmp5);
-		free(tmp6);
-		free(tmp7);
-		free(tmp8);
+		add((int*) R, (int*) T, (int*) C12, n / 2);
+		add((int*) Q, (int*) S, (int*) C21, n / 2);
+
+		add((int*) P, (int*) S, (int*) resAdd1, n / 2);
+		add((int*) resAdd1, (int*) V, (int*) resAdd2, n / 2);
+		sub((int*) resAdd2, (int*) T, (int*) C11, n / 2);
+
+		add((int*) P, (int*) R, (int*) resAdd1, n / 2);
+		add((int*) resAdd1, (int*) U, (int*) resAdd2, n / 2);
+		sub((int*) resAdd2, (int*) Q, (int*) C22, n / 2);
+
+		free(P);
+		free(Q);
+		free(R);
+		free(S);
+		free(T);
+		free(U);
+		free(V);
+		free(resAdd1);
+		free(resAdd2);
 
 		join((int*) C11, (int*) C, n / 2, 0, 0);
 		join((int*) C12, (int*) C, n / 2, 0, n / 2);
@@ -429,32 +434,32 @@ void run_algo(void (*algo)(), char alog_name[], int print)
 
 }
 
-void run_algo_cblas(int print)
-{
-
-	FILE *fptr;
-
-	fptr = fopen("meas/blas.txt", "w");
-	for(int i=0; i<n_arrays; ++i)
-	{
-		for(int j = 0; j<1; ++j)
-		{
-			double *dC = (double*) malloc(n[i] * n[i] * sizeof(double));
-			double dtime = omp_get_wtime();
-			cblas_dgemm(CblasRowMajor, CblasNoTrans, CblasNoTrans, n[i], n[i], n[i], 1.0, dAp[i], n[i],
-			dBp[i], n[i], 0.0, dC, n[i]);
-			dtime = omp_get_wtime() - dtime;
-			// printf("The cblas program took %f seconds to execute \n", dtime);
-			fprintf(fptr, "%f,%d\n",dtime, n[i]);
-
-			if(print==1)
-			{
-				printMatrix_double( (double*)dC, n[i]);
-			}
-
-			free(dC);
-		}
-	}
-	fclose(fptr);
-
-}
+// void run_algo_cblas(int print)
+// {
+//
+// 	FILE *fptr;
+//
+// 	fptr = fopen("meas/blas.txt", "w");
+// 	for(int i=0; i<n_arrays; ++i)
+// 	{
+// 		for(int j = 0; j<1; ++j)
+// 		{
+// 			double *dC = (double*) malloc(n[i] * n[i] * sizeof(double));
+// 			double dtime = omp_get_wtime();
+// 			cblas_dgemm(CblasRowMajor, CblasNoTrans, CblasNoTrans, n[i], n[i], n[i], 1.0, dAp[i], n[i],
+// 			dBp[i], n[i], 0.0, dC, n[i]);
+// 			dtime = omp_get_wtime() - dtime;
+// 			// printf("The cblas program took %f seconds to execute \n", dtime);
+// 			fprintf(fptr, "%f,%d\n",dtime, n[i]);
+//
+// 			if(print==1)
+// 			{
+// 				printMatrix_double( (double*)dC, n[i]);
+// 			}
+//
+// 			free(dC);
+// 		}
+// 	}
+// 	fclose(fptr);
+//
+// }

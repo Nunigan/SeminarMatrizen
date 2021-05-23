@@ -1,13 +1,18 @@
 \begin{frame}
   \frametitle{Algorithm}
-
+  \begin{columns}
+    \begin{column}{0.6\textwidth}
   \begin{algorithm}[H]\caption{Square Matrix Multiplication}
     \setlength{\lineskip}{7pt}
     \begin{algorithmic}[1]
-      \Function{MM}{$\textbf{A}, \textbf{B}, \textbf{C}, n$}
+      \Function{MM}{$\textbf{A}, \textbf{B}, \textbf{C}$}
       \State $sum \gets 0$
-        \For{$i = 0,1,2 \dots,n-1$}
-        \For{$j = 0,1,2 \dots,n-1$}
+      \State $n \gets columns(\textbf{A}) == rows(\textbf{B})$
+      \State $m \gets rows(\textbf{A})$
+      \State $p \gets columns(\textbf{B})$
+
+        \For{$i = 0,1,2 \dots,m-1$}
+        \For{$j = 0,1,2 \dots,p-1$}
         \State $sum \gets 0$
         \For{$k = 0,1,2 \dots,n-1$}
           \State $sum \gets  sum + \textbf{A}[i][k] \cdot \textbf{B}[k][j]$
@@ -19,11 +24,9 @@
      \EndFunction
     \end{algorithmic}
   \end{algorithm}
-\end{frame}
-
-\begin{frame}
-  \frametitle{CNN Parallel Computing}
-  \scalebox{0.9}{\parbox{\linewidth}{
+\end{column}
+\begin{column}{0.4\textwidth}
+  \scalebox{0.6}{\parbox{\linewidth}{
 
   \begin{tikzpicture}[ampersand replacement=\&,remember picture,overlay]
 
@@ -40,7 +43,7 @@
       {
       B_{1,1} \& \cdots \& B_{1,j} \& \cdots \& B_{1,p} \\
       \vdots \&  \& \vdots \&  \& \vdots \\
-      B_{k,1} \& \cdots \& B_{k,j} \& \cdots \& B_{i,p} \\
+      B_{k,1} \& \cdots \& B_{k,j} \& \cdots \& B_{k,p} \\
       \vdots \&  \& \vdots \& \& \vdots \\
       B_{n,1} \& \cdots \& B_{n,j} \& \cdots \& B_{n,p} \\
       };
@@ -57,12 +60,15 @@
 
                \begin{scope}[on background layer]
                \node[opacity=0.5, rounded corners=2pt, inner sep=-1pt, fill=green, fit=(A-3-1)(A-3-5)] {};
-               \node[opacity=0.5, rounded corners=2pt, inner sep=-1pt, fill=green, fit=(B-1-3)(B-5-3)] {};
-               \node[opacity=0.5, rounded corners=2pt, inner sep=-1pt, fill=green, fit=(C-3-3)] {};
+               \node[opacity=0.5, rounded corners=2pt, inner sep=-1pt, fill=blue, fit=(B-1-3)(B-5-3)] {};
+               \node[opacity=0.5, rounded corners=2pt, inner sep=-1pt, fill=red, fit=(C-3-3)] {};
 
                \end{scope}
 
 
    \end{tikzpicture}
    }}
-   \end{frame}
+ \end{column}
+
+\end{columns}
+\end{frame}

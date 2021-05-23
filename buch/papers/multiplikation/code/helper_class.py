@@ -57,42 +57,42 @@ class Helper():
     
                 file.writelines('  };\n')
     
-                file.writelines('const double dB{}[][{}] = \n'.format(k,n))
-                file.writelines('  {\n')
-                for i in range(n):
-                    file.writelines('    {')
-                    for j in range(n):
-                        if j == n-1:
-                            file.writelines('{}'.format(B[i,j]))
-                        else:
-                            file.writelines('{},'.format(B[i,j]))
-                    if i == n-1:
-                        file.writelines('}\n')
-                    else:
-                        file.writelines('},\n')
+                # file.writelines('const double dB{}[][{}] = \n'.format(k,n))
+                # file.writelines('  {\n')
+                # for i in range(n):
+                #     file.writelines('    {')
+                #     for j in range(n):
+                #         if j == n-1:
+                #             file.writelines('{}'.format(B[i,j]))
+                #         else:
+                #             file.writelines('{},'.format(B[i,j]))
+                #     if i == n-1:
+                #         file.writelines('}\n')
+                #     else:
+                #         file.writelines('},\n')
     
-                file.writelines('  };\n')
+                # file.writelines('  };\n')
     
-                file.writelines('const double dA{}[][{}] = \n'.format(k,n))
-                file.writelines('  {\n')
-                for i in range(n):
-                    file.writelines('    {')
-                    for j in range(n):
-                        if j == n-1:
-                            file.writelines('{}'.format(A[i,j]))
-                        else:
-                            file.writelines('{},'.format(A[i,j]))
-                    if i == n-1:
-                        file.writelines('}\n')
-                    else:
-                        file.writelines('},\n')
+                # file.writelines('const double dA{}[][{}] = \n'.format(k,n))
+                # file.writelines('  {\n')
+                # for i in range(n):
+                #     file.writelines('    {')
+                #     for j in range(n):
+                #         if j == n-1:
+                #             file.writelines('{}'.format(A[i,j]))
+                #         else:
+                #             file.writelines('{},'.format(A[i,j]))
+                #     if i == n-1:
+                #         file.writelines('}\n')
+                #     else:
+                #         file.writelines('},\n')
     
-                file.writelines('  };\n')
+                # file.writelines('  };\n')
 
             file.writelines('const int *Ap[{}] = {{{}}}; \n'.format(len(n_array),",".join(['(int*) A'+str(element) for element in np.arange(len(n_array))])))
             file.writelines('const int *Bp[{}] = {{{}}}; \n'.format(len(n_array),",".join(['(int*) B'+str(element) for element in np.arange(len(n_array))])))
-            file.writelines('const double *dAp[{}] = {{{}}}; \n'.format(len(n_array),",".join(['(double*) dA'+str(element) for element in np.arange(len(n_array))])))
-            file.writelines('const double *dBp[{}] = {{{}}}; \n'.format(len(n_array),",".join(['(double*) dB'+str(element) for element in np.arange(len(n_array))])))
+            # file.writelines('const double *dAp[{}] = {{{}}}; \n'.format(len(n_array),",".join(['(double*) dA'+str(element) for element in np.arange(len(n_array))])))
+            # file.writelines('const double *dBp[{}] = {{{}}}; \n'.format(len(n_array),",".join(['(double*) dB'+str(element) for element in np.arange(len(n_array))])))
             file.writelines('int n[{}] = {{{}}}; \n'.format(len(n_array),",".join([str(element) for element in n_array])))
             file.writelines('int n_arrays = {};\n'.format(len(n_array)))
 
@@ -100,5 +100,6 @@ class Helper():
 if __name__ == '__main__':
 
     helper = Helper()
-    n = np.arange(2,10)  
+    # n = np.arange(2,10)
+    n = np.logspace(1,3,3,base=2,dtype=(np.int))
     C = helper.write_c_matrix(n)

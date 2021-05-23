@@ -3,33 +3,98 @@
   \frametitle{Big $\mathcal{O}$ notation}
 \begin{itemize}
   \item <1-> Time complexity of an algorithm
-  \item <2->How many multiplications in a function 
+  \item <2-> How many multiplications in a function
+  \item <3-> Drop Constants
 \end{itemize}
 \end{frame}
 
 
 \begin{frame}
   \frametitle{Big $\mathcal{O}$ notation}
+  \onslide<1->{
 
   \begin{algorithm}[H]\caption{Square Matrix Multiplication}
     \setlength{\lineskip}{7pt}
     \begin{algorithmic}[1]
-      \Function{MM}{$\textbf{A}, \textbf{B}, \textbf{C}, n$}
-      \State $sum \gets 0$
-        \For{$i = 0,1,2 \dots,n-1$}
-        \For{$j = 0,1,2 \dots,n-1$}
-        \State $sum \gets 0$
-        \For{$k = 0,1,2 \dots,n-1$}
-          \State $sum \gets  sum + \textbf{A}[i][k] \cdot \textbf{B}[k][j]$
-        \EndFor
-        \State $\textbf{C}[i][j] \gets  sum $
-        \EndFor
-        \EndFor
-        \State \textbf{return} $\textbf{C}$
+      \Function{foo}{$a, b$}
+        \State \textbf{return} $a+b$
      \EndFunction
     \end{algorithmic}
   \end{algorithm}
+}
+\onslide<2->{
+$\mathcal{O}(1)$
+  }
 \end{frame}
+
+\begin{frame}
+  \frametitle{Big $\mathcal{O}$ notation}
+  \onslide<1->{
+
+  \begin{algorithm}[H]\caption{Square Matrix Multiplication}
+    \setlength{\lineskip}{7pt}
+    \begin{algorithmic}[1]
+      \Function{foo}{$a, b$}
+        \State $ x \gets a+b $
+        \State $ y \gets a \cdot b $
+        \State \textbf{return} $x+y$
+     \EndFunction
+    \end{algorithmic}
+  \end{algorithm}
+}
+\onslide<2->{
+$\mathcal{O}(1) + \mathcal{O}(1) = 2\mathcal{O}(1) = \mathcal{O}(1) $
+  }
+\end{frame}
+
+\begin{frame}
+  \frametitle{Big $\mathcal{O}$ notation}
+  \onslide<1->{
+
+  \begin{algorithm}[H]\caption{Square Matrix Multiplication}
+    \setlength{\lineskip}{7pt}
+    \begin{algorithmic}[1]
+      \Function{foo}{$\mathbf{A}, \mathbf{B}$,n}
+      \State $ sum \gets 0$
+      \For{$i = 0,1,2 \dots,n$}
+        \State $ sum \gets sum + A[i] \cdot B[i] $
+        \EndFor
+
+        \State \textbf{return} $sum$
+
+     \EndFunction
+    \end{algorithmic}
+  \end{algorithm}
+}
+\onslide<2->{
+$\mathcal{O}(n)$
+  }
+\end{frame}
+
+\begin{frame}
+  \frametitle{Big $\mathcal{O}$ notation}
+  \onslide<1->{
+
+  \begin{algorithm}[H]\caption{Square Matrix Multiplication}
+    \setlength{\lineskip}{7pt}
+    \begin{algorithmic}[1]
+      \Function{foo}{$\mathbf{A}, \mathbf{B}$,n}
+      \State $ sum \gets 0$
+      \For{$i = 0,1,2 \dots,n$}
+      \For{$j = 0,1,2 \dots,n$}
+      \State $ sum \gets sum + A[i] \cdot B[j] $
+      \EndFor
+      \EndFor
+        \State \textbf{return} $sum$
+     \EndFunction
+    \end{algorithmic}
+  \end{algorithm}
+}
+\onslide<2->{
+$\mathcal{O}(n^2)$
+  }
+\end{frame}
+
 
 \begin{frame}
   \frametitle{Big $\mathcal{O}$ notation}

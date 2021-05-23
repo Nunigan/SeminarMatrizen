@@ -62,10 +62,19 @@ def strassen(A, B):
         m = n//2
         A11, A12, A21, A22 = A[:m, :m], A[:m, m:], A[m:, :m], A[m:, m:]
         B11, B12, B21, B22 = B[:m, :m], B[:m, m:], B[m:, :m], B[m:, m:]
-        C11 = strassen(A11, B11) + strassen(A12, B21)
-        C12 = strassen(A11, B12) + strassen(A12, B22)
-        C21 = strassen(A21, B11) + strassen(A22, B21)
-        C22 = strassen(A21, B12) + strassen(A22, B22)
+        P = strassen((A11+A22),(B11+B22))
+        Q = strassen((A21+A22),B11)
+        R = strassen(A11,(B12-B22))
+        S = strassen(A22,(B21-B11))
+        T = strassen((A11+A12),B22)
+        U = strassen((A21-A11),(B11+B12))
+        V = strassen((A12-A22),(B21+B22))
+        
+        C11 = P+S-T+V
+        C12 = R+T
+        C21 = Q+S
+        C22 = P+R-Q+U
+
         C = np.vstack((np.hstack((C11, C12)), np.hstack((C21, C22))))
     return C
 
@@ -134,17 +143,17 @@ def test_perfomance(n):
         # A = np.random.randint(-100, 100,(i, i))
         # B = np.random.randint(-100, 100,(i, i))
 
-        # start = time.time()
-        # C3 = strassen(A, B)
-        # t_mm_strassen.append(time.time() - start)
+        start = time.time()
+        C3 = strassen(A, B)
+        t_mm_strassen.append(time.time() - start)
 
         start = time.time()
         C1 = MM(A, B)
         t_mm.append(time.time() - start)
 
-        # start = time.time()
-        # C2 = MM_dc(A, B)
-        # t_mm_dc.append(time.time() - start)
+        start = time.time()
+        C2 = MM_dc(A, B)
+        t_mm_dc.append(time.time() - start)
 
         start = time.time()
         C4 = winograd2(A, B)
@@ -156,8 +165,8 @@ def test_perfomance(n):
 
     plt.figure()
     plt.plot(n, t_mm, label='Standard MM', lw=5)
-    # plt.plot(n, t_mm_dc, label='Divide and conquer MM', lw=5)
-    # plt.plot(n, t_mm_strassen, label='Strassen MM', lw=5)
+    plt.plot(n, t_mm_dc, label='Divide and conquer MM', lw=5)
+    plt.plot(n, t_mm_strassen, label='Strassen MM', lw=5)
     plt.plot(n, t_wino, label='Winograd MM', lw=5)
     plt.plot(n, t_np, label='np MM', lw=5)
     plt.legend()
@@ -165,38 +174,53 @@ def test_perfomance(n):
 
 def plot_c_res(ave):
     MM = np.loadtxt("meas/MM.txt", delimiter=',')
-    winograd = np.loadtxt("meas/winograd.txt", delimiter=',')
-    blas = np.loadtxt("meas/blas.txt", delimiter=',')
-    
+    # winograd = np.loadtxt("meas/winograd.txt", delimiter=',')
+    # blas = np.loadtxt("meas/blas.txt", delimiter=',')
+    # MM_dc = np.loadtxt("meas/MM_dc.txt", delimiter=',')
+    strassen = np.loadtxt("meas/strassen.txt", delimiter=',')
+
     MM_t = MM[:,0] 
     MM_n = MM[:,1] 
     MM_t = np.mean(MM_t.reshape(-1,ave),axis=1)
     MM_n = np.mean(MM_n.reshape(-1,ave),axis=1)
 
-    winograd_t = winograd[:,0] 
-    winograd_n = winograd[:,1] 
-    winograd_t = np.mean(winograd_t.reshape(-1,ave),axis=1)
-    winograd_n = np.mean(winograd_n.reshape(-1,ave),axis=1)
+    # MM_dc_t = MM_dc[:,0] 
+    # MM_dc_n = MM_dc[:,1] 
+    # MM_dc_t = np.mean(MM_dc_t.reshape(-1,ave),axis=1)
+    # MM_dc_n = np.mean(MM_dc_n.reshape(-1,ave),axis=1)
+
+    strassen_t = strassen[:,0] 
+    strassen_n = strassen[:,1] 
+    strassen_t = np.mean(strassen_t.reshape(-1,ave),axis=1)
+    strassen_n = np.mean(strassen_n.reshape(-1,ave),axis=1)
     
-    blas_t = blas[:,0] 
-    blas_n = blas[:,1] 
-    blas_t = np.mean(blas_t.reshape(-1,ave),axis=1)
-    blas_n = np.mean(blas_n.reshape(-1,ave),axis=1)
+    # winograd_t = winograd[:,0] 
+    # winograd_n = winograd[:,1] 
+    # winograd_t = np.mean(winograd_t.reshape(-1,ave),axis=1)
+    # winograd_n = np.mean(winograd_n.reshape(-1,ave),axis=1)
+    
+    # blas_t = blas[:,0] 
+    # blas_n = blas[:,1] 
+    # blas_t = np.mean(blas_t.reshape(-1,ave),axis=1)
+    # blas_n = np.mean(blas_n.reshape(-1,ave),axis=1)
 
     def func(x, a,b):
         return b*x**a
 
-    popt, pcov = curve_fit(func, blas_n, blas_t)
-    popt1, pcov2 = curve_fit(func, blas_n, winograd_t)
-    popt2, pcov2 = curve_fit(func, blas_n, MM_t)
+    # popt, pcov = curve_fit(func, blas_n, blas_t)
+    # popt1, pcov2 = curve_fit(func, blas_n, winograd_t)
+    # popt2, pcov2 = curve_fit(func, blas_n, MM_t)
 
     plt.figure()
     plt.plot(MM_n, MM_t, label='Standard MM', lw=5)
-    plt.plot(winograd_n, winograd_t, label='Winograd MM', lw=5)
-    plt.plot(blas_n, blas_t, label='Blas MM', lw=5)
-    plt.plot(blas_n, func(blas_n, *popt), 'r-', label='fit blas: a=%5.5f, b=%5.10f' % tuple(popt))
-    plt.plot(blas_n, func(blas_n, *popt1), 'r-', label='fit winograd: a=%5.5f, b=%5.10f' % tuple(popt1))
-    plt.plot(blas_n, func(blas_n, *popt2), 'r-', label='fit MM: a=%5.5f, b=%5.10f' % tuple(popt2))
+    # plt.plot(winograd_n, winograd_t, label='Winograd MM', lw=5)
+    # plt.plot(blas_n, blas_t, label='Blas MM', lw=5)
+    plt.plot(strassen_n, strassen_t, label='Strassen MM', lw=5)
+    # plt.plot(MM_dc_n, MM_dc_t, label='MM_dc', lw=5)
+
+    # plt.plot(blas_n, func(blas_n, *popt), 'r-', label='fit blas: a=%5.5f, b=%5.10f' % tuple(popt))
+    # plt.plot(blas_n, func(blas_n, *popt1), 'r-', label='fit winograd: a=%5.5f, b=%5.10f' % tuple(popt1))
+    # plt.plot(blas_n, func(blas_n, *popt2), 'r-', label='fit MM: a=%5.5f, b=%5.10f' % tuple(popt2))
 
     plt.legend()
     
@@ -206,10 +230,10 @@ if __name__ == '__main__':
     plot_c_res(1)
 
     
-    # n = np.logspace(1,9,9,base=2,dtype=(np.int))
-    # n = np.arange(1,200,2)  
-    # A = np.random.randint(-10, 10, (5,5))
-    # B = np.random.randint(-10, 10, (5,5))
+    # n = np.logspace(1,7,7,base=2,dtype=(np.int))
+    # n = np.arange(1,50,2)  
+    # A = np.random.randint(-10, 10, (8,8))
+    # B = np.random.randint(-10, 10, (8,8))
 
     # C = winograd2(A, B)
     # C_test = A@B
