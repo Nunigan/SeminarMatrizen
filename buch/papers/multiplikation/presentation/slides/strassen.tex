@@ -284,13 +284,13 @@ $
 
 \begin{frame}
   \frametitle{Algorithm}
-  \scalebox{0.5}{\parbox{\linewidth}{
+  \scalebox{0.45}{\parbox{\linewidth}{
     \begin{algorithm}[H]\caption{Strassen Matrix Multiplication}
       \setlength{\lineskip}{7pt}
       \begin{algorithmic}[1]
-        \Function{MM}{$\textbf{A}, \textbf{B}, \textbf{C}, n$}
+        \Function{MM}{$\textbf{A}, \textbf{B}, n$}
         \If{$n = 2$}
-        \State  $C \gets zeros((n, n))$
+        \State  $ \mathbf{C} \gets zeros((n, n))$
         \State $P  \gets (A[0][0]+A[1][1])\cdot( B[0][0]+B[1][1])$
         \State   $Q  \gets (A[1][0]+A[1][1])\cdot B[0][0]$
         \State   $R  \gets A[0][0]\cdot (B[0][1]-B[1][1])$
@@ -304,12 +304,23 @@ $
         \State   $C[1][1]  \gets P+R-Q+U$
         \Else
       \State  $ m \gets n/2$
-  \State $A11, A12, A21, A22 \gets A[:m][:m], A[:m][m:], A[m:][:m], A[m:][m:]$
-  \State $B11, B12, B21, B22 \gets B[:m][:m], B[:m][m:], B[m:][:m], B[m:][m:]$
-  \State $C11 \gets strassen(A11, B11, m) + strassen(A12, B21, m)$
-  \State $C12 \gets strassen(A11, B12, m) + strassen(A12, B22, m)$
-  \State $C21 \gets strassen(A21, B11, m) + strassen(A22, B21, m)$
-  \State $C22 \gets strassen(A21, B12, m) + strassen(A22, B22, m)$
+  \State $\mathbf{A11}, \mathbf{A12}, \mathbf{A21}, \mathbf{A22} \gets \mathbf{A}[:m][:m], \mathbf{A}[:m][m:], \mathbf{A}[m:][:m], \mathbf{A}[m:][m:]$
+  \State $\mathbf{B11}, \mathbf{B12}, \mathbf{B21}, \mathbf{B22} \gets \mathbf{B}[:m][:m], \mathbf{B}[:m][m:], \mathbf{B}[m:][:m], \mathbf{B}[m:][m:]$
+
+  \State $ \mathbf{P} \gets \text{strassen}((\mathbf{A11}+ \mathbf{A22}),(\mathbf{B11}+\mathbf{B22}), m)$
+  \State $ \mathbf{Q} \gets \text{strassen}((\mathbf{A21}+ \mathbf{A22}), \mathbf{B11},m)$
+  \State $ \mathbf{R} \gets \text{strassen}( \mathbf{A11},(\mathbf{B12}-  \mathbf{B22}),m)$
+  \State $ \mathbf{S} \gets \text{strassen}( \mathbf{A22},(\mathbf{B21}-  \mathbf{B11}),m)$
+  \State $ \mathbf{T} \gets \text{strassen}((\mathbf{A11}+ \mathbf{A12}), \mathbf{B22},m)$
+  \State $ \mathbf{U} \gets \text{strassen}((\mathbf{A21}- \mathbf{A11}),(\mathbf{B11}+\mathbf{B12}),m)$
+  \State $ \mathbf{V} \gets \text{strassen}((\mathbf{A12}- \mathbf{A22}),(\mathbf{B21}+\mathbf{B22}),m)$
+
+
+
+  \State   $\mathbf{C11}  \gets \mathbf{P+S-T+V}$
+  \State   $\mathbf{C12}  \gets \mathbf{R+T}$
+  \State   $\mathbf{C21}  \gets \mathbf{Q+S}$
+  \State   $\mathbf{C22}  \gets \mathbf{P+R-Q+U}$
   \State $  C \gets vstack((hstack((C11, C12)), hstack((C21, C22))))$
 
         \EndIf

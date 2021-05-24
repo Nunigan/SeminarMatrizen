@@ -1,0 +1,92 @@
+% This file was created by tikzplotlib v0.9.8.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0.886274509803922,0.290196078431373,0.2}
+\definecolor{color1}{rgb}{0.203921568627451,0.541176470588235,0.741176470588235}
+\definecolor{color2}{rgb}{0.596078431372549,0.556862745098039,0.835294117647059}
+\definecolor{color3}{rgb}{0.984313725490196,0.756862745098039,0.368627450980392}
+
+\begin{axis}[
+axis background/.style={fill=white!89.8039215686275!black},
+axis line style={white},
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(0.03,0.97)},
+  anchor=north west,
+  draw=white!80!black,
+  fill=white!89.8039215686275!black
+},
+tick align=outside,
+tick pos=left,
+x grid style={white},
+xlabel={n},
+xmajorgrids,
+xmin=-4.3, xmax=134.3,
+xtick style={color=white!33.3333333333333!black},
+y grid style={white},
+ylabel={time (s)},
+ymajorgrids,
+ymin=-0.0847841262817383, ymax=1.78058204650879,
+ytick style={color=white!33.3333333333333!black}
+]
+\addplot [line width=2pt, color0]
+table {%
+2 1.16825103759766e-05
+4 5.48362731933594e-05
+8 0.000375032424926758
+16 0.00347995758056641
+32 0.0224947929382324
+64 0.167299270629883
+128 1.35637784004211
+};
+\addlegendentry{Standard MM}
+\addplot [line width=2pt, color1]
+table {%
+2 5.24520874023438e-06
+4 5.88893890380859e-05
+8 0.000436067581176758
+16 0.00687670707702637
+32 0.0286312103271484
+64 0.222895383834839
+128 1.69579267501831
+};
+\addlegendentry{Divide and conquer MM}
+\addplot [line width=2pt, color2]
+table {%
+2 1.33514404296875e-05
+4 0.000115156173706055
+8 0.000606060028076172
+16 0.00395750999450684
+32 0.0355596542358398
+64 0.20725679397583
+128 1.32189655303955
+};
+\addlegendentry{Strassen MM}
+\addplot [line width=2pt, white!46.6666666666667!black]
+table {%
+2 1.88350677490234e-05
+4 7.00950622558594e-05
+8 0.000344276428222656
+16 0.00486111640930176
+32 0.0194263458251953
+64 0.145667791366577
+128 1.03415465354919
+};
+\addlegendentry{Winograd MM}
+\addplot [line width=2pt, color3]
+table {%
+2 1.16825103759766e-05
+4 5.7220458984375e-06
+8 6.91413879394531e-06
+16 3.36170196533203e-05
+32 4.62532043457031e-05
+64 8.03470611572266e-05
+128 0.000163555145263672
+};
+\addlegendentry{np MM}
+\end{axis}
+
+\end{tikzpicture}

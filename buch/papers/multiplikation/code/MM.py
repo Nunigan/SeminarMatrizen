@@ -9,8 +9,7 @@ import numpy as np
 import time
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
-
-
+import tikzplotlib
 def MM(A, B):
     n = np.shape(A)[0]
     C = np.zeros((n, n))
@@ -163,14 +162,26 @@ def test_perfomance(n):
         C = A@B
         t_np.append(time.time() - start)
 
-    plt.figure()
+    plt.figure(figsize=(13,8))
+    plt.rcParams['font.family'] = 'STIXGeneral'
+    plt.rc('axes', labelsize=23)
+    plt.rc('xtick', labelsize=23)
+    plt.rc('ytick', labelsize=23)
     plt.plot(n, t_mm, label='Standard MM', lw=5)
     plt.plot(n, t_mm_dc, label='Divide and conquer MM', lw=5)
     plt.plot(n, t_mm_strassen, label='Strassen MM', lw=5)
     plt.plot(n, t_wino, label='Winograd MM', lw=5)
     plt.plot(n, t_np, label='np MM', lw=5)
     plt.legend()
-    return t_np
+    plt.xlabel("n")
+    plt.ylabel("time (s)")
+    plt.grid(True)
+    plt.tight_layout()
+    plt.yscale('log')
+    plt.legend(fontsize=19)
+    arr = np.array([n, t_mm, t_mm_dc, t_mm_strassen, t_wino, t_np])
+    np.savetxt('meas_' + str(max(n))+ '.txt',arr)    
+    return arr
 
 def plot_c_res(ave):
     MM = np.loadtxt("meas/MM.txt", delimiter=',')
@@ -221,16 +232,16 @@ def plot_c_res(ave):
     # plt.plot(blas_n, func(blas_n, *popt), 'r-', label='fit blas: a=%5.5f, b=%5.10f' % tuple(popt))
     # plt.plot(blas_n, func(blas_n, *popt1), 'r-', label='fit winograd: a=%5.5f, b=%5.10f' % tuple(popt1))
     # plt.plot(blas_n, func(blas_n, *popt2), 'r-', label='fit MM: a=%5.5f, b=%5.10f' % tuple(popt2))
-
+  
     plt.legend()
     
 
 # test%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 if __name__ == '__main__':
-    plot_c_res(1)
+    # plot_c_res(1)
 
     
-    # n = np.logspace(1,7,7,base=2,dtype=(np.int))
+    n = np.logspace(1,9,9,base=2,dtype=(np.int))
     # n = np.arange(1,50,2)  
     # A = np.random.randint(-10, 10, (8,8))
     # B = np.random.randint(-10, 10, (8,8))
@@ -240,7 +251,7 @@ if __name__ == '__main__':
 
     # print(np.equal(C, C_test))
 
-    # t_np = test_perfomance(n)
+    t_np = test_perfomance(n)
     # C = strassen(A, B)
     # C_test = A@B
     
