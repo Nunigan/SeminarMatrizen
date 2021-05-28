@@ -177,7 +177,7 @@ def test_perfomance(n):
     plt.ylabel("time (s)")
     plt.grid(True)
     plt.tight_layout()
-    plt.yscale('log')
+    # plt.yscale('log')
     plt.legend(fontsize=19)
     arr = np.array([n, t_mm, t_mm_dc, t_mm_strassen, t_wino, t_np])
     np.savetxt('meas_' + str(max(n))+ '.txt',arr)    
