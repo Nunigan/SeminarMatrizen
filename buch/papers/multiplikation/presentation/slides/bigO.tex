@@ -75,7 +75,7 @@ $\mathcal{O}(n)$
   \frametitle{Big $\mathcal{O}$ notation}
   \onslide<1->{
 
-  \begin{algorithm}[H]\caption{Foo 1}
+  \begin{algorithm}[H]\caption{Foo 4}
     \setlength{\lineskip}{7pt}
     \begin{algorithmic}[1]
       \Function{foo}{$\mathbf{A}, \mathbf{B}$,n}
@@ -94,6 +94,34 @@ $\mathcal{O}(n)$
 $\mathcal{O}(n^2)$
   }
 \end{frame}
+
+% \begin{frame}
+%   \frametitle{Big $\mathcal{O}$ notation}
+%   \onslide<1->{
+%
+%   \begin{algorithm}[H]\caption{Fibonacci}
+%     \setlength{\lineskip}{7pt}
+%     \begin{algorithmic}[1]
+%       \Function{fib}{$n$}
+%       \If{$n <= 1$}
+%       \State \textbf{return} $1$
+%       \Else
+%         \State \textbf{return} fib($n-1$) + fib($n-2$)
+%         \EndIf
+%
+%      \EndFunction
+%     \end{algorithmic}
+%   \end{algorithm}
+% }
+% \onslide<2->{
+% \[
+% \langle x,y \rangle =
+% \begin{cases}
+%  \displaystyle $\mathcal{O}(1)$  & \text{if  $n \leq 2$}\\
+% \displaystyle $ 2 \mathcal{T}(\frac{n}{2})$  & \text{if  $n > 2$}
+% \end{cases}
+% \]  }
+% \end{frame}
 
 
 \begin{frame}
@@ -146,10 +174,72 @@ $\mathcal{O}(n^2)$
     samples=100,
     color=black,
 ]
-{x^x};
-\addlegendentry{$\mathcal{O}(n^n)$}
+{exp(x)};
+\addlegendentry{$\mathcal{O}(e^n)$}
 \addplot [
     domain= 1:6,
+    samples=100,
+    color=orange,
+]
+{log2(x)};
+\addlegendentry{$\mathcal{O}(\log n)$}
+\end{axis}
+\end{tikzpicture}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Big $\mathcal{O}$ notation}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines = left,
+    xlabel = $n$ (Data Input),
+    ylabel = {$t$ (time)},
+    legend pos=north east,
+    very thick,
+    ymax = 500,
+    yticklabels=\empty,
+    xticklabels=\empty,
+    scale only axis=true,
+  width=12cm, height=6cm,
+    ]
+\addplot [
+    domain= 1:20,
+    samples=100,
+    color=red,
+]
+{1};
+\addlegendentry{$\mathcal{O}(1)$}
+\addplot [
+    domain= 1:20,
+    samples=100,
+    color=green,
+]
+{x};
+\addlegendentry{$\mathcal{O}(n)$}
+\addplot [
+    domain= 1:20,
+    samples=100,
+    color=blue,
+]
+{x^2};
+\addlegendentry{$\mathcal{O}(n^2)$}
+\addplot [
+    domain= 1:10,
+    samples=100,
+    color=purple,
+]
+{x^3};
+\addlegendentry{$\mathcal{O}(n^3)$}
+\addplot [
+    domain= 1:10,
+    samples=100,
+    color=black,
+]
+{exp(x)};
+\addlegendentry{$\mathcal{O}(e^n)$}
+\addplot [
+    domain= 1:20,
     samples=100,
     color=orange,
 ]

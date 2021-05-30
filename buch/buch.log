@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.22)  5 MAR 2021 08:17
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.8)  11 FEB 2021 22:20
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.26)  28 MAY 2021 08:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -79,15 +75,9 @@ File: babel.def 2020/02/14 3.40 Babel common definitions
 Package babel Info: \l@canadian = using hyphenrules for english
 (babel)             (\language0) on input line 102.
 Package babel Info: \l@australian = using hyphenrules for ukenglish
-<<<<<<< HEAD
-(babel)             (\language5) on input line 105.
+(babel)             (\language6) on input line 105.
 Package babel Info: \l@newzealand = using hyphenrules for ukenglish
-(babel)             (\language5) on input line 108.
-=======
-(babel)             (\language56) on input line 105.
-Package babel Info: \l@newzealand = using hyphenrules for ukenglish
-(babel)             (\language56) on input line 108.
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+(babel)             (\language6) on input line 108.
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel-german/ngerman.ldf
 Language: ngerman 2018/12/08 v2.11 German support for babel (post-1996 orthogra
@@ -1879,8 +1869,15 @@ Package biblatex Info: ... file 'biblatex.cfg' found.
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
 ))
-(./papers/common/addpackages.tex (./papers/000template/packages.tex))
-(./papers/common/addbibresources.tex)
+(./papers/common/addpackages.tex (./papers/verkehr/packages.tex)
+(./papers/multiplikation/packages.tex) (./papers/punktgruppen/packages.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/doublestroke/dsfont.sty
+Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
+)
+(./papers/reedsolomon/packages.tex) (./papers/ifs/packages.tex)
+(./papers/mceliece/packages.tex) (./papers/clifford/packages.tex)
+(./papers/spannung/packages.tex) (./papers/erdbeben/packages.tex)
+(./papers/munkres/packages.tex)) (./papers/common/addbibresources.tex)
 \@indexfile=\write8
 \openout8 = `buch.idx'.
 
@@ -1892,16 +1889,11 @@ LaTeX Warning: Label `buch:vektoren-und-matrizen:eqn:linabhkomb' multiply defin
 ed.
 
 
-<<<<<<< HEAD
 LaTeX Warning: Label `buch:polynome:eqn:divisionsaufgabe' multiply defined.
 
 
 LaTeX Warning: Label `buch:endlichekoerper:subsection:matrixschreibweise' multi
 ply defined.
-=======
-LaTeX Warning: Label `buch:endlichekoerper:fig:additionmultiplikation' multiply
- defined.
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
 
 
 LaTeX Warning: Label `buch:eigenwerte:eqn:Jkchain' multiply defined.
@@ -1919,12 +1911,13 @@ LaTeX Warning: Label `buch:eigenwerte:eqn:allgnilpotent' multiply defined.
 LaTeX Warning: Label `buch:eigenwerte:eqn:Jnkpotenz' multiply defined.
 
 
-<<<<<<< HEAD
 LaTeX Warning: Label `buch:graphen:eqn:linkmatrix' multiply defined.
 
 
-=======
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+LaTeX Warning: Label `buch:wahrscheinlichkeit:satz:perron-frobenius2' multiply 
+defined.
+
+
 LaTeX Warning: Label `buch:google:eqn:composed' multiply defined.
 
 
@@ -1934,10 +1927,32 @@ LaTeX Warning: Label `buch:section:permutationsmatrizen' multiply defined.
 LaTeX Warning: Label `buch:section:permutationsmatrizen' multiply defined.
 
 
+LaTeX Warning: Label `buch:wahrscheinlichkeit:satz:perron-frobenius2' multiply 
+defined.
+
+
 LaTeX Warning: Label `buch:crypto:eqn:rest2' multiply defined.
 
 
 LaTeX Warning: Label `buch:crypto:eqn:t' multiply defined.
+
+
+LaTeX Warning: Label `section:verkehr/versuchsreihe' multiply defined.
+
+
+LaTeX Warning: Label `verkehr:Vr1' multiply defined.
+
+
+LaTeX Warning: Label `verkehr:pathDifference' multiply defined.
+
+
+LaTeX Warning: Label `verkehr:Knotenzahl' multiply defined.
+
+
+LaTeX Warning: Label `verkehr:Vr2' multiply defined.
+
+
+LaTeX Warning: Label `verkehr:Comparison' multiply defined.
 
 )
 \openout1 = `buch.aux'.
@@ -2037,16 +2052,8 @@ File: t1txr.fd 2000/12/15 v3.1
 \everyMPtoPDFconversion=\toks68
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-
-(/usr/share/texlive/texmf-dist/tex/latex/grfext/grfext.sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
@@ -2182,13 +2189,73 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                - Invalid format of field 'month'.
 
 )
-Package biblatex Info: ... file 'buch2-blx.bbl' not found.
+Package biblatex Info: ... file 'buch2-blx.bbl' found.
+ (./buch2-blx.bbl)
+Package biblatex Info: ... file 'buch3-blx.bbl' found.
+ (./buch3-blx.bbl
 
-No file buch2-blx.bbl.
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'multiplikation:bibtex':
+(biblatex)                - Can't use 'date' + 'month' 
+(biblatex)                - Can't use 'date' + 'year'.
+
+)
+Package biblatex Info: ... file 'buch4-blx.bbl' found.
+ (./buch4-blx.bbl)
+Package biblatex Info: ... file 'buch5-blx.bbl' found.
+ (./buch5-blx.bbl
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'reedsolomon:bibtex':
+(biblatex)                - Can't use 'date' + 'month' 
+(biblatex)                - Can't use 'date' + 'year'.
+
+)
+Package biblatex Info: ... file 'buch6-blx.bbl' found.
+ (./buch6-blx.bbl
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'ifs:bibtex':
+(biblatex)                - Can't use 'date' + 'month' 
+(biblatex)                - Can't use 'date' + 'year'.
+
+)
+Package biblatex Info: ... file 'buch7-blx.bbl' found.
+ (./buch7-blx.bbl
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'mceliece:bibtex':
+(biblatex)                - Can't use 'date' + 'month' 
+(biblatex)                - Can't use 'date' + 'year'.
+
+)
+Package biblatex Info: ... file 'buch8-blx.bbl' found.
+ (./buch8-blx.bbl
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'clifford:bibtex':
+(biblatex)                - Can't use 'date' + 'month' 
+(biblatex)                - Can't use 'date' + 'year'.
+
+)
+Package biblatex Info: ... file 'buch9-blx.bbl' found.
+ (./buch9-blx.bbl)
+Package biblatex Info: ... file 'buch10-blx.bbl' found.
+ (./buch10-blx.bbl
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'erdbeben:bibtex':
+(biblatex)                - Can't use 'date' + 'month' 
+(biblatex)                - Can't use 'date' + 'year'.
+
+)
+Package biblatex Info: ... file 'buch11-blx.bbl' found.
+ (./buch11-blx.bbl)
 Package biblatex Info: Reference section=0 on input line 29.
 Package biblatex Info: Reference segment=0 on input line 29.
 LaTeX Font Info:    Trying to load font information for OT1+txss on input line 
 29.
+
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txss.fd
 File: ot1txss.fd 2000/12/15 v3.1
 )
@@ -2223,23 +2290,15 @@ LaTeX Font Info:    Font shape `T1/txr/b/n' in size <12> not available
 LaTeX Font Info:    Font shape `T1/txr/b/n' in size <10> not available
 (Font)              Font shape `T1/txr/bx/n' tried instead on input line 4.
  [3] [4]
-<<<<<<< HEAD
-[5] [6])
-=======
-[5])
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+[5] [6] [7] [8])
 \tf@toc=\write10
 \openout10 = `buch.toc'.
 
 \c@satz=\count550
 \c@forderung=\count551
-<<<<<<< HEAD
-) [7] [8
+) [9] [10
 
 ] (./chapters/part1.tex
-=======
-) [6] (./chapters/part1.tex
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
 \blx@maxsegment@1=\count552
 \blx@sectionciteorder@1=\count553
 Package biblatex Info: Reference section=1 on input line 6.
@@ -2264,10 +2323,6 @@ LaTeX Font Info:    Trying to load font information for T1+txtt on input line 2
 File: t1txtt.fd 2000/12/15 v3.1
 )) [1
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
 ] [2
 
 ]
@@ -2290,11 +2345,10 @@ Overfull \hbox (1.15573pt too wide) in paragraph at lines 159--163
 ot-wen-dig, zwi-schen Links- und Rechts-
  []
 
-<<<<<<< HEAD
 [11]) (./chapters/05-zahlen/ganz.tex [12] [13])
 (./chapters/05-zahlen/rational.tex [14]) (./chapters/05-zahlen/reell.tex
 [15]) (./chapters/05-zahlen/komplex.tex [16] [17]
-<chapters/05-zahlen/images/komplex.pdf, id=1162, 223.63449pt x 178.57516pt>
+<chapters/05-zahlen/images/komplex.pdf, id=1817, 223.63449pt x 178.57516pt>
 File: chapters/05-zahlen/images/komplex.pdf Graphic file (type pdf)
 <use chapters/05-zahlen/images/komplex.pdf>
 Package pdftex.def Info: chapters/05-zahlen/images/komplex.pdf  used on input l
@@ -2309,25 +2363,6 @@ Kapitel 2.
 (./chapters/10-vektorenmatrizen/linear.tex [23] [24]
 Missing character: There is no e in font txsyb!
  [25] [26]
-=======
-[11]) (./chapters/05-zahlen/ganz.tex [12]) (./chapters/05-zahlen/rational.tex
-[13] [14]) (./chapters/05-zahlen/reell.tex [15])
-(./chapters/05-zahlen/komplex.tex [16] [17]
-<chapters/05-zahlen/images/komplex.pdf, id=1109, 223.63449pt x 178.57516pt>
-File: chapters/05-zahlen/images/komplex.pdf Graphic file (type pdf)
-<use chapters/05-zahlen/images/komplex.pdf>
-Package pdftex.def Info: chapters/05-zahlen/images/komplex.pdf  used on input l
-ine 191.
-(pdftex.def)             Requested size: 223.63393pt x 178.57472pt.
- [18 <./chapters/05-zahlen/images/komplex.pdf>] [19])) (./chapters/10-vektorenm
-atrizen/chapter.tex [20]
-Kapitel 2.
-(./chapters/10-vektorenmatrizen/linear.tex [21
-
-] [22]
-Missing character: There is no e in font txsyb!
- [23] [24]
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
 Overfull \hbox (9.52893pt too wide) in paragraph at lines 385--390
 []\T1/txr/m/n/10 Die $\OML/txmi/m/it/10 m$\T1/txr/m/n/10 -dimensionalen Spal-te
 n-vek-to-ren $\OML/txmi/m/it/10 v \OMS/txsy/m/n/10 2 \U/txsyb/m/n/10 |[]$ \T1/t
@@ -2337,9 +2372,8 @@ M[]\OT1/txr/m/n/10 (\U/txsyb/m/n/10 |\OT1/txr/m/n/10 )$\T1/txr/m/n/10 , die $\O
 ML/txmi/m/it/10 n$\T1/txr/m/n/10 -dimensionalen
  []
 
-<<<<<<< HEAD
 [27] [28] [29]
-<chapters/10-vektorenmatrizen/images/rref.pdf, id=1298, 406.318pt x 191.20836pt
+<chapters/10-vektorenmatrizen/images/rref.pdf, id=1952, 406.318pt x 191.20836pt
 >
 File: chapters/10-vektorenmatrizen/images/rref.pdf Graphic file (type pdf)
 <use chapters/10-vektorenmatrizen/images/rref.pdf>
@@ -2352,13 +2386,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [30 <./chapters/10-vektorenmatrizen/images/rref.pdf>] [31] [32] [33] [34])
 (./chapters/10-vektorenmatrizen/skalarprodukt.tex [35] [36] [37] [38] [39]
 [40] [41] [42] [43]) (./chapters/10-vektorenmatrizen/strukturen.tex
-<chapters/10-vektorenmatrizen/images/strukturen.pdf, id=1427, 399.13818pt x 527
-=======
-[25] [26] [27] [28] [29] [30])
-(./chapters/10-vektorenmatrizen/skalarprodukt.tex)
-(./chapters/10-vektorenmatrizen/strukturen.tex
-<chapters/10-vektorenmatrizen/images/strukturen.pdf, id=1257, 399.13818pt x 527
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+<chapters/10-vektorenmatrizen/images/strukturen.pdf, id=2081, 399.13818pt x 527
 .17552pt>
 File: chapters/10-vektorenmatrizen/images/strukturen.pdf Graphic file (type pdf
 )
@@ -2367,17 +2395,10 @@ Package pdftex.def Info: chapters/10-vektorenmatrizen/images/strukturen.pdf  us
 ed on input line 11.
 (pdftex.def)             Requested size: 398.33858pt x 526.1285pt.
 
-<<<<<<< HEAD
 (./chapters/10-vektorenmatrizen/gruppen.tex [44] [45 <./chapters/10-vektorenmat
 rizen/images/strukturen.pdf>] [46] [47] [48])
 (./chapters/10-vektorenmatrizen/ringe.tex [49]
-<chapters/10-vektorenmatrizen/images/gausszahlen.pdf, id=1513, 397.18689pt x 21
-=======
-(./chapters/10-vektorenmatrizen/gruppen.tex [31] [32 <./chapters/10-vektorenmat
-rizen/images/strukturen.pdf>] [33] [34] [35])
-(./chapters/10-vektorenmatrizen/ringe.tex [36]
-<chapters/10-vektorenmatrizen/images/gausszahlen.pdf, id=1345, 397.18689pt x 21
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+<chapters/10-vektorenmatrizen/images/gausszahlen.pdf, id=2168, 397.18689pt x 21
 3.22862pt>
 File: chapters/10-vektorenmatrizen/images/gausszahlen.pdf Graphic file (type pd
 f)
@@ -2385,26 +2406,16 @@ f)
 Package pdftex.def Info: chapters/10-vektorenmatrizen/images/gausszahlen.pdf  u
 sed on input line 110.
 (pdftex.def)             Requested size: 397.18591pt x 213.22809pt.
-<<<<<<< HEAD
  [50 <./chapters/10-vektorenmatrizen/images/gausszahlen.pdf>] [51]
-<chapters/10-vektorenmatrizen/images/ideale.pdf, id=1540, 372.71846pt x 179.138
-=======
- [37 <./chapters/10-vektorenmatrizen/images/gausszahlen.pdf>] [38]
-<chapters/10-vektorenmatrizen/images/ideale.pdf, id=1372, 372.71846pt x 179.138
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+<chapters/10-vektorenmatrizen/images/ideale.pdf, id=2195, 372.71846pt x 179.138
 26pt>
 File: chapters/10-vektorenmatrizen/images/ideale.pdf Graphic file (type pdf)
 <use chapters/10-vektorenmatrizen/images/ideale.pdf>
 Package pdftex.def Info: chapters/10-vektorenmatrizen/images/ideale.pdf  used o
 n input line 284.
 (pdftex.def)             Requested size: 372.71753pt x 179.13782pt.
-<<<<<<< HEAD
  [52 <./chapters/10-vektorenmatrizen/images/ideale.pdf>]) (./chapters/10-vektor
 enmatrizen/algebren.tex [53]
-=======
- [39 <./chapters/10-vektorenmatrizen/images/ideale.pdf>]) (./chapters/10-vektor
-enmatrizen/algebren.tex [40]
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
 Overfull \hbox (3.84431pt too wide) in paragraph at lines 80--91
 \T1/txr/m/n/10 Die Men-ge der ste-ti-gen Funk-tio-nen $\OML/txmi/m/it/10 C\OT1/
 txr/m/n/10 ([\OML/txmi/m/it/10 a; b\OT1/txr/m/n/10 ])$ \T1/txr/m/n/10 ist na-tü
@@ -2413,17 +2424,12 @@ r-lich ei-ne Teil-men-ge al-ler Funk-tio-nen: $\OML/txmi/m/it/10 C\OT1/txr/m/n/
  []
 
 ) (./chapters/10-vektorenmatrizen/koerper.tex))
-<<<<<<< HEAD
 (./chapters/10-vektorenmatrizen/hadamard.tex [54]
-=======
-(./chapters/10-vektorenmatrizen/hadamard.tex [41]
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
 Overfull \hbox (0.94571pt too wide) in paragraph at lines 69--74
 []\T1/txr/m/n/10 Das Hadamard-Produkt ist kom-mu-ta-tiv, da die Mul-ti-pli-ka-t
 i-on in $\U/txsyb/m/n/10 |$ \T1/txr/m/n/10 kom-mua-tiv ist. Das Hadamard-
  []
 
-<<<<<<< HEAD
 [55] [56] [57]) (./chapters/10-vektorenmatrizen/uebungsaufgaben//1001.tex
 [58]) (./chapters/10-vektorenmatrizen/uebungsaufgaben//1002.tex [59]) [60])
 (./chapters/20-polynome/chapter.tex
@@ -2431,29 +2437,15 @@ Kapitel 3.
 [61
 
 ]
-=======
-[42] [43] [44]) (./chapters/10-vektorenmatrizen/uebungsaufgaben//1001.tex
-[45]) (./chapters/10-vektorenmatrizen/uebungsaufgaben//1002.tex [46]) [47])
-(./chapters/20-polynome/chapter.tex [48
-
-]
-Kapitel 3.
-[49]
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
 Overfull \hbox (1.80632pt too wide) detected at line 116
 []
  []
 
-<<<<<<< HEAD
 (./chapters/20-polynome/definitionen.tex [62] [63] [64]
-=======
-(./chapters/20-polynome/definitionen.tex [50] [51] [52]
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
 Overfull \hbox (7.36925pt too wide) detected at line 354
 []
  []
 
-<<<<<<< HEAD
 [65] [66] [67]) (./chapters/20-polynome/vektoren.tex [68] [69])
 (./chapters/20-polynome/matrizen.tex)
 (./chapters/20-polynome/minimalpolynom.tex))
@@ -2462,11 +2454,11 @@ Kapitel 4.
 (./chapters/30-endlichekoerper/euklid.tex [71
 
 ] [72] [73] [74] [75] [76]
-Overfull \hbox (11.23698pt too wide) detected at line 595
+Overfull \hbox (11.23698pt too wide) detected at line 597
 []
  []
 
-) (./chapters/30-endlichekoerper/galois.tex
+[77] [78] [79] [80]) (./chapters/30-endlichekoerper/galois.tex
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
 (Font)              scaled to size 11.39996pt on input line 33.
 
@@ -2478,185 +2470,161 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 33.
 
-[77] [78] [79] [80] [81]
-<chapters/30-endlichekoerper/images/binomial2.pdf, id=1802, 399.4142pt x 332.31
-=======
-[53]) (./chapters/20-polynome/vektoren.tex [54])
-(./chapters/20-polynome/matrizen.tex)
-(./chapters/20-polynome/minimalpolynom.tex))
-(./chapters/30-endlichekoerper/chapter.tex
-Underfull \vbox (badness 1221) has occurred while \output is active []
-
- [55]
-[56]
-Kapitel 4.
-(./chapters/30-endlichekoerper/euklid.tex [57
-
-] [58] [59] [60]
-Overfull \hbox (11.23698pt too wide) detected at line 408
-[]
- []
-
-) (./chapters/30-endlichekoerper/galois.tex [61]
-LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 32.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 32.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 32.
-
-[62] [63] [64] [65]
-<chapters/30-endlichekoerper/images/binomial2.pdf, id=1601, 399.4142pt x 332.31
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
-152pt>
+[81] [82] [83] [84]
+<chapters/30-endlichekoerper/images/binomial2.pdf, id=2482, 399.4142pt x 357.47
+554pt>
 File: chapters/30-endlichekoerper/images/binomial2.pdf Graphic file (type pdf)
 <use chapters/30-endlichekoerper/images/binomial2.pdf>
 Package pdftex.def Info: chapters/30-endlichekoerper/images/binomial2.pdf  used
-<<<<<<< HEAD
  on input line 415.
-(pdftex.def)             Requested size: 399.41322pt x 332.3107pt.
+(pdftex.def)             Requested size: 399.41322pt x 357.47466pt.
 
 Overfull \hbox (1.07465pt too wide) in paragraph at lines 415--419
-=======
- on input line 414.
-(pdftex.def)             Requested size: 399.41322pt x 332.3107pt.
-
-Overfull \hbox (1.07465pt too wide) in paragraph at lines 414--418
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
  [][] 
  []
 
 (./chapters/30-endlichekoerper/images/farben.tex)
-<<<<<<< HEAD
-<chapters/30-endlichekoerper/images/binomial5.pdf, id=1803, 347.40388pt x 332.0
-=======
-<chapters/30-endlichekoerper/images/binomial5.pdf, id=1602, 347.40388pt x 332.0
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
-9369pt>
+<chapters/30-endlichekoerper/images/binomial5.pdf, id=2483, 389.51323pt x 368.5
+6093pt>
 File: chapters/30-endlichekoerper/images/binomial5.pdf Graphic file (type pdf)
 <use chapters/30-endlichekoerper/images/binomial5.pdf>
 Package pdftex.def Info: chapters/30-endlichekoerper/images/binomial5.pdf  used
-<<<<<<< HEAD
  on input line 425.
-(pdftex.def)             Requested size: 347.40303pt x 332.09288pt.
- [82] [83 <./chapters/30-endlichekoerper/images/binomial2.pdf>] [84 <./chapters
-/30-endlichekoerper/images/binomial5.pdf>]) (./chapters/30-endlichekoerper/wurz
-eln.tex [85] [86] [87]
-[88] [89] [90] [91] [92] [93])
+(pdftex.def)             Requested size: 389.51227pt x 368.56001pt.
+ [85] [86 <./chapters/30-endlichekoerper/images/binomial2.pdf>] [87 <./chapters
+/30-endlichekoerper/images/binomial5.pdf>] [88]) (./chapters/30-endlichekoerper
+/wurzeln.tex [89] [90]
+[91] [92] [93] [94] [95] [96] [97])
+(./chapters/30-endlichekoerper/uebungsaufgaben//3004.tex [98] [99])
+(./chapters/30-endlichekoerper/uebungsaufgaben//3003.tex [100])
 (./chapters/30-endlichekoerper/uebungsaufgaben//3002.tex)
-(./chapters/30-endlichekoerper/uebungsaufgaben//3001.tex [94]) [95])
-(./chapters/40-eigenwerte/chapter.tex [96
-=======
- on input line 424.
-(pdftex.def)             Requested size: 347.40303pt x 332.09288pt.
- [66] [67 <./chapters/30-endlichekoerper/images/binomial2.pdf>] [68 <./chapters
-/30-endlichekoerper/images/binomial5.pdf>]) (./chapters/30-endlichekoerper/wurz
-eln.tex [69] [70] [71]
-[72] [73] [74] [75] [76] [77])
-(./chapters/30-endlichekoerper/uebungsaufgaben//3002.tex)
-(./chapters/30-endlichekoerper/uebungsaufgaben//3001.tex [78]) [79])
-(./chapters/40-eigenwerte/chapter.tex [80
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+(./chapters/30-endlichekoerper/uebungsaufgaben//3001.tex [101])
+(./chapters/30-endlichekoerper/uebungsaufgaben//3005.tex [102]
+Overfull \hbox (1.52446pt too wide) detected at line 246
+[]
+ []
+
+) [103]) (./chapters/40-eigenwerte/chapter.tex [104
 
 ]
 Kapitel 5.
 
-<<<<<<< HEAD
-LaTeX Warning: Reference `buch:section:spektralradius' on page 97 undefined on 
-input line 27.
+LaTeX Warning: Reference `buch:section:spektralradius' on page 105 undefined on
+ input line 27.
 
 
-LaTeX Warning: Reference `buch:section:numerisch' on page 97 undefined on input
- line 28.
+LaTeX Warning: Reference `buch:section:numerisch' on page 105 undefined on inpu
+t line 28.
 
-(./chapters/40-eigenwerte/grundlagen.tex [97] [98] [99]
-<chapters/40-eigenwerte/images/nilpotent.pdf, id=1971, 340.11766pt x 105.49814p
-=======
-LaTeX Warning: Reference `buch:section:spektralradius' on page 81 undefined on 
-input line 27.
+(./chapters/40-eigenwerte/grundlagen.tex
+<chapters/40-eigenwerte/images/kernbild.pdf, id=2664, 400.93892pt x 200.13269pt
+>
+File: chapters/40-eigenwerte/images/kernbild.pdf Graphic file (type pdf)
+<use chapters/40-eigenwerte/images/kernbild.pdf>
+Package pdftex.def Info: chapters/40-eigenwerte/images/kernbild.pdf  used on in
+put line 21.
+(pdftex.def)             Requested size: 398.33858pt x 198.83432pt.
+<chapters/40-eigenwerte/images/kombiniert.pdf, id=2665, 399.31383pt x 399.3058p
+t>
+File: chapters/40-eigenwerte/images/kombiniert.pdf Graphic file (type pdf)
+<use chapters/40-eigenwerte/images/kombiniert.pdf>
+Package pdftex.def Info: chapters/40-eigenwerte/images/kombiniert.pdf  used on 
+input line 32.
+(pdftex.def)             Requested size: 398.33858pt x 398.32996pt.
+ [105] [106 <./chapters/40-eigenwerte/images/kernbild.pdf>] [107 <./chapters/40
+-eigenwerte/images/kombiniert.pdf>]
+<chapters/40-eigenwerte/images/dimjk.pdf, id=2711, 368.02193pt x 223.0975pt>
+File: chapters/40-eigenwerte/images/dimjk.pdf Graphic file (type pdf)
+<use chapters/40-eigenwerte/images/dimjk.pdf>
+Package pdftex.def Info: chapters/40-eigenwerte/images/dimjk.pdf  used on input
+ line 218.
+(pdftex.def)             Requested size: 368.02101pt x 223.09695pt.
 
-
-LaTeX Warning: Reference `buch:section:numerisch' on page 81 undefined on input
- line 28.
-
-(./chapters/40-eigenwerte/grundlagen.tex [81] [82] [83]
-<chapters/40-eigenwerte/images/nilpotent.pdf, id=1768, 340.11766pt x 105.49814p
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+[108 <./chapters/40-eigenwerte/images/dimjk.pdf>] [109]
+<chapters/40-eigenwerte/images/nilpotent.pdf, id=2745, 340.11766pt x 105.49814p
 t>
 File: chapters/40-eigenwerte/images/nilpotent.pdf Graphic file (type pdf)
 <use chapters/40-eigenwerte/images/nilpotent.pdf>
 Package pdftex.def Info: chapters/40-eigenwerte/images/nilpotent.pdf  used on i
-nput line 349.
+nput line 398.
 (pdftex.def)             Requested size: 340.11682pt x 105.49786pt.
-<<<<<<< HEAD
- [100 <./chapters/40-eigenwerte/images/nilpotent.pdf>] [101] [102] [103] [104]
+ [110 <./chapters/40-eigenwerte/images/nilpotent.pdf>] [111]
+<chapters/40-eigenwerte/images/jknilp.pdf, id=2781, 435.26917pt x 289.77458pt>
+File: chapters/40-eigenwerte/images/jknilp.pdf Graphic file (type pdf)
+<use chapters/40-eigenwerte/images/jknilp.pdf>
+Package pdftex.def Info: chapters/40-eigenwerte/images/jknilp.pdf  used on inpu
+t line 514.
+(pdftex.def)             Requested size: 398.33858pt x 265.19861pt.
+ [112 <./chapters/40-eigenwerte/images/jknilp.pdf>]
+<chapters/40-eigenwerte/images/normalform.pdf, id=2804, 372.36215pt x 303.1094p
+t>
+File: chapters/40-eigenwerte/images/normalform.pdf Graphic file (type pdf)
+<use chapters/40-eigenwerte/images/normalform.pdf>
+Package pdftex.def Info: chapters/40-eigenwerte/images/normalform.pdf  used on 
+input line 562.
+(pdftex.def)             Requested size: 372.36124pt x 303.10866pt.
+ [113 <./chapters/40-eigenwerte/images/normalform.pdf>] [114] [115]
+[116] [117]
 
-LaTeX Warning: Reference `buch:eigenwerte:satz:jordanblock' on page 105 undefin
-ed on input line 818.
+LaTeX Warning: Reference `buch:eigenwerte:satz:jordanblock' on page 118 undefin
+ed on input line 1040.
 
-[105]
+[118]
 
-LaTeX Warning: Reference `XXX' on page 106 undefined on input line 919.
+LaTeX Warning: Reference `XXX' on page 119 undefined on input line 1141.
 
-) (./chapters/40-eigenwerte/normalformen.tex [106] [107] [108])
-(./chapters/40-eigenwerte/spektralradius.tex [109] [110] [111]
-=======
- [84 <./chapters/40-eigenwerte/images/nilpotent.pdf>] [85] [86] [87] [88]
-
-LaTeX Warning: Reference `buch:eigenwerte:satz:jordanblock' on page 89 undefine
-d on input line 818.
-
-[89]
-
-LaTeX Warning: Reference `XXX' on page 90 undefined on input line 919.
-
-) (./chapters/40-eigenwerte/normalformen.tex [90] [91] [92])
-(./chapters/40-eigenwerte/spektralradius.tex [93] [94] [95]
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 337.
-
+) (./chapters/40-eigenwerte/normalformen.tex [119] [120] [121] [122] [123]
+[124]) (./chapters/40-eigenwerte/spektralradius.tex [125] [126] [127]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 337.
 
-<<<<<<< HEAD
-[112] [113]
 
-LaTeX Warning: Reference `buch:subsection:konvergenzbedingung' on page 114 unde
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 337.
+
+[128]
+
+LaTeX Warning: Reference `buch:subsection:konvergenzbedingung' on page 129 unde
 fined on input line 452.
 
-[114] [115] [116]) (./chapters/40-eigenwerte/numerisch.tex)
-(./chapters/40-eigenwerte/spektraltheorie.tex)
-(./chapters/40-eigenwerte/uebungsaufgaben//4001.tex [117])
+[129] [130] [131]) (./chapters/40-eigenwerte/spektraltheorie.tex [132] [133]
+[134] [135]
+<chapters/40-eigenwerte/images/wurzel.pdf, id=2978, 320.48334pt x 325.77008pt>
+File: chapters/40-eigenwerte/images/wurzel.pdf Graphic file (type pdf)
+<use chapters/40-eigenwerte/images/wurzel.pdf>
+Package pdftex.def Info: chapters/40-eigenwerte/images/wurzel.pdf  used on inpu
+t line 281.
+(pdftex.def)             Requested size: 320.48254pt x 325.76927pt.
+<chapters/40-eigenwerte/images/wurzelapprox.pdf, id=2979, 400.63075pt x 199.643
+86pt>
+File: chapters/40-eigenwerte/images/wurzelapprox.pdf Graphic file (type pdf)
+<use chapters/40-eigenwerte/images/wurzelapprox.pdf>
+Package pdftex.def Info: chapters/40-eigenwerte/images/wurzelapprox.pdf  used o
+n input line 289.
+(pdftex.def)             Requested size: 398.33858pt x 198.50099pt.
+<chapters/40-eigenwerte/images/minmax.pdf, id=2983, 387.48462pt x 213.50064pt>
+File: chapters/40-eigenwerte/images/minmax.pdf Graphic file (type pdf)
+<use chapters/40-eigenwerte/images/minmax.pdf>
+Package pdftex.def Info: chapters/40-eigenwerte/images/minmax.pdf  used on inpu
+t line 332.
+(pdftex.def)             Requested size: 387.48367pt x 213.5001pt.
+ [136] [137 <./chapters/40-eigenwerte/images/wurzel.pdf>] [138 <./chapters/40-e
+igenwerte/images/wurzelapprox.pdf> <./chapters/40-eigenwerte/images/minmax.pdf>
+] [139] [140] [141] [142])
+(./chapters/40-eigenwerte/uebungsaufgaben//4001.tex [143])
 (./chapters/40-eigenwerte/uebungsaufgaben//4002.tex)
-(./chapters/40-eigenwerte/uebungsaufgaben//4003.tex [118] [119]
-=======
-[96] [97]
-
-LaTeX Warning: Reference `buch:subsection:konvergenzbedingung' on page 98 undef
-ined on input line 452.
-
-[98] [99] [100]) (./chapters/40-eigenwerte/numerisch.tex)
-(./chapters/40-eigenwerte/spektraltheorie.tex)
-(./chapters/40-eigenwerte/uebungsaufgaben//4001.tex [101])
-(./chapters/40-eigenwerte/uebungsaufgaben//4002.tex)
-(./chapters/40-eigenwerte/uebungsaufgaben//4003.tex [102] [103]
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+(./chapters/40-eigenwerte/uebungsaufgaben//4003.tex [144]
 
 LaTeX Warning: Command \` invalid in math mode on input line 239.
 
 Missing character: There is no Ò in font txr!
-<<<<<<< HEAD
-) [120]) (./chapters/50-permutationen/chapter.tex
-=======
-) [104]) (./chapters/50-permutationen/chapter.tex
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+[145]) (./chapters/40-eigenwerte/uebungsaufgaben//4004.tex [146])
+(./chapters/40-eigenwerte/uebungsaufgaben//4005.tex [147])
+(./chapters/40-eigenwerte/uebungsaufgaben//4006.tex [148]) [149])
+(./chapters/50-permutationen/chapter.tex [150
+
+]
 Kapitel 6.
 (./chapters/50-permutationen/endlich.tex
 
@@ -2671,39 +2639,22 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 21.
 
-<<<<<<< HEAD
-<chapters/50-permutationen/images/permutation.pdf, id=2146, 280.78804pt x 48.38
-=======
-<chapters/50-permutationen/images/permutation.pdf, id=1944, 280.78804pt x 48.38
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+<chapters/50-permutationen/images/permutation.pdf, id=3154, 280.78804pt x 48.38
 477pt>
 File: chapters/50-permutationen/images/permutation.pdf Graphic file (type pdf)
 <use chapters/50-permutationen/images/permutation.pdf>
 Package pdftex.def Info: chapters/50-permutationen/images/permutation.pdf  used
  on input line 24.
 (pdftex.def)             Requested size: 280.78734pt x 48.38463pt.
-<<<<<<< HEAD
-[121
-
- <./chapters/50-permutationen/images/permutation.pdf>]
-<chapters/50-permutationen/images/komposition.pdf, id=2162, 378.48099pt x 59.31
-=======
-[105
-
- <./chapters/50-permutationen/images/permutation.pdf>]
-<chapters/50-permutationen/images/komposition.pdf, id=1959, 378.48099pt x 59.31
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+[151 <./chapters/50-permutationen/images/permutation.pdf>]
+<chapters/50-permutationen/images/komposition.pdf, id=3169, 378.48099pt x 59.31
 862pt>
 File: chapters/50-permutationen/images/komposition.pdf Graphic file (type pdf)
 <use chapters/50-permutationen/images/komposition.pdf>
 Package pdftex.def Info: chapters/50-permutationen/images/komposition.pdf  used
  on input line 43.
 (pdftex.def)             Requested size: 378.48006pt x 59.31845pt.
-<<<<<<< HEAD
-<chapters/50-permutationen/images/zyklenzerlegung.pdf, id=2163, 308.5136pt x 55
-=======
-<chapters/50-permutationen/images/zyklenzerlegung.pdf, id=1960, 308.5136pt x 55
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+<chapters/50-permutationen/images/zyklenzerlegung.pdf, id=3170, 308.5136pt x 55
 .96408pt>
 File: chapters/50-permutationen/images/zyklenzerlegung.pdf Graphic file (type p
 df)
@@ -2724,17 +2675,10 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 127.
 
-<<<<<<< HEAD
-[122 <./chapters/50-permutationen/images/komposition.pdf> <./chapters/50-permut
+[152 <./chapters/50-permutationen/images/komposition.pdf> <./chapters/50-permut
 ationen/images/zyklenzerlegung.pdf>]
 
-LaTeX Warning: Reference `XXX' on page 123 undefined on input line 165.
-=======
-[106 <./chapters/50-permutationen/images/komposition.pdf> <./chapters/50-permut
-ationen/images/zyklenzerlegung.pdf>]
-
-LaTeX Warning: Reference `XXX' on page 107 undefined on input line 165.
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+LaTeX Warning: Reference `XXX' on page 153 undefined on input line 165.
 
 
 Overfull \hbox (1.15514pt too wide) in paragraph at lines 165--172
@@ -2742,13 +2686,8 @@ Overfull \hbox (1.15514pt too wide) in paragraph at lines 165--172
 er Ma-trix ver-gli-chen wer-den. Durch
  []
 
-<<<<<<< HEAD
-) (./chapters/50-permutationen/transpositionen.tex [123]
-<chapters/50-permutationen/images/transpositionen.pdf, id=2208, 253.38063pt x 2
-=======
-) (./chapters/50-permutationen/transpositionen.tex [107]
-<chapters/50-permutationen/images/transpositionen.pdf, id=2005, 253.38063pt x 2
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+) (./chapters/50-permutationen/transpositionen.tex [153]
+<chapters/50-permutationen/images/transpositionen.pdf, id=3216, 253.38063pt x 2
 55.46341pt>
 File: chapters/50-permutationen/images/transpositionen.pdf Graphic file (type p
 df)
@@ -2756,94 +2695,315 @@ df)
 Package pdftex.def Info: chapters/50-permutationen/images/transpositionen.pdf  
 used on input line 38.
 (pdftex.def)             Requested size: 253.38pt x 255.46277pt.
-<<<<<<< HEAD
- [124 <./chapters/50-permutationen/images/transpositionen.pdf>])
-(./chapters/50-permutationen/matrizen.tex [125] [126])
+ [154 <./chapters/50-permutationen/images/transpositionen.pdf>])
+(./chapters/50-permutationen/matrizen.tex [155] [156])
 (./chapters/50-permutationen/determinante.tex)
-(./chapters/50-permutationen/uebungsaufgaben//5001.tex [127]) [128])
-=======
- [108 <./chapters/50-permutationen/images/transpositionen.pdf>])
-(./chapters/50-permutationen/matrizen.tex [109] [110])
-(./chapters/50-permutationen/determinante.tex)
-(./chapters/50-permutationen/uebungsaufgaben//5001.tex [111]) [112])
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+(./chapters/50-permutationen/uebungsaufgaben//5001.tex [157]) [158])
 (./chapters/60-gruppen/chapter.tex
 Kapitel 7.
-(./chapters/60-gruppen/symmetrien.tex) (./chapters/60-gruppen/lie-gruppen.tex)
-(./chapters/60-gruppen/lie-algebren.tex) (./chapters/60-gruppen/homogen.tex))
-<<<<<<< HEAD
-(./chapters/70-graphen/chapter.tex [129
+(./chapters/60-gruppen/symmetrien.tex
+<chapters/60-gruppen/images/castle.jpeg, id=3259, 1302.8675pt x 539.01375pt>
+File: chapters/60-gruppen/images/castle.jpeg Graphic file (type jpg)
+<use chapters/60-gruppen/images/castle.jpeg>
+Package pdftex.def Info: chapters/60-gruppen/images/castle.jpeg  used on input 
+line 22.
+(pdftex.def)             Requested size: 398.33858pt x 164.79784pt.
+ [159
 
-] [130
+] [160 <./chapters/60-gruppen/images/castle.jpeg>]
+<chapters/60-gruppen/images/phasenraum.pdf, id=3272, 381.79439pt x 268.738pt>
+File: chapters/60-gruppen/images/phasenraum.pdf Graphic file (type pdf)
+<use chapters/60-gruppen/images/phasenraum.pdf>
+Package pdftex.def Info: chapters/60-gruppen/images/phasenraum.pdf  used on inp
+ut line 161.
+(pdftex.def)             Requested size: 381.79346pt x 268.73735pt.
+ [161] [162 <./chapters/60-gruppen/images/phasenraum.pdf>]
+[163]
+<chapters/60-gruppen/images/karten.pdf, id=3315, 291.36955pt x 336.98094pt>
+File: chapters/60-gruppen/images/karten.pdf Graphic file (type pdf)
+<use chapters/60-gruppen/images/karten.pdf>
+Package pdftex.def Info: chapters/60-gruppen/images/karten.pdf  used on input l
+ine 418.
+(pdftex.def)             Requested size: 291.36884pt x 336.9801pt.
+ [164]
+<chapters/60-gruppen/images/kartenkreis.pdf, id=3324, 393.54027pt x 325.1628pt>
 
-]
+File: chapters/60-gruppen/images/kartenkreis.pdf Graphic file (type pdf)
+<use chapters/60-gruppen/images/kartenkreis.pdf>
+Package pdftex.def Info: chapters/60-gruppen/images/kartenkreis.pdf  used on in
+put line 463.
+(pdftex.def)             Requested size: 393.53929pt x 325.162pt.
+ [165 <./chapters/60-gruppen/images/karten.pdf>] [166 <./chapters/60-gruppen/im
+ages/kartenkreis.pdf>] [167]
+Overfull \hbox (6.21416pt too wide) in paragraph at lines 680--686
+[]\T1/txr/m/n/10 Betrachtet man die Kreis-li-nie als Kur-ve in $\U/txsyb/m/n/10
+ R[]$\T1/txr/m/n/10 , dann ist der Tan-gen-ti-al-vek-tor durch $[]\OT1/txr/m/n/
+10 (\OML/txmi/m/it/10 t\OT1/txr/m/n/10 ) = ([](\OML/txmi/m/it/10 t\OT1/txr/m/n/
+10 )\OML/txmi/m/it/10 ; []\OT1/txr/m/n/10 (\OML/txmi/m/it/10 t\OT1/txr/m/n/10 )
+)$
+ []
+
+
+Overfull \hbox (8.94861pt too wide) in paragraph at lines 697--705
+[]\T1/txr/m/n/10 Eine Mög-lich-keit, einen Tan-gen-ti-al-vek-tor in $\OT1/txr/m
+/n/10 (1\OML/txmi/m/it/10 ; \OT1/txr/m/n/10 0)$ \T1/txr/m/n/10 mit ei-nem Tan-g
+en-ti-al-vek-tor im Punkt $\OT1/txr/m/n/10 ([] \OML/txmi/m/it/10 t; [] t\OT1/tx
+r/m/n/10 )$
+ []
+
+) (./chapters/60-gruppen/lie-gruppen.tex [168] [169] [170] [171]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 347.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 347.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 347.
+
+[172]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 532.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 532.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 532.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 532.
+
+[173] [174]
+<chapters/60-gruppen/images/sl2.pdf, id=3435, 387.48462pt x 192.59554pt>
+File: chapters/60-gruppen/images/sl2.pdf Graphic file (type pdf)
+<use chapters/60-gruppen/images/sl2.pdf>
+Package pdftex.def Info: chapters/60-gruppen/images/sl2.pdf  used on input line
+ 767.
+(pdftex.def)             Requested size: 387.48367pt x 192.59506pt.
+<chapters/60-gruppen/images/scherungen.pdf, id=3436, 393.1759pt x 196.9217pt>
+File: chapters/60-gruppen/images/scherungen.pdf Graphic file (type pdf)
+<use chapters/60-gruppen/images/scherungen.pdf>
+Package pdftex.def Info: chapters/60-gruppen/images/scherungen.pdf  used on inp
+ut line 780.
+(pdftex.def)             Requested size: 393.17493pt x 196.92122pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 792.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 792.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 792.
+
+[175] [176 <./chapters/60-gruppen/images/sl2.pdf> <./chapters/60-gruppen/images
+/scherungen.pdf>]
+Overfull \hbox (7.46916pt too wide) in paragraph at lines 873--879
+\T1/txr/m/n/10 Die Ma-tri-zen von $[]\OT1/txr/m/n/10 (2)$ \T1/txr/m/n/10 ste-he
+n da-her in ei-ner eins-zu-eins-Beziehung zu den Vek-to-ren $\OT1/txr/m/n/10 (\
+OML/txmi/m/it/10 a[]; a[]; b[]; b[]\OT1/txr/m/n/10 ) \OMS/txsy/m/n/10 2
+ []
+
+) (./chapters/60-gruppen/lie-algebren.tex [177] [178] [179]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 224.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 224.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 224.
+
+[180]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 414.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 414.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 414.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 414.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 440.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 440.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 440.
+
+[181]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 510.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 510.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 510.
+
+[182]) (./chapters/60-gruppen/uebungsaufgaben//6002.tex [183])
+(./chapters/60-gruppen/uebungsaufgaben//6001.tex [184] [185]) [186])
+(./chapters/70-graphen/chapter.tex
 Kapitel 8.
-(./chapters/70-graphen/beschreibung.tex [131] [132]
-<chapters/70-graphen/images/adjazenzu.pdf, id=2276, 370.25528pt x 129.26193pt>
+(./chapters/70-graphen/beschreibung.tex [187
+
+] [188]
+<chapters/70-graphen/images/adjazenzu.pdf, id=3579, 370.25528pt x 129.26193pt>
 File: chapters/70-graphen/images/adjazenzu.pdf Graphic file (type pdf)
 <use chapters/70-graphen/images/adjazenzu.pdf>
 Package pdftex.def Info: chapters/70-graphen/images/adjazenzu.pdf  used on inpu
 t line 136.
 (pdftex.def)             Requested size: 370.25436pt x 129.2616pt.
-<chapters/70-graphen/images/adjazenzd.pdf, id=2278, 370.25528pt x 129.26193pt>
+<chapters/70-graphen/images/adjazenzd.pdf, id=3581, 370.25528pt x 129.26193pt>
 File: chapters/70-graphen/images/adjazenzd.pdf Graphic file (type pdf)
 <use chapters/70-graphen/images/adjazenzd.pdf>
 Package pdftex.def Info: chapters/70-graphen/images/adjazenzd.pdf  used on inpu
 t line 166.
 (pdftex.def)             Requested size: 370.25436pt x 129.2616pt.
- [133 <./chapters/70-graphen/images/adjazenzu.pdf>] [134 <./chapters/70-graphen
+ [189 <./chapters/70-graphen/images/adjazenzu.pdf>] [190 <./chapters/70-graphen
 /images/adjazenzd.pdf>]
-<chapters/70-graphen/images/peterson.pdf, id=2333, 124.08759pt x 117.96973pt>
+<chapters/70-graphen/images/peterson.pdf, id=3637, 124.08759pt x 117.96973pt>
 File: chapters/70-graphen/images/peterson.pdf Graphic file (type pdf)
 <use chapters/70-graphen/images/peterson.pdf>
 Package pdftex.def Info: chapters/70-graphen/images/peterson.pdf  used on input
  line 274.
 (pdftex.def)             Requested size: 124.08727pt x 117.96942pt.
 
-[135 <./chapters/70-graphen/images/peterson.pdf>] [136] [137])
-(./chapters/70-graphen/spektral.tex) (./chapters/70-graphen/wavelets.tex
-Overfull \hbox (12.68517pt too wide) in paragraph at lines 19--26
-[]\T1/txr/m/n/10 In die-sem Ab-schnitt wer-den erst Funk-tio-nen auf ei-nem Gra
--phen ge-nau-er de-fi-niert. In Ab-schnitt []8.3.2[]
- []
+[191 <./chapters/70-graphen/images/peterson.pdf>] [192] [193])
+(./chapters/70-graphen/spektral.tex [194]
+<chapters/70-graphen/images/petersonchrind.pdf, id=3677, 319.592pt x 138.41211p
+t>
+File: chapters/70-graphen/images/petersonchrind.pdf Graphic file (type pdf)
+<use chapters/70-graphen/images/petersonchrind.pdf>
+Package pdftex.def Info: chapters/70-graphen/images/petersonchrind.pdf  used on
+ input line 99.
+(pdftex.def)             Requested size: 319.5912pt x 138.41176pt.
+ [195 <./chapters/70-graphen/images/petersonchrind.pdf>]
 
-<chapters/70-graphen/images/kreis.pdf, id=2365, 379.48376pt x 180.30562pt>
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 192.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 192.
+
+[196]
+LaTeX Font Info:    Font shape `T1/txr/b/n' in size <8> not available
+(Font)              Font shape `T1/txr/bx/n' tried instead on input line 330.
+LaTeX Font Info:    Font shape `T1/txr/b/n' in size <6> not available
+(Font)              Font shape `T1/txr/bx/n' tried instead on input line 330.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 330.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\alpha' on input line 330.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 330.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 330.
+
+[197]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 387.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\alpha' on input line 387.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 387.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 387.
+
+<chapters/70-graphen/images/nine.pdf, id=3724, 94.96579pt x 96.24257pt>
+File: chapters/70-graphen/images/nine.pdf Graphic file (type pdf)
+<use chapters/70-graphen/images/nine.pdf>
+Package pdftex.def Info: chapters/70-graphen/images/nine.pdf  used on input lin
+e 437.
+(pdftex.def)             Requested size: 94.96555pt x 96.24232pt.
+[198]) (./chapters/70-graphen/waerme.tex [199 <./chapters/70-graphen/images/nin
+e.pdf>]
+<chapters/70-graphen/images/kreis.pdf, id=3745, 379.48376pt x 180.30562pt>
 File: chapters/70-graphen/images/kreis.pdf Graphic file (type pdf)
 <use chapters/70-graphen/images/kreis.pdf>
 Package pdftex.def Info: chapters/70-graphen/images/kreis.pdf  used on input li
-ne 45.
+ne 106.
 (pdftex.def)             Requested size: 379.48283pt x 180.30518pt.
-[138])) (./chapters/80-wahrscheinlichkeit/chapter.tex [139 <./chapters/70-graph
-en/images/kreis.pdf>] [140]
+
+Underfull \vbox (badness 4366) has occurred while \output is active []
+
+ [200 <./chapters/70-graphen/images/kreis.pdf>]) (./chapters/70-graphen/wavelet
+s.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 23.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 23.
+
+[201]
+<chapters/70-graphen/images/fundamental.pdf, id=3779, 393.1759pt x 153.52156pt>
+
+File: chapters/70-graphen/images/fundamental.pdf Graphic file (type pdf)
+<use chapters/70-graphen/images/fundamental.pdf>
+Package pdftex.def Info: chapters/70-graphen/images/fundamental.pdf  used on in
+put line 57.
+(pdftex.def)             Requested size: 393.17493pt x 153.52118pt.
+ [202 <./chapters/70-graphen/images/fundamental.pdf>] [203]
+<chapters/70-graphen/images/gh.pdf, id=3812, 396.18614pt x 104.73529pt>
+File: chapters/70-graphen/images/gh.pdf Graphic file (type pdf)
+<use chapters/70-graphen/images/gh.pdf>
+Package pdftex.def Info: chapters/70-graphen/images/gh.pdf  used on input line 
+165.
+(pdftex.def)             Requested size: 396.18517pt x 104.73502pt.
+ [204 <./chapters/70-graphen/images/gh.pdf>] [205]))
+(./chapters/80-wahrscheinlichkeit/chapter.tex [206]
 Kapitel 9.
-(./chapters/80-wahrscheinlichkeit/google.tex [141
+(./chapters/80-wahrscheinlichkeit/google.tex [207
 
 ]
-<chapters/80-wahrscheinlichkeit/images/internet.pdf, id=2409, 276.7961pt x 125.
-=======
-(./chapters/70-graphen/chapter.tex [113
-
-] [114
-
-]
-Kapitel 8.
-(./chapters/70-graphen/beschreibung.tex [115] [116] [117]
-<chapters/70-graphen/images/peterson.pdf, id=2083, 124.08759pt x 117.96973pt>
-File: chapters/70-graphen/images/peterson.pdf Graphic file (type pdf)
-<use chapters/70-graphen/images/peterson.pdf>
-Package pdftex.def Info: chapters/70-graphen/images/peterson.pdf  used on input
- line 239.
-(pdftex.def)             Requested size: 124.08727pt x 117.96942pt.
- [118 <./chapters/70-graphen/images/peterson.pdf>] [119]) (./chapters/70-graphe
-n/spektral.tex)
-(./chapters/70-graphen/wavelets.tex))
-(./chapters/80-wahrscheinlichkeit/chapter.tex [120]
-Kapitel 9.
-(./chapters/80-wahrscheinlichkeit/google.tex [121
-
-]
-<chapters/80-wahrscheinlichkeit/images/internet.pdf, id=2116, 276.7961pt x 125.
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+<chapters/80-wahrscheinlichkeit/images/internet.pdf, id=3856, 276.7961pt x 125.
 99573pt>
 File: chapters/80-wahrscheinlichkeit/images/internet.pdf Graphic file (type pdf
 )
@@ -2851,23 +3011,13 @@ File: chapters/80-wahrscheinlichkeit/images/internet.pdf Graphic file (type pdf
 Package pdftex.def Info: chapters/80-wahrscheinlichkeit/images/internet.pdf  us
 ed on input line 43.
 (pdftex.def)             Requested size: 276.79541pt x 125.9954pt.
-<<<<<<< HEAD
- [142 <./chapters/80-wahrscheinlichkeit/images/internet.pdf>] [143] [144] [145]
+ [208 <./chapters/80-wahrscheinlichkeit/images/internet.pdf>] [209] [210] [211]
 
 Underfull \vbox (badness 1859) has occurred while \output is active []
 
- [146])
-(./chapters/80-wahrscheinlichkeit/markov.tex [147] [148]
-<chapters/80-wahrscheinlichkeit/images/markov.pdf, id=2476, 400.70605pt x 193.8
-=======
- [122 <./chapters/80-wahrscheinlichkeit/images/internet.pdf>] [123] [124] [125]
-
-Underfull \vbox (badness 1859) has occurred while \output is active []
-
- [126])
-(./chapters/80-wahrscheinlichkeit/markov.tex [127] [128]
-<chapters/80-wahrscheinlichkeit/images/markov.pdf, id=2183, 400.70605pt x 193.8
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+ [212])
+(./chapters/80-wahrscheinlichkeit/markov.tex [213] [214]
+<chapters/80-wahrscheinlichkeit/images/markov.pdf, id=3923, 400.70605pt x 193.8
 131pt>
 File: chapters/80-wahrscheinlichkeit/images/markov.pdf Graphic file (type pdf)
 <use chapters/80-wahrscheinlichkeit/images/markov.pdf>
@@ -2885,13 +3035,8 @@ Overfull \hbox (4.2015pt too wide) in paragraph at lines 209--214
 en auf-ein-an-der-fol-gen-den Zeit-punk-ten stel-
  []
 
-<<<<<<< HEAD
-[149] [150 <./chapters/80-wahrscheinlichkeit/images/markov.pdf>] [151]
-<chapters/80-wahrscheinlichkeit/images/markov2.pdf, id=2521, 400.70605pt x 250.
-=======
-[129] [130 <./chapters/80-wahrscheinlichkeit/images/markov.pdf>] [131]
-<chapters/80-wahrscheinlichkeit/images/markov2.pdf, id=2227, 400.70605pt x 250.
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+[215] [216 <./chapters/80-wahrscheinlichkeit/images/markov.pdf>] [217]
+<chapters/80-wahrscheinlichkeit/images/markov2.pdf, id=3967, 400.70605pt x 250.
 71867pt>
 File: chapters/80-wahrscheinlichkeit/images/markov2.pdf Graphic file (type pdf)
 
@@ -2904,26 +3049,16 @@ Overfull \hbox (2.3665pt too wide) in paragraph at lines 401--405
  [][] 
  []
 
-<<<<<<< HEAD
-<chapters/80-wahrscheinlichkeit/images/konvex.pdf, id=2525, 387.31198pt x 184.4
-=======
-<chapters/80-wahrscheinlichkeit/images/konvex.pdf, id=2231, 387.31198pt x 184.4
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+<chapters/80-wahrscheinlichkeit/images/konvex.pdf, id=3971, 387.31198pt x 184.4
 8222pt>
 File: chapters/80-wahrscheinlichkeit/images/konvex.pdf Graphic file (type pdf)
 <use chapters/80-wahrscheinlichkeit/images/konvex.pdf>
 Package pdftex.def Info: chapters/80-wahrscheinlichkeit/images/konvex.pdf  used
  on input line 472.
 (pdftex.def)             Requested size: 387.31102pt x 184.48175pt.
-<<<<<<< HEAD
-[152] [153 <./chapters/80-wahrscheinlichkeit/images/markov2.pdf> <./chapters/80
--wahrscheinlichkeit/images/konvex.pdf>] [154] [155]
-<chapters/80-wahrscheinlichkeit/images/markov3.pdf, id=2594, 400.70605pt x 222.
-=======
-[132] [133 <./chapters/80-wahrscheinlichkeit/images/markov2.pdf> <./chapters/80
--wahrscheinlichkeit/images/konvex.pdf>] [134] [135]
-<chapters/80-wahrscheinlichkeit/images/markov3.pdf, id=2300, 400.70605pt x 222.
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+[218] [219 <./chapters/80-wahrscheinlichkeit/images/markov2.pdf> <./chapters/80
+-wahrscheinlichkeit/images/konvex.pdf>] [220] [221]
+<chapters/80-wahrscheinlichkeit/images/markov3.pdf, id=4040, 400.70605pt x 222.
 26538pt>
 File: chapters/80-wahrscheinlichkeit/images/markov3.pdf Graphic file (type pdf)
 
@@ -2936,15 +3071,9 @@ Overfull \hbox (2.3665pt too wide) in paragraph at lines 704--708
  [][] 
  []
 
-<<<<<<< HEAD
-[156] [157 <./chapters/80-wahrscheinlichkeit/images/markov3.pdf>])
-(./chapters/80-wahrscheinlichkeit/positiv.tex [158]
-<chapters/80-wahrscheinlichkeit/images/diffusion.pdf, id=2633, 388.62288pt x 22
-=======
-[136] [137 <./chapters/80-wahrscheinlichkeit/images/markov3.pdf>])
-(./chapters/80-wahrscheinlichkeit/positiv.tex [138]
-<chapters/80-wahrscheinlichkeit/images/diffusion.pdf, id=2339, 388.62288pt x 22
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+[222] [223 <./chapters/80-wahrscheinlichkeit/images/markov3.pdf>])
+(./chapters/80-wahrscheinlichkeit/positiv.tex [224]
+<chapters/80-wahrscheinlichkeit/images/diffusion.pdf, id=4079, 388.62288pt x 22
 2.10881pt>
 File: chapters/80-wahrscheinlichkeit/images/diffusion.pdf Graphic file (type pd
 f)
@@ -2952,24 +3081,15 @@ f)
 Package pdftex.def Info: chapters/80-wahrscheinlichkeit/images/diffusion.pdf  u
 sed on input line 98.
 (pdftex.def)             Requested size: 388.62192pt x 222.10826pt.
-<<<<<<< HEAD
- [159] [160 <./chapters/80-wahrscheinlichkeit/images/diffusion.pdf>]
-<chapters/80-wahrscheinlichkeit/images/trenn.pdf, id=2667, 190.30096pt x 131.88
-=======
- [139] [140 <./chapters/80-wahrscheinlichkeit/images/diffusion.pdf>]
-<chapters/80-wahrscheinlichkeit/images/trenn.pdf, id=2375, 190.30096pt x 131.88
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+ [225] [226 <./chapters/80-wahrscheinlichkeit/images/diffusion.pdf>]
+<chapters/80-wahrscheinlichkeit/images/trenn.pdf, id=4115, 190.30096pt x 131.88
 573pt>
 File: chapters/80-wahrscheinlichkeit/images/trenn.pdf Graphic file (type pdf)
 <use chapters/80-wahrscheinlichkeit/images/trenn.pdf>
 Package pdftex.def Info: chapters/80-wahrscheinlichkeit/images/trenn.pdf  used 
 on input line 189.
 (pdftex.def)             Requested size: 190.30049pt x 131.88539pt.
-<<<<<<< HEAD
-<chapters/80-wahrscheinlichkeit/images/vergleich.pdf, id=2669, 291.19388pt x 28
-=======
-<chapters/80-wahrscheinlichkeit/images/vergleich.pdf, id=2377, 291.19388pt x 28
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+<chapters/80-wahrscheinlichkeit/images/vergleich.pdf, id=4117, 291.19388pt x 28
 4.62938pt>
 File: chapters/80-wahrscheinlichkeit/images/vergleich.pdf Graphic file (type pd
 f)
@@ -2977,13 +3097,8 @@ f)
 Package pdftex.def Info: chapters/80-wahrscheinlichkeit/images/vergleich.pdf  u
 sed on input line 234.
 (pdftex.def)             Requested size: 291.19316pt x 284.62868pt.
-<<<<<<< HEAD
- [161 <./chapters/80-wahrscheinlichkeit/images/trenn.pdf>]
-<chapters/80-wahrscheinlichkeit/images/dreieck.pdf, id=2700, 364.4044pt x 246.8
-=======
- [141 <./chapters/80-wahrscheinlichkeit/images/trenn.pdf>]
-<chapters/80-wahrscheinlichkeit/images/dreieck.pdf, id=2407, 364.4044pt x 246.8
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+ [227 <./chapters/80-wahrscheinlichkeit/images/trenn.pdf>]
+<chapters/80-wahrscheinlichkeit/images/dreieck.pdf, id=4147, 364.4044pt x 246.8
 462pt>
 File: chapters/80-wahrscheinlichkeit/images/dreieck.pdf Graphic file (type pdf)
 
@@ -2991,15 +3106,9 @@ File: chapters/80-wahrscheinlichkeit/images/dreieck.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/80-wahrscheinlichkeit/images/dreieck.pdf  use
 d on input line 308.
 (pdftex.def)             Requested size: 364.4035pt x 246.8456pt.
-<<<<<<< HEAD
- [162 <./chapters/80-wahrscheinlichkeit/images/vergleich.pdf>] [163 <./chapters
+ [228 <./chapters/80-wahrscheinlichkeit/images/vergleich.pdf>] [229 <./chapters
 /80-wahrscheinlichkeit/images/dreieck.pdf>]
-<chapters/80-wahrscheinlichkeit/images/positiv.pdf, id=2744, 405.00409pt x 230.
-=======
- [142 <./chapters/80-wahrscheinlichkeit/images/vergleich.pdf>] [143 <./chapters
-/80-wahrscheinlichkeit/images/dreieck.pdf>]
-<chapters/80-wahrscheinlichkeit/images/positiv.pdf, id=2450, 405.00409pt x 230.
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+<chapters/80-wahrscheinlichkeit/images/positiv.pdf, id=4190, 405.00409pt x 230.
 74306pt>
 File: chapters/80-wahrscheinlichkeit/images/positiv.pdf Graphic file (type pdf)
 
@@ -3012,41 +3121,24 @@ Overfull \hbox (6.6645pt too wide) in paragraph at lines 404--408
  [][] 
  []
 
-<<<<<<< HEAD
-[164]
+[230]
 Underfull \vbox (badness 6575) has occurred while \output is active []
 
- [165 <./chapters/80-wahrscheinlichkeit/images/positiv.pdf>] [166])
-(./chapters/80-wahrscheinlichkeit/parrondo.tex [167]
-<chapters/80-wahrscheinlichkeit/images/spielB.pdf, id=2797, 127.81651pt x 133.8
-=======
-[144]
-Underfull \vbox (badness 6575) has occurred while \output is active []
-
- [145 <./chapters/80-wahrscheinlichkeit/images/positiv.pdf>] [146])
-(./chapters/80-wahrscheinlichkeit/parrondo.tex [147]
-<chapters/80-wahrscheinlichkeit/images/spielB.pdf, id=2504, 127.81651pt x 133.8
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+ [231 <./chapters/80-wahrscheinlichkeit/images/positiv.pdf>] [232])
+(./chapters/80-wahrscheinlichkeit/parrondo.tex [233]
+<chapters/80-wahrscheinlichkeit/images/spielB.pdf, id=4243, 127.81651pt x 133.8
 2295pt>
 File: chapters/80-wahrscheinlichkeit/images/spielB.pdf Graphic file (type pdf)
 <use chapters/80-wahrscheinlichkeit/images/spielB.pdf>
 Package pdftex.def Info: chapters/80-wahrscheinlichkeit/images/spielB.pdf  used
  on input line 64.
 (pdftex.def)             Requested size: 127.81618pt x 133.82262pt.
-<<<<<<< HEAD
- [168] [169 <./chapters/80-wahrscheinlichkeit/images/spielB.pdf>] [170]
-=======
- [148] [149 <./chapters/80-wahrscheinlichkeit/images/spielB.pdf>] [150]
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+ [234] [235 <./chapters/80-wahrscheinlichkeit/images/spielB.pdf>] [236]
 Overfull \hbox (17.8923pt too wide) detected at line 390
 []
  []
 
-<<<<<<< HEAD
-<chapters/80-wahrscheinlichkeit/images/spielBtilde.pdf, id=2831, 152.45657pt x 
-=======
-<chapters/80-wahrscheinlichkeit/images/spielBtilde.pdf, id=2537, 152.45657pt x 
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+<chapters/80-wahrscheinlichkeit/images/spielBtilde.pdf, id=4276, 152.45657pt x 
 161.27954pt>
 File: chapters/80-wahrscheinlichkeit/images/spielBtilde.pdf Graphic file (type 
 pdf)
@@ -3054,43 +3146,56 @@ pdf)
 Package pdftex.def Info: chapters/80-wahrscheinlichkeit/images/spielBtilde.pdf 
  used on input line 419.
 (pdftex.def)             Requested size: 152.45619pt x 161.27913pt.
-<<<<<<< HEAD
-[171] [172 <./chapters/80-wahrscheinlichkeit/images/spielBtilde.pdf>] [173]))
-(./chapters/90-crypto/chapter.tex [174]
-=======
-[151] [152 <./chapters/80-wahrscheinlichkeit/images/spielBtilde.pdf>] [153]))
-(./chapters/90-crypto/chapter.tex [154]
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+[237] [238 <./chapters/80-wahrscheinlichkeit/images/spielBtilde.pdf>] [239]))
+(./chapters/90-crypto/chapter.tex [240]
 Kapitel 10.
-(./chapters/90-crypto/arith.tex
+(./chapters/90-crypto/arith.tex [241
+
+] [242]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 15.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 15.
+(hyperref)                removing `math shift' on input line 125.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 15.
+(hyperref)                removing `subscript' on input line 125.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 20.
+(hyperref)                removing `math shift' on input line 125.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 20.
+(hyperref)                removing `math shift' on input line 208.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 20.
+(hyperref)                removing `subscript' on input line 208.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 20.
+(hyperref)                removing `superscript' on input line 208.
 
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 208.
+
+[243]
+<chapters/90-crypto/images/schieberegister.pdf, id=4353, 383.89223pt x 176.8898
+6pt>
+File: chapters/90-crypto/images/schieberegister.pdf Graphic file (type pdf)
+<use chapters/90-crypto/images/schieberegister.pdf>
+Package pdftex.def Info: chapters/90-crypto/images/schieberegister.pdf  used on
+ input line 256.
+(pdftex.def)             Requested size: 383.89128pt x 176.8894pt.
+ [244]
+<chapters/90-crypto/images/multiplikation.pdf, id=4364, 397.09555pt x 493.45154
+pt>
+File: chapters/90-crypto/images/multiplikation.pdf Graphic file (type pdf)
+<use chapters/90-crypto/images/multiplikation.pdf>
+Package pdftex.def Info: chapters/90-crypto/images/multiplikation.pdf  used on 
+input line 282.
+(pdftex.def)             Requested size: 398.33858pt x 494.99387pt.
 ) (./chapters/90-crypto/ff.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -3104,86 +3209,81 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 12.
 
-<<<<<<< HEAD
-[175
-=======
-[155
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
-
-]
+[245 <./chapters/90-crypto/images/schieberegister.pdf>] [246 <./chapters/90-cry
+pto/images/multiplikation.pdf>]
 Overfull \hbox (26.92535pt too wide) in paragraph at lines 79--84
 []\T1/txr/m/n/10 Man be-rech-ne die Po-tenz $\OT1/txr/m/n/10 7[]$ \T1/txr/m/n/1
 0 in $\U/txsyb/m/n/10 F[]$\T1/txr/m/n/10 . Die Bi-när-dar-stel-lung von 2021 is
 t $\OT1/txr/m/n/10 2021[] = [][]$\T1/txr/m/n/10 .
  []
 
-<<<<<<< HEAD
-[176]
-<chapters/90-crypto/images/dh.pdf, id=2893, 398.3382pt x 213.82384pt>
-=======
-[156]
-<chapters/90-crypto/images/dh.pdf, id=2600, 398.3382pt x 213.82384pt>
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+[247]
+<chapters/90-crypto/images/dh.pdf, id=4440, 398.3382pt x 213.82384pt>
 File: chapters/90-crypto/images/dh.pdf Graphic file (type pdf)
 <use chapters/90-crypto/images/dh.pdf>
 Package pdftex.def Info: chapters/90-crypto/images/dh.pdf  used on input line 1
 92.
 (pdftex.def)             Requested size: 398.33722pt x 213.8233pt.
-<<<<<<< HEAD
- [177] [178 <./chapters/90-crypto/images/dh.pdf>]
-<chapters/90-crypto/images/elliptic.pdf, id=2937, 347.66588pt x 347.4581pt>
-=======
- [157] [158 <./chapters/90-crypto/images/dh.pdf>]
-<chapters/90-crypto/images/elliptic.pdf, id=2644, 347.66588pt x 347.4581pt>
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+
+Underfull \vbox (badness 2608) has occurred while \output is active []
+
+ [248 <./chapters/90-crypto/images/dh.pdf>] [249]
+<chapters/90-crypto/images/elliptic.pdf, id=4479, 347.66588pt x 347.4581pt>
 File: chapters/90-crypto/images/elliptic.pdf Graphic file (type pdf)
 <use chapters/90-crypto/images/elliptic.pdf>
 Package pdftex.def Info: chapters/90-crypto/images/elliptic.pdf  used on input 
 line 346.
 (pdftex.def)             Requested size: 347.66501pt x 347.45724pt.
-<<<<<<< HEAD
- [179] [180 <./chapters/90-crypto/images/elliptic.pdf>] [181]) (./chapters/90-c
-rypto/aes.tex [182])
-(./chapters/90-crypto/rs.tex) (./chapters/90-crypto/uebungsaufgaben//9001.tex
-Underfull \vbox (badness 1776) has occurred while \output is active []
+ [250] [251 <./chapters/90-crypto/images/elliptic.pdf>] [252]) (./chapters/90-c
+rypto/aes.tex [253] [254]
+<chapters/90-crypto/images/sbox.pdf, id=4554, 433.28072pt x 182.89731pt>
+File: chapters/90-crypto/images/sbox.pdf Graphic file (type pdf)
+<use chapters/90-crypto/images/sbox.pdf>
+Package pdftex.def Info: chapters/90-crypto/images/sbox.pdf  used on input line
+ 87.
+(pdftex.def)             Requested size: 398.33858pt x 168.1587pt.
+ [255 <./chapters/90-crypto/images/sbox.pdf>]
+<chapters/90-crypto/images/shift.pdf, id=4564, 396.29353pt x 91.84915pt>
+File: chapters/90-crypto/images/shift.pdf Graphic file (type pdf)
+<use chapters/90-crypto/images/shift.pdf>
+Package pdftex.def Info: chapters/90-crypto/images/shift.pdf  used on input lin
+e 165.
+(pdftex.def)             Requested size: 398.33858pt x 92.32541pt.
 
- [183])
-[184]) (./chapters/95-homologie/chapter.tex
-Kapitel 11.
-<chapters/95-homologie/images/dreieck.pdf, id=3017, 319.3792pt x 115.65408pt>
-=======
- [159] [160 <./chapters/90-crypto/images/elliptic.pdf>] [161]) (./chapters/90-c
-rypto/aes.tex [162])
-(./chapters/90-crypto/rs.tex) (./chapters/90-crypto/uebungsaufgaben//9001.tex
-Underfull \vbox (badness 1776) has occurred while \output is active []
 
- [163])
-[164]) (./chapters/95-homologie/chapter.tex
+LaTeX Warning: Reference `buch:crypto:fig:zeilenshift' on page 256 undefined on
+ input line 178.
+
+[256 <./chapters/90-crypto/images/shift.pdf>]
+<chapters/90-crypto/images/keys.pdf, id=4582, 381.35574pt x 493.49368pt>
+File: chapters/90-crypto/images/keys.pdf Graphic file (type pdf)
+<use chapters/90-crypto/images/keys.pdf>
+Package pdftex.def Info: chapters/90-crypto/images/keys.pdf  used on input line
+ 353.
+(pdftex.def)             Requested size: 381.3548pt x 493.49248pt.
+ [257])
+(./chapters/90-crypto/uebungsaufgaben//9001.tex [258] [259 <./chapters/90-crypt
+o/images/keys.pdf>]) [260]) (./chapters/95-homologie/chapter.tex
 Kapitel 11.
-<chapters/95-homologie/images/dreieck.pdf, id=2725, 319.3792pt x 115.65408pt>
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+<chapters/95-homologie/images/dreieck.pdf, id=4621, 319.3792pt x 115.65408pt>
 File: chapters/95-homologie/images/dreieck.pdf Graphic file (type pdf)
 <use chapters/95-homologie/images/dreieck.pdf>
 Package pdftex.def Info: chapters/95-homologie/images/dreieck.pdf  used on inpu
 t line 17.
 (pdftex.def)             Requested size: 319.37842pt x 115.65378pt.
-<<<<<<< HEAD
-(./chapters/95-homologie/simplex.tex [185
+(./chapters/95-homologie/simplex.tex [261
 
-] [186 <./chapters/95-homologie/images/dreieck.pdf>]) (./chapters/95-homologie/
+] [262 <./chapters/95-homologie/images/dreieck.pdf>]) (./chapters/95-homologie/
 komplex.tex)
 (./chapters/95-homologie/homologie.tex)
-(./chapters/95-homologie/mayervietoris.tex [187])
-(./chapters/95-homologie/fixpunkte.tex)) [188]
-=======
-(./chapters/95-homologie/simplex.tex [165
+(./chapters/95-homologie/mayervietoris.tex [263])
+(./chapters/95-homologie/fixpunkte.tex)) [264]
+Overfull \hbox (13.0855pt too wide) in paragraph at lines 28--28
+[]\T1/txr/m/n/10 L. D. Land-au und E. M. Lif-schitz. \T1/txr/m/it/10 Me-cha-nik
+\T1/txr/m/n/10 . Bd. 1. Lehr-buch der theo-re-ti-schen Phy-sik. Akademie-
+ []
 
-] [166 <./chapters/95-homologie/images/dreieck.pdf>]) (./chapters/95-homologie/
-komplex.tex)
-(./chapters/95-homologie/homologie.tex)
-(./chapters/95-homologie/mayervietoris.tex [167])
-(./chapters/95-homologie/fixpunkte.tex)) [168]
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+
 Overfull \hbox (16.6247pt too wide) in paragraph at lines 28--28
 []\T1/txr/m/n/10 Andreas Mül-ler. \T1/txr/m/it/10 Sour-ce Co-de Re-po-si-to-ry\
 T1/txr/m/n/10 . 2020. \T1/txr/m/sc/10 url\T1/txr/m/n/10 : []$\T1/txtt/m/n/10 ht
@@ -3191,21 +3291,12 @@ tps : / / github . com / AndreasFMueller /
  []
 
 Package biblatex Info: Reference section=0 on input line 30.
-<<<<<<< HEAD
-) (./papers/part2.tex [189] [190
+) (./papers/part2.tex [265] [266
 
-] [191] [192] (./papers/uebersicht.tex)
-(./papers/common/addpapers.tex (./papers/000template/main.tex [193
+] [267] [268] (./papers/uebersicht.tex)
+(./papers/common/addpapers.tex (./papers/verkehr/main.tex [269
 
-] [194
-=======
-) (./papers/part2.tex [169] [170
-
-] [171] [172] (./papers/uebersicht.tex)
-(./papers/common/addpapers.tex (./papers/000template/main.tex [173
-
-] [174
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+] [270
 
 ]
 Kapitel 12.
@@ -3215,76 +3306,387 @@ Package biblatex Info: Reference section=2 on input line 8.
 \openout7 = `buch2-blx.aux'.
 
 Package biblatex Info: Setting label 'refsection:2' on input line 8.
-(./papers/000template/teil0.tex
+(./papers/verkehr/section1.tex
+<papers/verkehr/figures/chart_Vr1.png, id=4698, 455.301pt x 170.601pt>
+File: papers/verkehr/figures/chart_Vr1.png Graphic file (type png)
+<use papers/verkehr/figures/chart_Vr1.png>
+Package pdftex.def Info: papers/verkehr/figures/chart_Vr1.png  used on input li
+ne 16.
+(pdftex.def)             Requested size: 341.43306pt x 127.93741pt.
+<papers/verkehr/figures/chart_pathDiff.png, id=4702, 455.301pt x 170.601pt>
+File: papers/verkehr/figures/chart_pathDiff.png Graphic file (type png)
+<use papers/verkehr/figures/chart_pathDiff.png>
+Package pdftex.def Info: papers/verkehr/figures/chart_pathDiff.png  used on inp
+ut line 28.
+(pdftex.def)             Requested size: 341.43306pt x 127.93741pt.
+<papers/verkehr/figures/chart_Vr2.png, id=4703, 455.301pt x 170.601pt>
+File: papers/verkehr/figures/chart_Vr2.png Graphic file (type png)
+<use papers/verkehr/figures/chart_Vr2.png>
+Package pdftex.def Info: papers/verkehr/figures/chart_Vr2.png  used on input li
+ne 39.
+(pdftex.def)             Requested size: 341.43306pt x 127.93741pt.
+ [271]
+<papers/verkehr/figures/network_dij.png, id=4712, 490.08093pt x 481.8pt>
+File: papers/verkehr/figures/network_dij.png Graphic file (type png)
+<use papers/verkehr/figures/network_dij.png>
+Package pdftex.def Info: papers/verkehr/figures/network_dij.png  used on input 
+line 49.
+(pdftex.def)             Requested size: 170.71652pt x 167.83119pt.
+<papers/verkehr/figures/network_aStar.png, id=4713, 487.8225pt x 487.8225pt>
+File: papers/verkehr/figures/network_aStar.png Graphic file (type png)
+<use papers/verkehr/figures/network_aStar.png>
+Package pdftex.def Info: papers/verkehr/figures/network_aStar.png  used on inpu
+t line 50.
+(pdftex.def)             Requested size: 170.71652pt x 170.7181pt.
+) (./papers/verkehr/section2.tex [272 <./papers/verkehr/figures/chart_Vr1.png> 
+<./papers/verkehr/figures/chart_pathDiff.png>]
+File: papers/verkehr/figures/chart_Vr1.png Graphic file (type png)
+<use papers/verkehr/figures/chart_Vr1.png>
+Package pdftex.def Info: papers/verkehr/figures/chart_Vr1.png  used on input li
+ne 16.
+(pdftex.def)             Requested size: 341.43306pt x 127.93741pt.
 
-<<<<<<< HEAD
-LaTeX Warning: Citation '000template:bibtex' on page 195 undefined on input lin
-e 10.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-) (./papers/000template/teil1.tex [195]
+ [273 <./papers/verkehr/figures/chart_Vr2.png> <./papers/verkehr/figures/networ
+k_dij.png> <./papers/verkehr/figures/network_aStar.png>]
+File: papers/verkehr/figures/chart_pathDiff.png Graphic file (type png)
+<use papers/verkehr/figures/chart_pathDiff.png>
+Package pdftex.def Info: papers/verkehr/figures/chart_pathDiff.png  used on inp
+ut line 28.
+(pdftex.def)             Requested size: 341.43306pt x 127.93741pt.
+File: papers/verkehr/figures/chart_Vr2.png Graphic file (type png)
+<use papers/verkehr/figures/chart_Vr2.png>
+Package pdftex.def Info: papers/verkehr/figures/chart_Vr2.png  used on input li
+ne 39.
+(pdftex.def)             Requested size: 341.43306pt x 127.93741pt.
+File: papers/verkehr/figures/network_dij.png Graphic file (type png)
+<use papers/verkehr/figures/network_dij.png>
+Package pdftex.def Info: papers/verkehr/figures/network_dij.png  used on input 
+line 49.
+(pdftex.def)             Requested size: 170.71652pt x 167.83119pt.
+File: papers/verkehr/figures/network_aStar.png Graphic file (type png)
+<use papers/verkehr/figures/network_aStar.png>
+Package pdftex.def Info: papers/verkehr/figures/network_aStar.png  used on inpu
+t line 50.
+(pdftex.def)             Requested size: 170.71652pt x 170.7181pt.
+) (./papers/verkehr/section3.tex
+[274] [275])
+Overfull \hbox (9.03282pt too wide) in paragraph at lines 7--14
+\T1/txr/m/n/10 stanz ent-we-der nicht er-mit-telt wer-den kann, oder aber nicht
+ aus-schlag-ge-bend ist, sind an-de-re Netzwerk-
+ []
 
-LaTeX Warning: Reference `000tempmlate:equation1' on page 196 undefined on inpu
+
+LaTeX Warning: Empty bibliography on input line 15.
+
+Package biblatex Info: Reference section=0 on input line 16.
+) (./papers/multiplikation/main.tex [276]
+Kapitel 13.
+\blx@maxsegment@3=\count556
+\blx@sectionciteorder@3=\count557
+Package biblatex Info: Reference section=3 on input line 8.
+\openout7 = `buch3-blx.aux'.
+
+Package biblatex Info: Setting label 'refsection:3' on input line 8.
+(./papers/multiplikation/teil0.tex) (./papers/multiplikation/teil1.tex [277
+
+]
+
+LaTeX Warning: Reference `000tempmlate:equation1' on page 278 undefined on inpu
 t line 40.
 
 
-LaTeX Warning: Reference `000template:section:loesung' on page 196 undefined on
- input line 43.
+LaTeX Warning: Reference `multiplikation:section:loesung' on page 278 undefined
+ on input line 43.
 
 
-LaTeX Warning: Reference `000template:section:folgerung' on page 196 undefined 
-on input line 47.
+LaTeX Warning: Reference `multiplikation:section:folgerung' on page 278 undefin
+ed on input line 47.
 
-) (./papers/000template/teil2.tex [196]) (./papers/000template/teil3.tex)
-=======
-LaTeX Warning: Citation '000template:bibtex' on page 175 undefined on input lin
-e 10.
+) (./papers/multiplikation/teil2.tex [278]) (./papers/multiplikation/teil3.tex)
+Package biblatex Info: Reference section=0 on input line 36.
+) (./papers/punktgruppen/main.tex [279] [280
 
-) (./papers/000template/teil1.tex [175]
+]
+Kapitel 14.
 
-LaTeX Warning: Reference `000tempmlate:equation1' on page 176 undefined on inpu
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\rotatebox' on input line 6.
+
+\blx@maxsegment@4=\count558
+\blx@sectionciteorder@4=\count559
+Package biblatex Info: Reference section=4 on input line 8.
+\openout7 = `buch4-blx.aux'.
+
+Package biblatex Info: Setting label 'refsection:4' on input line 8.
+(./papers/punktgruppen/intro.tex) (./papers/punktgruppen/symmetry.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[281]
+LaTeX Font Info:    Trying to load font information for U+dsrom on input line 9
+7.
+ (/usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
+File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
+) [282])
+(./papers/punktgruppen/crystals.tex
+
+LaTeX Warning: Reference `fig:punktgruppen:lattce-grid' on page 283 undefined o
+n input line 10.
+
+
+LaTeX Warning: Reference `fig:punktgruppen:lattce-grid' on page 283 undefined o
+n input line 13.
+
+) (./papers/punktgruppen/piezo.tex) [283]
+Package biblatex Info: Reference section=0 on input line 21.
+) (./papers/reedsolomon/main.tex
+[284]
+Kapitel 15.
+\blx@maxsegment@5=\count560
+\blx@sectionciteorder@5=\count561
+Package biblatex Info: Reference section=5 on input line 8.
+\openout7 = `buch5-blx.aux'.
+
+Package biblatex Info: Setting label 'refsection:5' on input line 8.
+(./papers/reedsolomon/teil0.tex) (./papers/reedsolomon/teil1.tex [285
+
+]
+
+LaTeX Warning: Reference `000tempmlate:equation1' on page 286 undefined on inpu
 t line 40.
 
 
-LaTeX Warning: Reference `000template:section:loesung' on page 176 undefined on
+LaTeX Warning: Reference `reedsolomon:section:loesung' on page 286 undefined on
  input line 43.
 
 
-LaTeX Warning: Reference `000template:section:folgerung' on page 176 undefined 
+LaTeX Warning: Reference `reedsolomon:section:folgerung' on page 286 undefined 
 on input line 47.
 
-) (./papers/000template/teil2.tex [176]) (./papers/000template/teil3.tex)
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+) (./papers/reedsolomon/teil2.tex [286]) (./papers/reedsolomon/teil3.tex)
+Package biblatex Info: Reference section=0 on input line 36.
+)
+(./papers/ifs/main.tex [287] [288
+
+]
+Kapitel 16.
+\blx@maxsegment@6=\count562
+\blx@sectionciteorder@6=\count563
+Package biblatex Info: Reference section=6 on input line 8.
+\openout7 = `buch6-blx.aux'.
+
+Package biblatex Info: Setting label 'refsection:6' on input line 8.
+(./papers/ifs/teil0.tex) (./papers/ifs/teil1.tex [289]
+
+LaTeX Warning: Reference `000tempmlate:equation1' on page 290 undefined on inpu
+t line 40.
+
+
+LaTeX Warning: Reference `ifs:section:loesung' on page 290 undefined on input l
+ine 43.
+
+
+LaTeX Warning: Reference `ifs:section:folgerung' on page 290 undefined on input
+ line 47.
+
+) (./papers/ifs/teil2.tex [290]) (./papers/ifs/teil3.tex)
+Package biblatex Info: Reference section=0 on input line 36.
+)
+(./papers/mceliece/main.tex [291] [292
+
+]
+Kapitel 17.
+\blx@maxsegment@7=\count564
+\blx@sectionciteorder@7=\count565
+Package biblatex Info: Reference section=7 on input line 8.
+\openout7 = `buch7-blx.aux'.
+
+Package biblatex Info: Setting label 'refsection:7' on input line 8.
+(./papers/mceliece/teil0.tex) (./papers/mceliece/teil1.tex [293]
+
+LaTeX Warning: Reference `000tempmlate:equation1' on page 294 undefined on inpu
+t line 40.
+
+
+LaTeX Warning: Reference `mceliece:section:loesung' on page 294 undefined on in
+put line 43.
+
+
+LaTeX Warning: Reference `mceliece:section:folgerung' on page 294 undefined on 
+input line 47.
+
+) (./papers/mceliece/teil2.tex [294]) (./papers/mceliece/teil3.tex)
+Package biblatex Info: Reference section=0 on input line 36.
+)
+(./papers/clifford/main.tex [295] [296
+
+]
+Kapitel 18.
+\blx@maxsegment@8=\count566
+\blx@sectionciteorder@8=\count567
+Package biblatex Info: Reference section=8 on input line 8.
+\openout7 = `buch8-blx.aux'.
+
+Package biblatex Info: Setting label 'refsection:8' on input line 8.
+(./papers/clifford/teil0.tex) (./papers/clifford/teil1.tex [297]
+
+LaTeX Warning: Reference `000tempmlate:equation1' on page 298 undefined on inpu
+t line 40.
+
+
+LaTeX Warning: Reference `clifford:section:loesung' on page 298 undefined on in
+put line 43.
+
+
+LaTeX Warning: Reference `clifford:section:folgerung' on page 298 undefined on 
+input line 47.
+
+) (./papers/clifford/teil2.tex [298]) (./papers/clifford/teil3.tex)
+Package biblatex Info: Reference section=0 on input line 36.
+)
+(./papers/spannung/main.tex [299] [300
+
+]
+Kapitel 19.
+\blx@maxsegment@9=\count568
+\blx@sectionciteorder@9=\count569
+Package biblatex Info: Reference section=9 on input line 8.
+\openout7 = `buch9-blx.aux'.
+
+Package biblatex Info: Setting label 'refsection:9' on input line 8.
+(./papers/spannung/Einleitung.tex [301]) (./papers/spannung/teil0.tex
+<papers/spannung/Grafiken/Bild4.png, id=4902, 247.34407pt x 278.60085pt>
+File: papers/spannung/Grafiken/Bild4.png Graphic file (type png)
+<use papers/spannung/Grafiken/Bild4.png>
+Package pdftex.def Info: papers/spannung/Grafiken/Bild4.png  used on input line
+ 16.
+(pdftex.def)             Requested size: 199.16928pt x 224.35184pt.
+<papers/spannung/Grafiken/Bild5.png, id=4903, 241.92383pt x 254.75175pt>
+File: papers/spannung/Grafiken/Bild5.png Graphic file (type png)
+<use papers/spannung/Grafiken/Bild5.png>
+Package pdftex.def Info: papers/spannung/Grafiken/Bild5.png  used on input line
+ 23.
+(pdftex.def)             Requested size: 199.16928pt x 209.72963pt.
+ [302]
+[303 <./papers/spannung/Grafiken/Bild4.png> <./papers/spannung/Grafiken/Bild5.p
+ng>]
+<papers/spannung/Grafiken/Bild3.png, id=4915, 260.71402pt x 173.80936pt>
+File: papers/spannung/Grafiken/Bild3.png Graphic file (type png)
+<use papers/spannung/Grafiken/Bild3.png>
+Package pdftex.def Info: papers/spannung/Grafiken/Bild3.png  used on input line
+ 36.
+(pdftex.def)             Requested size: 199.16928pt x 132.78336pt.
+) (./papers/spannung/teil1.tex [304 <./papers/spannung/Grafiken/Bild3.png>]) (.
+/papers/spannung/teil2.tex
+<papers/spannung/Grafiken/infinitesimalerWuerfel.png, id=4921, 146.88878pt x 11
+5.632pt>
+File: papers/spannung/Grafiken/infinitesimalerWuerfel.png Graphic file (type pn
+g)
+<use papers/spannung/Grafiken/infinitesimalerWuerfel.png>
+Package pdftex.def Info: papers/spannung/Grafiken/infinitesimalerWuerfel.png  u
+sed on input line 10.
+(pdftex.def)             Requested size: 199.16928pt x 156.80045pt.
+ [305 <./papers/spannung/Grafiken/infinitesimalerWuerfel.png>] [306] [307] [308
+]) (./papers/spannung/teil3.tex [309])
+(./papers/spannung/teil4.tex
+<papers/spannung/Grafiken/DiagrammOedometer-Versuch.png, id=4945, 246.4407pt x 
+125.0271pt>
+File: papers/spannung/Grafiken/DiagrammOedometer-Versuch.png Graphic file (type
+ png)
+<use papers/spannung/Grafiken/DiagrammOedometer-Versuch.png>
+Package pdftex.def Info: papers/spannung/Grafiken/DiagrammOedometer-Versuch.png
+  used on input line 26.
+(pdftex.def)             Requested size: 199.16928pt x 101.04436pt.
+ [310])
+
+LaTeX Warning: Empty bibliography on input line 20.
+
+Package biblatex Info: Reference section=0 on input line 21.
+) (./papers/erdbeben/main.tex [311 <./papers/spannung/Grafiken/DiagrammOedomete
+r-Versuch.png>] [312
+
+]
+Kapitel 20.
+\blx@maxsegment@10=\count570
+\blx@sectionciteorder@10=\count571
+Package biblatex Info: Reference section=10 on input line 8.
+\openout7 = `buch10-blx.aux'.
+
+Package biblatex Info: Setting label 'refsection:10' on input line 8.
+(./papers/erdbeben/teil0.tex) (./papers/erdbeben/teil1.tex [313]
+<papers/erdbeben/Gausskurve2.pdf, id=4965, 210.55464pt x 162.39772pt>
+File: papers/erdbeben/Gausskurve2.pdf Graphic file (type pdf)
+<use papers/erdbeben/Gausskurve2.pdf>
+Package pdftex.def Info: papers/erdbeben/Gausskurve2.pdf  used on input line 25
+.
+(pdftex.def)             Requested size: 142.26378pt x 109.7277pt.
+ [314 <./papers/erdbeben/Gausskurve2.pdf>]
+<papers/erdbeben/Gausskurve3.pdf, id=4989, 210.55464pt x 162.39772pt>
+File: papers/erdbeben/Gausskurve3.pdf Graphic file (type pdf)
+<use papers/erdbeben/Gausskurve3.pdf>
+Package pdftex.def Info: papers/erdbeben/Gausskurve3.pdf  used on input line 54
+.
+(pdftex.def)             Requested size: 142.26378pt x 109.7277pt.
+<papers/erdbeben/Apperatur.jpg, id=4990, 1286.8075pt x 417.56pt>
+File: papers/erdbeben/Apperatur.jpg Graphic file (type jpg)
+<use papers/erdbeben/Apperatur.jpg>
+Package pdftex.def Info: papers/erdbeben/Apperatur.jpg  used on input line 73.
+(pdftex.def)             Requested size: 142.26378pt x 46.1611pt.
+ [315 <./papers/erdbeben/Gausskurve3.pdf>] [316 <./papers/erdbeben/Apperatur.jp
+g>] [317] [318] [319]) (./papers/erdbeben/teil2.tex) (./papers/erdbeben/teil3.t
+ex [320])
+Package biblatex Info: Reference section=0 on input line 36.
+) (./papers/munkres/main.tex [321] [322
+
+]
+Kapitel 21.
+\blx@maxsegment@11=\count572
+\blx@sectionciteorder@11=\count573
+Package biblatex Info: Reference section=11 on input line 8.
+\openout7 = `buch11-blx.aux'.
+
+Package biblatex Info: Setting label 'refsection:11' on input line 8.
+(./papers/munkres/teil0.tex
+
+LaTeX Warning: Citation 'munkres:bibtex' on page 323 undefined on input line 10
+.
+
+) (./papers/munkres/teil1.tex [323]
+
+LaTeX Warning: Reference `000tempmlate:equation1' on page 324 undefined on inpu
+t line 40.
+
+
+LaTeX Warning: Reference `munkres:section:loesung' on page 324 undefined on inp
+ut line 43.
+
+
+LaTeX Warning: Reference `munkres:section:folgerung' on page 324 undefined on i
+nput line 47.
+
+) (./papers/munkres/teil2.tex [324]) (./papers/munkres/teil3.tex)
 
 LaTeX Warning: Empty bibliography on input line 35.
 
 Package biblatex Info: Reference section=0 on input line 36.
-<<<<<<< HEAD
-))) [197] [198] (./buch.ind [199
+))) [325] [326] (./buch.ind [327
 
 
-] [200] [201
+] [328] [329
 
-]) [202
+]) [330
 
 
 ]
-=======
-))) [177] [178] (./buch.ind [179
-
-
-] [180])
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 49.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
  (./buch.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 49.
 Package rerunfilecheck Info: File `buch.out' has not changed.
-<<<<<<< HEAD
-(rerunfilecheck)             Checksum: CE906D6A98CEC7C4AFDB196D0D176E1B;12052.
-=======
-(rerunfilecheck)             Checksum: 7801A6EBF61DA8E86B1C0BCC8D4BF9FE;11446.
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+(rerunfilecheck)             Checksum: BAF9CFD8FAFCBA57ED2E43AB11BBC00C;19949.
 
 
 LaTeX Warning: There were undefined references.
@@ -3294,7 +3696,7 @@ LaTeX Warning: There were multiply-defined labels.
 
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
-(biblatex)                buch2-blx
+(biblatex)                buch11-blx
 (biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'buch.run.xml'.
@@ -3303,51 +3705,36 @@ Package logreq Info: Writing requests to 'buch.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 49.
  ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 71794 strings out of 481239
- 1742064 string characters out of 5920377
- 2745659 words of memory out of 5000000
- 84697 multiletter control sequences out of 15000+600000
- 628833 words of font info for 186 fonts, out of 8000000 for 9000
- 1143 hyphenation exceptions out of 8191
- 66i,20n,100p,3340b,2442s stack positions out of 5000i,500n,10000p,200000b,80000s
-=======
- 71634 strings out of 481239
- 1738863 string characters out of 5920378
- 2738744 words of memory out of 5000000
- 84645 multiletter control sequences out of 15000+600000
- 626880 words of font info for 184 fonts, out of 8000000 for 9000
+ 73441 strings out of 481239
+ 1778817 string characters out of 5920377
+ 2765798 words of memory out of 5000000
+ 85591 multiletter control sequences out of 15000+600000
+ 634299 words of font info for 196 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  66i,20n,100p,3340b,2425s stack positions out of 5000i,500n,10000p,200000b,80000s
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/txfonts/rtxb.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/txfonts/rtxi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txf
-onts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/txfonts/txexa.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfo
-nts/txsya.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyb.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/urw/times/utmri8a.pfb>
-<<<<<<< HEAD
-Output written on buch.pdf (210 pages, 1346827 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/doublestroke/dsrom10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/txfonts/rtcxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/tx
+fonts/rtxb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxi.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/txfonts/t1xtt.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfo
+nts/txexa.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/txfonts/txtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8
+a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on buch.pdf (340 pages, 3372120 bytes).
 PDF statistics:
- 3532 PDF objects out of 3580 (max. 8388607)
- 3230 compressed objects within 33 object streams
- 892 named destinations out of 1000 (max. 500000)
- 1472 words of extra memory for PDF output out of 10000 (max. 10000000)
-=======
-Output written on buch.pdf (186 pages, 1258294 bytes).
-PDF statistics:
- 3182 PDF objects out of 3580 (max. 8388607)
- 2911 compressed objects within 30 object streams
- 789 named destinations out of 1000 (max. 500000)
- 1396 words of extra memory for PDF output out of 10000 (max. 10000000)
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
+ 5629 PDF objects out of 6186 (max. 8388607)
+ 5124 compressed objects within 52 object streams
+ 1419 named destinations out of 1440 (max. 500000)
+ 2508 words of extra memory for PDF output out of 10000 (max. 10000000)
 

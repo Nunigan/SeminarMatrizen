@@ -17,7 +17,6 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
-<<<<<<< HEAD
   \entry{buch:ebbinghaus}{book}{}
     \name{author}{1}{}{%
       {{hash=eaHDE}{%
@@ -45,8 +44,6 @@
     \field{year}{1983}
   \endentry
 
-=======
->>>>>>> 039f91e1b1b9fbf8b7f4dac1a06212431e874db6
   \entry{BRIN1998107}{article}{}
     \name{author}{2}{}{%
       {{hash=BS}{%
@@ -108,6 +105,60 @@
     \field{volume}{30}
     \field{journaltitle}{Computer Networks and ISDN Systems}
     \field{year}{1998}
+  \endentry
+
+  \entry{skript:landaulifschitz1}{book}{}
+    \name{author}{2}{}{%
+      {{hash=LLD}{%
+         family={Landau},
+         familyi={L\bibinitperiod},
+         given={L.\bibnamedelima D.},
+         giveni={L\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=LEM}{%
+         family={Lifschitz},
+         familyi={L\bibinitperiod},
+         given={E.\bibnamedelima M.},
+         giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {german}%
+    }
+    \list{publisher}{1}{%
+      {Akademie-Verlag}%
+    }
+    \strng{namehash}{LLDLEM1}
+    \strng{fullhash}{LLDLEM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{series}{Lehrbuch der theoretischen Physik}
+    \field{title}{Mechanik}
+    \field{volume}{1}
+    \field{year}{1981}
+  \endentry
+
+  \entry{buch:mathsem-wavelets}{book}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{1}{}{%
+      {{hash=MA}{%
+         family={M"uller},
+         familyi={M\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MA+1}
+    \strng{fullhash}{MA+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Mathematisches Seminar Wavelets}
+    \field{year}{2019}
   \endentry
 
   \entry{buch:repo}{online}{}

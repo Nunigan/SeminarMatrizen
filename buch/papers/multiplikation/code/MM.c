@@ -27,12 +27,12 @@ int main() {
 	// omp_set_dynamic(0);
 	// omp_set_num_threads(4);
 //	run_algo(openMP_MM, "openMP_MM",0);
-	// run_algo(MM_dc, "MM_dc",0);
+	run_algo(MM_dc, "MM_dc",0);
 	run_algo(strassen, "strassen",0);
 
 	run_algo(MM, "MM", 0);
   // run_algo(winograd, "winograd", 0);
-  // run_algo_cblas(0);
+  run_algo_cblas(0);
 
 	return 0;
 }
@@ -434,32 +434,32 @@ void run_algo(void (*algo)(), char alog_name[], int print)
 
 }
 
-// void run_algo_cblas(int print)
-// {
-//
-// 	FILE *fptr;
-//
-// 	fptr = fopen("meas/blas.txt", "w");
-// 	for(int i=0; i<n_arrays; ++i)
-// 	{
-// 		for(int j = 0; j<1; ++j)
-// 		{
-// 			double *dC = (double*) malloc(n[i] * n[i] * sizeof(double));
-// 			double dtime = omp_get_wtime();
-// 			cblas_dgemm(CblasRowMajor, CblasNoTrans, CblasNoTrans, n[i], n[i], n[i], 1.0, dAp[i], n[i],
-// 			dBp[i], n[i], 0.0, dC, n[i]);
-// 			dtime = omp_get_wtime() - dtime;
-// 			// printf("The cblas program took %f seconds to execute \n", dtime);
-// 			fprintf(fptr, "%f,%d\n",dtime, n[i]);
-//
-// 			if(print==1)
-// 			{
-// 				printMatrix_double( (double*)dC, n[i]);
-// 			}
-//
-// 			free(dC);
-// 		}
-// 	}
-// 	fclose(fptr);
-//
-// }
+void run_algo_cblas(int print)
+{
+
+	FILE *fptr;
+
+	fptr = fopen("meas/blas.txt", "w");
+	for(int i=0; i<n_arrays; ++i)
+	{
+		for(int j = 0; j<1; ++j)
+		{
+			double *dC = (double*) malloc(n[i] * n[i] * sizeof(double));
+			double dtime = omp_get_wtime();
+			cblas_dgemm(CblasRowMajor, CblasNoTrans, CblasNoTrans, n[i], n[i], n[i], 1.0, dAp[i], n[i],
+			dBp[i], n[i], 0.0, dC, n[i]);
+			dtime = omp_get_wtime() - dtime;
+			// printf("The cblas program took %f seconds to execute \n", dtime);
+			fprintf(fptr, "%f,%d\n",dtime, n[i]);
+
+			if(print==1)
+			{
+				printMatrix_double( (double*)dC, n[i]);
+			}
+
+			free(dC);
+		}
+	}
+	fclose(fptr);
+
+}

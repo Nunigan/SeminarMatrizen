@@ -66,9 +66,46 @@
                \end{scope}
 
 
+
+
    \end{tikzpicture}
    }}
  \end{column}
-
 \end{columns}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Algorithm}
+
+\begin{columns}
+  \begin{column}{0.6\textwidth}
+\begin{algorithm}[H]\caption{Square Matrix Multiplication}
+  \setlength{\lineskip}{7pt}
+  \begin{algorithmic}[1]
+    \Function{MM}{$\textbf{A}, \textbf{B}, \textbf{C}$}
+    \State $sum \gets 0$
+    \State $n \gets columns(\textbf{A}) == rows(\textbf{B})$
+    \State $m \gets rows(\textbf{A})$
+    \State $p \gets columns(\textbf{B})$
+
+      \For{$i = 0,1,2 \dots,m-1$}
+      \For{$j = 0,1,2 \dots,p-1$}
+      \State $sum \gets 0$
+      \For{$k = 0,1,2 \dots,n-1$}
+        \State $sum \gets  sum + \textbf{A}[i][k] \cdot \textbf{B}[k][j]$
+      \EndFor
+      \State $\textbf{C}[i][j] \gets  sum $
+      \EndFor
+      \EndFor
+      \State \textbf{return} $\textbf{C}$
+   \EndFunction
+  \end{algorithmic}
+\end{algorithm}
+\end{column}
+\begin{column}{0.4\textwidth}
+\Huge$\mathcal{O}(n^3)$
+\end{column}
+\end{columns}
+
 \end{frame}

@@ -167,11 +167,11 @@ def test_perfomance(n):
     plt.rc('axes', labelsize=23)
     plt.rc('xtick', labelsize=23)
     plt.rc('ytick', labelsize=23)
-    plt.plot(n, t_mm, label='Standard MM', lw=5)
-    plt.plot(n, t_mm_dc, label='Divide and conquer MM', lw=5)
-    plt.plot(n, t_mm_strassen, label='Strassen MM', lw=5)
-    plt.plot(n, t_wino, label='Winograd MM', lw=5)
-    plt.plot(n, t_np, label='np MM', lw=5)
+    plt.plot(n, t_mm, label='Standard', lw=5)
+    plt.plot(n, t_mm_dc, label='Divide and conquer', lw=5)
+    plt.plot(n, t_mm_strassen, label='Strassen', lw=5)
+    plt.plot(n, t_wino, label='Winograd', lw=5)
+    plt.plot(n, t_np, label='NumPy A@B', lw=5)
     plt.legend()
     plt.xlabel("n")
     plt.ylabel("time (s)")
@@ -179,15 +179,40 @@ def test_perfomance(n):
     plt.tight_layout()
     # plt.yscale('log')
     plt.legend(fontsize=19)
+    plt.savefig('meas_' + str(max(n))+ '.pdf')
     arr = np.array([n, t_mm, t_mm_dc, t_mm_strassen, t_wino, t_np])
     np.savetxt('meas_' + str(max(n))+ '.txt',arr)    
     return arr
 
-def plot_c_res(ave):
+
+def plot(num):
+    arr = np.loadtxt('meas_{}.txt'.format(num))
+    n, t_mm, t_mm_dc, t_mm_strassen, t_wino, t_np = arr
+    plt.figure(figsize=(13,8))
+    plt.rcParams['font.family'] = 'STIXGeneral'
+    plt.rc('axes', labelsize=23)
+    plt.rc('xtick', labelsize=23)
+    plt.rc('ytick', labelsize=23)
+    plt.plot(n, t_mm, label='3 For Loops', lw=5)
+    plt.plot(n, t_mm_dc, label='Divide and Conquer', lw=5)
+    plt.plot(n, t_mm_strassen, label='Strassen', lw=5)
+    # plt.plot(n, t_wino, label='Winograd', lw=5)
+    plt.plot(n, t_np, label='NumPy A@B', lw=5)
+    plt.legend()
+    plt.xlabel("n")
+    plt.ylabel("time (s)")
+    plt.grid(True)
+    plt.tight_layout()
+    # plt.yscale('log')
+    plt.legend(fontsize=19)
+    plt.savefig('meas_' + str(num)+ '.pdf')    
+    return arr
+
+def plot_c_res(ave, num):
     MM = np.loadtxt("meas/MM.txt", delimiter=',')
     # winograd = np.loadtxt("meas/winograd.txt", delimiter=',')
-    # blas = np.loadtxt("meas/blas.txt", delimiter=',')
-    # MM_dc = np.loadtxt("meas/MM_dc.txt", delimiter=',')
+    blas = np.loadtxt("meas/blas.txt", delimiter=',')
+    MM_dc = np.loadtxt("meas/MM_dc.txt", delimiter=',')
     strassen = np.loadtxt("meas/strassen.txt", delimiter=',')
 
     MM_t = MM[:,0] 
@@ -195,10 +220,10 @@ def plot_c_res(ave):
     MM_t = np.mean(MM_t.reshape(-1,ave),axis=1)
     MM_n = np.mean(MM_n.reshape(-1,ave),axis=1)
 
-    # MM_dc_t = MM_dc[:,0] 
-    # MM_dc_n = MM_dc[:,1] 
-    # MM_dc_t = np.mean(MM_dc_t.reshape(-1,ave),axis=1)
-    # MM_dc_n = np.mean(MM_dc_n.reshape(-1,ave),axis=1)
+    MM_dc_t = MM_dc[:,0] 
+    MM_dc_n = MM_dc[:,1] 
+    MM_dc_t = np.mean(MM_dc_t.reshape(-1,ave),axis=1)
+    MM_dc_n = np.mean(MM_dc_n.reshape(-1,ave),axis=1)
 
     strassen_t = strassen[:,0] 
     strassen_n = strassen[:,1] 
@@ -210,10 +235,10 @@ def plot_c_res(ave):
     # winograd_t = np.mean(winograd_t.reshape(-1,ave),axis=1)
     # winograd_n = np.mean(winograd_n.reshape(-1,ave),axis=1)
     
-    # blas_t = blas[:,0] 
-    # blas_n = blas[:,1] 
-    # blas_t = np.mean(blas_t.reshape(-1,ave),axis=1)
-    # blas_n = np.mean(blas_n.reshape(-1,ave),axis=1)
+    blas_t = blas[:,0] 
+    blas_n = blas[:,1] 
+    blas_t = np.mean(blas_t.reshape(-1,ave),axis=1)
+    blas_n = np.mean(blas_n.reshape(-1,ave),axis=1)
 
     def func(x, a,b):
         return b*x**a
@@ -222,12 +247,22 @@ def plot_c_res(ave):
     # popt1, pcov2 = curve_fit(func, blas_n, winograd_t)
     # popt2, pcov2 = curve_fit(func, blas_n, MM_t)
 
-    plt.figure()
-    plt.plot(MM_n, MM_t, label='Standard MM', lw=5)
+    plt.figure(figsize=(13,8))
+    plt.rcParams['font.family'] = 'STIXGeneral'
+    plt.rc('axes', labelsize=23)
+    plt.rc('xtick', labelsize=23)
+    plt.rc('ytick', labelsize=23)
+    plt.plot(MM_n, MM_t, label='3 For Loops', lw=5)
     # plt.plot(winograd_n, winograd_t, label='Winograd MM', lw=5)
-    # plt.plot(blas_n, blas_t, label='Blas MM', lw=5)
-    plt.plot(strassen_n, strassen_t, label='Strassen MM', lw=5)
-    # plt.plot(MM_dc_n, MM_dc_t, label='MM_dc', lw=5)
+    plt.plot(blas_n, blas_t, label='Blas', lw=5)
+    plt.plot(strassen_n, strassen_t, label='Strassen', lw=5)
+    plt.plot(MM_dc_n, MM_dc_t, label='Divide and Conquer', lw=5)
+    plt.xlabel("n")
+    plt.ylabel("time (s)")
+    plt.grid(True)
+    plt.tight_layout()
+    plt.legend(fontsize=19)
+    plt.savefig('c_meas_' + str(num)+ '.pdf')    
 
     # plt.plot(blas_n, func(blas_n, *popt), 'r-', label='fit blas: a=%5.5f, b=%5.10f' % tuple(popt))
     # plt.plot(blas_n, func(blas_n, *popt1), 'r-', label='fit winograd: a=%5.5f, b=%5.10f' % tuple(popt1))
@@ -238,10 +273,11 @@ def plot_c_res(ave):
 
 # test%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 if __name__ == '__main__':
-    # plot_c_res(1)
+    plot_c_res(1, 1024)
 
-    
-    n = np.logspace(1,9,9,base=2,dtype=(np.int))
+ 
+    # plot(8)    
+    # n = np.logspace(1,10,10,base=2,dtype=(np.int))
     # n = np.arange(1,50,2)  
     # A = np.random.randint(-10, 10, (8,8))
     # B = np.random.randint(-10, 10, (8,8))
@@ -251,7 +287,7 @@ if __name__ == '__main__':
 
     # print(np.equal(C, C_test))
 
-    t_np = test_perfomance(n)
+    # t_np = test_perfomance(n)
     # C = strassen(A, B)
     # C_test = A@B
     
